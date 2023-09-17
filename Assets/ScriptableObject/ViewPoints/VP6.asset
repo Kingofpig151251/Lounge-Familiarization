@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
+  m_Name: VP6
+  m_EditorClassIdentifier: 
+  m_index: 7
+  m_relation: 01000000
+  m_arrowSO:
+  - {fileID: 11400000, guid: e84496f683eba99419c21c5d66a05857, type: 2}
+  m_infoSO:
+  - {fileID: 11400000, guid: b62dde9760023834eb6667b5696590fe, type: 2}
+  m_texture: {fileID: 2800000, guid: 2d8f65416df452c4c9b6c5af7af84649, type: 3}
+  m_rotation: 1.076
