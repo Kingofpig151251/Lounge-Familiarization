@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private const float m_rotationSpeed = 2500f;
+    private const float m_rotationSpeed = 500f;
 
     private float m_cameraRotationX = 0;
     private float m_cameraRotationY = 0;
