@@ -23,8 +23,8 @@ public class LayerManager : Singleton<LayerManager>
 
         if (regionID.Length == 1)
         {
-            UIElementReference.Instance.m_layerPanel1.SetActive(false);
-            UIElementReference.Instance.m_layerPanel2.SetActive(true);
+            UIElementReference.Instance.m_WorldMapPanel.SetActive(false);
+            UIElementReference.Instance.m_CityMapPanel.SetActive(true);
             if(regionID == "0")
             {
                 UIElementReference.Instance.m_Layer2hongKongBlock.SetActive(false);
@@ -38,19 +38,18 @@ public class LayerManager : Singleton<LayerManager>
         }
         if (regionID.Length == 2)
         {
-            UIElementReference.Instance.m_layerPanel2.SetActive(false);
-            UIElementReference.Instance.m_layerPanel3.SetActive(true);
-        }
-        if (regionID.Length == 3)
-        {
-            UIElementReference.Instance.m_layerPanel3.SetActive(false);
+            UIElementReference.Instance.m_CityMapPanel.SetActive(false);
+            GameEventReference.Instance.OnEnter360Mode.Trigger();
         }
     }
-
+        
     public void OnEnterViewPoint(params object[] param)
     {
-        UIElementReference.Instance.m_layerPanel3.SetActive(false);
-        UIElementReference.Instance.m_infoPanel.SetActive(false);
+        UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
+        UIElementReference.Instance.m_InfoPanel.SetActive(false);
+        if (ModeManager.Instance.m_CurrentMode != "Task") {
+            GameEventReference.Instance.OnEnter360Mode.Trigger();
+        }
     }
     
 }

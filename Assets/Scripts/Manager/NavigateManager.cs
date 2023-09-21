@@ -20,17 +20,17 @@ public class NavigateManager : Singleton<NavigateManager>
 
     private void OnEnterNavigatePhase(params object[] param)
     {
+        m_isEnterNavigatePhase = true;
         UIElementReference.Instance.m_navigatePanel.SetActive(true);
         UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(true);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(true);
-        m_isEnterNavigatePhase = true;
     }
     private void OnExitNavigatePhase(params object[] param)
     {
         m_isEnterNavigatePhase = false;
-        UIElementReference.Instance.m_navigatePanel.SetActive(false);
         UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(false);
+        GameEventReference.Instance.OnEnter360Mode.Trigger();
     }
 
     private void OnConfirmNavigate(params object[] param)
@@ -43,6 +43,6 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             Debug.Log("Wrong");
         }
-        GameEventReference.Instance.OnExitNavigatePhase.Trigger();
+        GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
     }
 }

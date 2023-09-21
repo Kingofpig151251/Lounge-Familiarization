@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InfoPanelManager : Singleton<InfoPanelManager>
 {
-    private bool m_isPanelExpanded = true;
+    private bool m_isPanelExpanded = false;
     
     private bool[] m_isLoungeHeaderExpanded = { false, false, false };
     private bool[] m_isClassHeaderExpanded = { false, false, false, false, false, false };
@@ -29,15 +29,15 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
     {
         m_isPanelExpanded = !m_isPanelExpanded;
 
-        if (m_isPanelExpanded)
+        if (!m_isPanelExpanded)
         {
-            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_infoPanel, -310f, 620f));
-            UIElementReference.Instance.m_infoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_collapseButton;
+            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, 310f, -620f));
+            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_expandButton;
         }
         else
         {
-            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_infoPanel, 310f, -620f));
-            UIElementReference.Instance.m_infoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_expandButton;
+            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, -310f, 620f));
+            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_collapseButton;
         }
     }
     private void StartRotateButton(GameObject button)

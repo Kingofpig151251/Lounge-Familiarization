@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class UIElementReference : Singleton<UIElementReference>
 {
-    public GameObject m_layerPanel1;
-    public GameObject m_layerPanel2;
-    public GameObject m_layerPanel3;
-    public GameObject m_messagePanel;
+    public GameObject m_WorldMapPanel;
+    public GameObject m_CityMapPanel;
+    public GameObject m_FloorPlanPanel;
+    public GameObject m_MessagePanel;
     public GameObject m_Grid;
     public GameObject m_Layer2sheKouBlock;
     public GameObject m_Layer2hongKongBlock;
-    public GameObject m_infoPanel;
-    public GameObject m_infoPanelExpandButton;
+    public GameObject m_InfoPanel;
+    public GameObject m_InfoPanelExpandButton;
+    public GameObject m_TopBar;
+    public GameObject m_InformationButton;
+
+    public GameObject m_360ButtonText;
+    public GameObject m_TaskButtonText;
+
 
     public GameObject m_firstViewPoint;
     public GameObject m_nextViewPoint;

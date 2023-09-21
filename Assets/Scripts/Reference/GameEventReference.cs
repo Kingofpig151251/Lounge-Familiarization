@@ -6,6 +6,8 @@ public class GameEventReference : Singleton<GameEventReference>
 {
     public GameEvent OnInteract = new GameEvent();
     public GameEvent OnEnterViewPoint = new GameEvent();
+    public GameEvent OnEnter360Mode = new GameEvent();
+    public GameEvent OnEnterTaskMode = new GameEvent();
     public GameEvent OnInteractInfo = new GameEvent();
     public GameEvent OnInteractUIMessage = new GameEvent();
     public GameEvent OnClickHeaderButton = new GameEvent();
@@ -20,4 +22,5 @@ public class GameEventReference : Singleton<GameEventReference>
     public GameEvent OnEnterNavigatePhase = new GameEvent();
     public GameEvent OnExitNavigatePhase = new GameEvent();
     public GameEvent OnConfirmNavigate = new GameEvent();
+    public GameEvent OnClickInformationButton = new GameEvent();
 }

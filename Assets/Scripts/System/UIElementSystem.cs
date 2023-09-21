@@ -19,12 +19,12 @@ public class UIElementSystem : MonoBehaviour
         switch (layer)
         {
             case 1:
-                UIElementReference.Instance.m_layerPanel2.SetActive(false);
-                UIElementReference.Instance.m_layerPanel1.SetActive(true);
+                UIElementReference.Instance.m_CityMapPanel.SetActive(false);
+                UIElementReference.Instance.m_WorldMapPanel.SetActive(true);
                 break;
             case 2:
-                UIElementReference.Instance.m_layerPanel3.SetActive(false);
-                UIElementReference.Instance.m_layerPanel2.SetActive(true);
+                UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
+                UIElementReference.Instance.m_CityMapPanel.SetActive(true);
                 break;
         }
     }
@@ -37,16 +37,16 @@ public class UIElementSystem : MonoBehaviour
         switch (id)
         {
             case 1:
-                UIElementReference.Instance.m_layerPanel1.SetActive(true);
+                UIElementReference.Instance.m_WorldMapPanel.SetActive(true);
                 break;
             case 2:
-                UIElementReference.Instance.m_layerPanel2.SetActive(true);
+                UIElementReference.Instance.m_CityMapPanel.SetActive(true);
                 break;
             case 3:
-                UIElementReference.Instance.m_layerPanel3.SetActive(true);
+                UIElementReference.Instance.m_FloorPlanPanel.SetActive(true);
                 break;
         }
-        UIElementReference.Instance.m_infoPanel.SetActive(true);
+        UIElementReference.Instance.m_InfoPanel.SetActive(true);
     }
 
     public void OnClickNextQuestion()
@@ -56,9 +56,11 @@ public class UIElementSystem : MonoBehaviour
     }
     public void EnterViewPoint(int index) => GameEventReference.Instance.OnEnterViewPoint.Trigger(index);
     public void OnClickInfoButton(string message) => GameEventReference.Instance.OnInteractUIMessage.Trigger(message);
+    public void OnClick360ModeButton(string message) => GameEventReference.Instance.OnEnter360Mode.Trigger(message);
+    public void OnClickTaskModeButton(string message) => GameEventReference.Instance.OnEnterTaskMode.Trigger(message);
     public void OnClickInfoExpandButton() => GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
     public void OnClickRegion(string regionID) => GameEventReference.Instance.OnChangeRegion.Trigger(regionID);
-    public void OnCloseMessagePanel() => UIElementReference.Instance.m_messagePanel.SetActive(false);
+    public void OnCloseMessagePanel() => UIElementReference.Instance.m_MessagePanel.SetActive(false);
     public void OnClickLoungeHeader(int index) => GameEventReference.Instance.OnClickLoungeHeader.Trigger(index);
     public void OnClickClassHeader(int index) => GameEventReference.Instance.OnClickClassHeader.Trigger(index);
     public void OpenTestPanel() => GameEventReference.Instance.OpenTestPanel.Trigger();
@@ -66,4 +68,5 @@ public class UIElementSystem : MonoBehaviour
     public void OnEnterNavigatePhase() => GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
     public void OnExitNavigatePhase() => GameEventReference.Instance.OnExitNavigatePhase.Trigger();
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
+    public void OnClickInformationButton() => GameEventReference.Instance.OnClickInformationButton.Trigger();
 }
