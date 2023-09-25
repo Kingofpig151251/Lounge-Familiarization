@@ -28,6 +28,7 @@ public class NavigateManager : Singleton<NavigateManager>
     private void OnExitNavigatePhase(params object[] param)
     {
         m_isEnterNavigatePhase = false;
+        UIElementReference.Instance.m_navigatePanel.SetActive(false);
         UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(false);
         GameEventReference.Instance.OnEnter360Mode.Trigger();
