@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
   m_Name: VP4
   m_EditorClassIdentifier: 
-  m_index: 5
+  m_index: 4
   m_relation: 01000000
   m_arrowSO:
-  - {fileID: 11400000, guid: 79607024cd8bcac4d892a286095b1b4d, type: 2}
   - {fileID: 11400000, guid: 3c55f881b0c8f344cadc5e1f25b542a2, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: 13d1419df3e38564da3129954f0a307c, type: 3}
-  m_rotation: 180
+  m_texture: {fileID: 2800000, guid: 14a3cb6e287794243bde7fdbe2ee8d40, type: 3}
+  m_rotation: 160

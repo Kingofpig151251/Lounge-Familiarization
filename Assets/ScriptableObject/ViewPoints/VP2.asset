@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
   m_Name: VP2
   m_EditorClassIdentifier: 
-  m_index: 3
+  m_index: 2
   m_relation: 01000000
   m_arrowSO:
-  - {fileID: 11400000, guid: ef76dbb54b5286f4dbbd641ec34e0c8e, type: 2}
   - {fileID: 11400000, guid: 18713d22e530e1448b56436aadc63e94, type: 2}
+  - {fileID: 11400000, guid: ef76dbb54b5286f4dbbd641ec34e0c8e, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: 47ab8720587166c4db0b9605dca123e0, type: 3}
-  m_rotation: -177.875
+  m_texture: {fileID: 2800000, guid: 51acac575df060044a4e01d6859d3eff, type: 3}
+  m_rotation: -100

@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
   m_Name: VP3
   m_EditorClassIdentifier: 
-  m_index: 4
+  m_index: 3
   m_relation: 01000000
   m_arrowSO:
   - {fileID: 11400000, guid: b950adeccdf6e8148903faf6465d371e, type: 2}
   - {fileID: 11400000, guid: e37c58ae50968f341890da9c2d779f3f, type: 2}
+  - {fileID: 11400000, guid: b910db7c3f86c294790f900927400b60, type: 2}
+  - {fileID: 11400000, guid: 969f51735e951d74a955ded7e521c92a, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: 5b77ef06807c7614c99f218b0615d727, type: 3}
-  m_rotation: 1.814
+  m_texture: {fileID: 2800000, guid: 1fcf8e6c01a71e74d97a783f56c51eb5, type: 3}
+  m_rotation: -120
