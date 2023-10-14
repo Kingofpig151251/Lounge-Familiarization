@@ -6,6 +6,8 @@ public class ViewPointManager : Singleton<ViewPointManager>
 {
     [SerializeField] private GameObject m_arrowObect;
     [SerializeField] private GameObject m_infoObect;
+    
+    [SerializeField] private GameObject m_firstViewPoint;
 
     public ViewPoint m_currentViewPoint;
     private List<GameObject> m_currentIcons = new List<GameObject>();
@@ -56,19 +58,19 @@ public class ViewPointManager : Singleton<ViewPointManager>
         GameObject currentObj;
         for (int i = 0; i < m_currentViewPoint.m_arrowSO.Length; i++)
         {
-            m_currentIcons.Add(currentObj = Instantiate(m_arrowObect));
-            currentObj.transform.position = m_currentViewPoint.m_arrowSO[i].m_position;
+            m_currentIcons.Add(currentObj = Instantiate(m_arrowObect, m_firstViewPoint.transform));
+            currentObj.transform.localPosition = m_currentViewPoint.m_arrowSO[i].m_position / 5; // Modified: position => localPosition / 5
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_arrowSO[i].m_rotation;
-            currentObj.transform.localScale = m_currentViewPoint.m_arrowSO[i].m_size;
+            currentObj.transform.localScale = m_currentViewPoint.m_arrowSO[i].m_size / 5; // Modified: localScale => localScale / 5
             currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex = m_currentViewPoint.m_arrowSO[i].m_nextViewPointIndex;
             currentObj.transform.GetChild(0).GetComponent<Renderer>().material.renderQueue = 3001;
         }
         for (int i = 0; i < m_currentViewPoint.m_infoSO.Length; i++)
         {
-            m_currentIcons.Add(currentObj = Instantiate(m_infoObect));
-            currentObj.transform.position = m_currentViewPoint.m_infoSO[i].m_position;
+            m_currentIcons.Add(currentObj = Instantiate(m_infoObect, m_firstViewPoint.transform));
+            currentObj.transform.localPosition = m_currentViewPoint.m_infoSO[i].m_position / 5; // Modified: position => localPosition / 5
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_infoSO[i].m_rotation;
-            currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size;
+            currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size / 5; // Modified: localScale => localScale / 5
             currentObj.GetComponent<InterfaceItem_Info>().m_info = m_currentViewPoint.m_infoSO[i].m_content;
             currentObj.GetComponent<Renderer>().material.renderQueue = 3001;
         }
