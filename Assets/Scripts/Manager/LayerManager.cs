@@ -25,16 +25,16 @@ public class LayerManager : Singleton<LayerManager>
         {
             UIElementReference.Instance.m_WorldMapPanel.SetActive(false);
             UIElementReference.Instance.m_CityMapPanel.SetActive(true);
-            if(regionID == "0")
-            {
-                UIElementReference.Instance.m_Layer2hongKongBlock.SetActive(false);
-                UIElementReference.Instance.m_Layer2sheKouBlock.SetActive(true);
-            }
-            else if(regionID == "1")
-            {
-                UIElementReference.Instance.m_Layer2hongKongBlock.SetActive(true);
-                UIElementReference.Instance.m_Layer2sheKouBlock.SetActive(false);
-            }
+            //if (regionID == "0")
+            //{
+            //    UIElementReference.Instance.m_Layer2hongKongBlock.SetActive(false);
+            //    UIElementReference.Instance.m_Layer2sheKouBlock.SetActive(true);
+            //}
+            //else if (regionID == "1")
+            //{
+            //    UIElementReference.Instance.m_Layer2hongKongBlock.SetActive(true);
+            //    UIElementReference.Instance.m_Layer2sheKouBlock.SetActive(false);
+            //}
         }
         if (regionID.Length == 2)
         {

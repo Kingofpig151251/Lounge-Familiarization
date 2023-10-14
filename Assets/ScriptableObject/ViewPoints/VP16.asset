@@ -17,6 +17,7 @@ MonoBehaviour:
   m_arrowSO:
   - {fileID: 11400000, guid: 294e1e96d9cd91a43bf395601570fdd8, type: 2}
   - {fileID: 11400000, guid: fc523f5ebe544b64497209cc06b8a51a, type: 2}
+  - {fileID: 11400000, guid: 06e186c9a6ff0d644a734438b48f5119, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: a131ecde0831e7a489a1a10122128ac9, type: 3}
+  m_texture: {fileID: 2800000, guid: 2fba77a97fe1ad94a82d5029236ac71d, type: 3}
   m_rotation: 45

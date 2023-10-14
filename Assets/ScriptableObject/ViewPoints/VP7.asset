@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: VP7
   m_EditorClassIdentifier: 
   m_index: 7
-  m_relation: 01000000
+  m_relation: 0d0000000900000012000000
   m_arrowSO:
   - {fileID: 11400000, guid: 8976ab09d9942b54e8b887f58f8f832b, type: 2}
   - {fileID: 11400000, guid: 3246b11c5de421049a241ca56f20359e, type: 2}
+  - {fileID: 11400000, guid: 296d105b3f56f574db798c4b46c55ece, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: 04565b6ee850f2e44b963d6bfc17e7f1, type: 3}
+  m_texture: {fileID: 2800000, guid: f70d8d5454f121e42b35f83cfdcf09fd, type: 3}
   m_rotation: -5

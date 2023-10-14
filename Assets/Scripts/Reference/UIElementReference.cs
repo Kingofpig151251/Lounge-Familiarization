@@ -9,8 +9,8 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_FloorPlanPanel;
     public GameObject m_MessagePanel;
     public GameObject m_Grid;
-    public GameObject m_Layer2sheKouBlock;
-    public GameObject m_Layer2hongKongBlock;
+    //public GameObject m_Layer2sheKouBlock;
+    //public GameObject m_Layer2hongKongBlock;
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;

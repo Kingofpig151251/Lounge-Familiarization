@@ -72,7 +72,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_infoSO[i].m_rotation;
             currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size / 5; // Modified: localScale => localScale / 5
             currentObj.GetComponent<InterfaceItem_Info>().m_info = m_currentViewPoint.m_infoSO[i].m_content;
-            currentObj.GetComponent<Renderer>().material.renderQueue = 3001;
+            currentObj.GetComponent<Renderer>().material.renderQueue = 3002;
         }
     }
 

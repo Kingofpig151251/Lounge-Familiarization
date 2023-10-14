@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class MsgManager : Singleton<MsgManager>
 {
-    [SerializeField] private Text m_messageText;
+    [SerializeField] private TextMeshProUGUI m_messageText;
+
     private void Start()
     {
-        GameEventReference.Instance.OnInteractUIMessage.AddListener(showMessagePanel);
+        GameEventReference.Instance.OnInteractInfo.AddListener(InteractUIMessage);
         gameObject.SetActive(false);
     }
-    private void showMessagePanel(params object[] param)
+    private void InteractUIMessage(params object[] param)
     {
         gameObject.SetActive(true);
         string messageText = (string)param[0];
