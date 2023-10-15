@@ -41,6 +41,8 @@ public class ModeManager : Singleton<ModeManager>
         UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(false);
+
+        UIElementReference.Instance.m_taskList.SetActive(false);
     }
     private void ShowTaskModePanel(params object[] param)
     {
@@ -49,11 +51,12 @@ public class ModeManager : Singleton<ModeManager>
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
         UIElementReference.Instance.m_InformationButton.SetActive(false);
 
-
-        GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
-
         UIElementReference.Instance.m_360ButtonText.GetComponentInChildren<TMP_Text>().color = m_color1;
         UIElementReference.Instance.m_TaskButtonText.GetComponentInChildren<TMP_Text>().color = Color.gray;
+
+        UIElementReference.Instance.m_taskList.SetActive(true);
+        GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
+
     }
 
     private void ShowFloorPlanPanel(params object[] param)

@@ -10,12 +10,10 @@ public class MsgManager : Singleton<MsgManager>
     private void Start()
     {
         GameEventReference.Instance.OnInteractInfo.AddListener(InteractUIMessage);
-        gameObject.SetActive(false);
     }
     private void InteractUIMessage(params object[] param)
     {
         UIElementReference.Instance.m_MessagePanel.SetActive(true);
-        gameObject.SetActive(true);
         string messageText = (string)param[0];
         this.m_messageText.text = messageText;
     }

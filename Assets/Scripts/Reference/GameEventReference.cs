@@ -23,4 +23,14 @@ public class GameEventReference : Singleton<GameEventReference>
     public GameEvent OnExitNavigatePhase = new GameEvent();
     public GameEvent OnConfirmNavigate = new GameEvent();
     public GameEvent OnClickInformationButton = new GameEvent();
+
+    public readonly GameEvent OnTaskListExpand = new GameEvent();
+    public readonly GameEvent OnTaskListCollapse = new GameEvent();
+
+    public readonly GameEvent OnTaskAdded = new GameEvent();
+    public readonly GameEvent OnTaskCompleted = new GameEvent();
+    public readonly GameEvent OnTaskUpdate = new GameEvent();
+    public readonly GameEvent OnTaskRemoved = new GameEvent();
+
+    public readonly GameEvent OnLanguageChanged = new GameEvent();
 }

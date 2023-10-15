@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UIElementReference : Singleton<UIElementReference>
 {
@@ -44,4 +45,8 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_enterNavigateButton;
     public GameObject m_exitNavigateButton;
     public GameObject m_confirmNavigateButton;
+
+    public GameObject m_taskList;
+    public TextMeshProUGUI m_taskText;
+    public TextMeshProUGUI m_taskCorrectRate;
 }
