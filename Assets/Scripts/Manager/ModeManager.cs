@@ -40,6 +40,7 @@ public class ModeManager : Singleton<ModeManager>
         NavigateManager.Instance.m_isEnterNavigatePhase = false;
         UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(false);
+        UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(false);
     }
     private void ShowTaskModePanel(params object[] param)
     {
