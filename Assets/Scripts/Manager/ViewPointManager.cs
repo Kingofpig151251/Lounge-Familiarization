@@ -34,8 +34,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
     private void OnInteractInfo(params object[] param)
     {
-        string info = (string)param[0];
-        Debug.Log(info);
+        InfoSO info = (InfoSO)param[0];
     }
 
     private void EnterViewPoint(int viewPointIndex)
@@ -71,7 +70,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             currentObj.transform.localPosition = m_currentViewPoint.m_infoSO[i].m_position / 5; // Modified: position => localPosition / 5
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_infoSO[i].m_rotation;
             currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size / 5; // Modified: localScale => localScale / 5
-            currentObj.GetComponent<InterfaceItem_Info>().m_info = m_currentViewPoint.m_infoSO[i].m_content;
+            currentObj.GetComponent<InterfaceItem_Info>().m_info = m_currentViewPoint.m_infoSO[i];
             currentObj.GetComponent<Renderer>().material.renderQueue = 3002;
         }
     }

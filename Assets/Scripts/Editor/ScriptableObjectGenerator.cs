@@ -29,7 +29,8 @@ public class ScriptableObjectGenerator
         testData.m_position = Selection.activeTransform.gameObject.transform.position;
         testData.m_rotation = Selection.activeTransform.gameObject.transform.localEulerAngles;
         testData.m_size = Selection.activeTransform.gameObject.transform.localScale;
-        testData.m_content = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info;
+        testData.m_title = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_title;
+        testData.m_content = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content;
 
         string fullPath = "Assets/ScriptableObject/Info/VP.asset";
         UnityEditor.AssetDatabase.DeleteAsset(fullPath);

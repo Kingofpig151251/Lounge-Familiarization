@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InterfaceItem_Info : InterfaceItem
 {
-    public string m_info;
+    public InfoSO m_info;
 
-    public string GetInfo() => m_info;
+    public InfoSO GetInfo() => m_info;
 
     public override void OnClick()
     {
