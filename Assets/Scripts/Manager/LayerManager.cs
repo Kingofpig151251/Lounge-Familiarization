@@ -6,6 +6,7 @@ using UnityEngine;
 public class LayerManager : Singleton<LayerManager>
 {
     public bool m_isLayerActive = false;
+
     private void Start()
     {
         SetUpListeners();
@@ -20,6 +21,7 @@ public class LayerManager : Singleton<LayerManager>
     private void OnClickRegion(params object[] param)
     {
         string regionID = (string)param[0];
+
 
         if (regionID.Length == 1)
         {
@@ -38,18 +40,20 @@ public class LayerManager : Singleton<LayerManager>
         }
         if (regionID.Length == 2)
         {
+            UIElementReference.Instance.m_TopBar.SetActive(true);
             UIElementReference.Instance.m_CityMapPanel.SetActive(false);
             GameEventReference.Instance.OnEnter360Mode.Trigger();
         }
     }
-        
+
     public void OnEnterViewPoint(params object[] param)
     {
-        UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
+        GameEventReference.Instance.OnClickInformationButton.Trigger();
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
-        if (ModeManager.Instance.m_CurrentMode != "Task") {
+        if (ModeManager.Instance.m_CurrentMode != PlayMode.TaskMode)
+        {
             GameEventReference.Instance.OnEnter360Mode.Trigger();
         }
     }
-    
+
 }

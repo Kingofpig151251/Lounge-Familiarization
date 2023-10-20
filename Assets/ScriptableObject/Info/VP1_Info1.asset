@@ -10,12 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
-  m_Name: VP15_Info1
+  m_Name: VP1_Info1
   m_EditorClassIdentifier: 
-  m_position: {x: 2.5, y: 0, z: -1}
+  m_position: {x: 2.5, y: 0, z: 2}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.05, y: 0.05, z: 0.05}
-  m_title: Noodle Bar
-  m_content: "Our noodle dish selections are freshly made-to-order and rotate regularly.
-    \_Savour popular, locally inspired dishes including dumplings,\_char siu\_buns,\_and
-    two of Hong Kong's favourites: wonton noodle soup and fish ball noodle soup. "
+  m_content: This is entry

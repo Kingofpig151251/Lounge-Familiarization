@@ -16,6 +16,7 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;
     public GameObject m_InformationButton;
+    public GameObject m_FloorPlanButtonText;
 
     public GameObject m_360ButtonText;
     public GameObject m_TaskButtonText;

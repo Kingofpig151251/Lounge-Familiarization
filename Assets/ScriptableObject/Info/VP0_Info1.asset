@@ -15,7 +15,7 @@ MonoBehaviour:
   m_position: {x: -0.1, y: 0.2, z: 2}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.05, y: 0.05, z: 0.05}
-  m_title: "The Deck\v"
+  m_title: The Deck
   m_content: 'In The Deck, you can pamper yourself before your flight, people-watch
     from atop, enjoy cocktails and sunset views from The Terrace, or savour your
     favourite dishes from our signature Noodle Bar. Opening Hours: 05:30 - 00:30 '

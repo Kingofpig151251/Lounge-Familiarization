@@ -9,6 +9,7 @@ public class NavigateManager : Singleton<NavigateManager>
     public int m_correctRate = 0;
     public int m_totalQuestionGenerate = 0;
     public int m_questionIndex;
+
     private void Start()
     {
         SetUpListener();
@@ -73,7 +74,6 @@ public class NavigateManager : Singleton<NavigateManager>
         int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
         Random.InitState(seed);
         m_questionIndex = Mathf.Clamp(Random.Range(0, UIElementReference.Instance.m_questionList.Count), 0, UIElementReference.Instance.m_questionList.Count - 1);
-        Debug.Log(m_questionIndex);
 
 
         //} while (isQuestionIndexPremit());

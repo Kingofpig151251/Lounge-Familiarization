@@ -17,8 +17,8 @@ public class MsgManager : Singleton<MsgManager>
         InfoSO info = (InfoSO)param[0];
         ;
         UIElementReference.Instance.m_MessagePanel.SetActive(true);
-        this.m_titleText.text =  info.m_title;
-        this.m_messageText.text =  info.m_content;
+        this.m_titleText.text = info.m_title;
+        this.m_messageText.text = info.m_content;
     }
 }
 

@@ -4,31 +4,6 @@ using UnityEngine;
 
 public class UIElementSystem : MonoBehaviour
 {
-    public void BackToPreviousLayer(int layer)
-    {
-        string regionIndex = GridManager.Instance.m_regionIndex;
-        if (regionIndex.Length == 1)
-        {
-            GameEventReference.Instance.OnChangeRegion.Trigger("");
-        }
-        else
-        {
-            GameEventReference.Instance.OnChangeRegion.Trigger(GridManager.Instance.m_regionIndex.Substring(0, regionIndex.Length - 1));
-        }
-
-        switch (layer)
-        {
-            case 1:
-                UIElementReference.Instance.m_CityMapPanel.SetActive(false);
-                UIElementReference.Instance.m_WorldMapPanel.SetActive(true);
-                break;
-            case 2:
-                UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
-                UIElementReference.Instance.m_CityMapPanel.SetActive(true);
-                break;
-        }
-    }
-
     public void ShowMapLayer(int id)
     {    
         if (NavigateManager.Instance.m_isEnterNavigatePhase || TestPanelManager.Instance.m_isQuestionPanelActive)
@@ -47,6 +22,8 @@ public class UIElementSystem : MonoBehaviour
                 break;
         }
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
+        UIElementReference.Instance.m_TopBar.SetActive(false);
+        UIElementReference.Instance.m_InfoPanel.SetActive(false);
     }
 
     public void OnClickNextQuestion()

@@ -15,10 +15,17 @@ public class TaskListManager : Singleton<TaskListManager>
         _taskList = new List<Task>();
     }
     
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // Add event listeners to the UI events
+        SetUpListeners();
+
+        // Test code
+        GameEventReference.Instance.OnTaskAdded.Trigger(new LanguagePlus("關掉電腦", "Turn off the computer"));
+    }
+
+    private void SetUpListeners()
+    {
         GameEventReference.Instance.OnTaskListExpand.AddListener(OnTaskListExpand);
         GameEventReference.Instance.OnTaskListCollapse.AddListener(OnTaskListCollapse);
         GameEventReference.Instance.OnTaskAdded.AddListener(OnTaskAdded);
@@ -26,9 +33,6 @@ public class TaskListManager : Singleton<TaskListManager>
         GameEventReference.Instance.OnTaskUpdate.AddListener(OnTaskUpdate);
         GameEventReference.Instance.OnTaskRemoved.AddListener(OnTaskRemoved);
         GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
-
-        // Test code
-        GameEventReference.Instance.OnTaskAdded.Trigger(new LanguagePlus("關掉電腦", "Turn off the computer"));
     }
     
     // Event listeners

@@ -1,9 +1,6 @@
-using Antlr.Runtime.Tree;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -23,7 +20,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
         GameEventReference.Instance.OnClickTestOption.AddListener(OnClickTestOption);
         GameEventReference.Instance.OnEnterNavigatePhase.AddListener(OnEnterNavigatePhase);
     }
-
+    
     private bool isQuestionIndexPremit()
     {
         switch (ViewPointManager.Instance.m_currentViewPoint.m_index)

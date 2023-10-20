@@ -5,71 +5,68 @@ using TMPro;
 
 public class ModeManager : Singleton<ModeManager>
 {
-
-    public string m_CurrentMode = "360";
-    private Color m_color1;
+    public int m_CurrentMode { get; private set; }
+    private Color m_inactiveColor = Color.gray;
+    private Color m_activeColor = new Color(0, 0.2941177f, 0.3137255f, 255);
     public bool isFloorPlanPanel = false;
 
-
-    // Start is called before the first frame update
-    void Start()
+    override protected void Init()
     {
-        m_color1 = new Color(0, 0.2941177f, 0.3137255f, 255);
-        GameEventReference.Instance.OnEnter360Mode.AddListener(Show360ModePanel);
-        GameEventReference.Instance.OnEnterTaskMode.AddListener(ShowTaskModePanel);
-        GameEventReference.Instance.OnClickInformationButton.AddListener(ShowFloorPlanPanel);
+        m_CurrentMode = PlayMode.ViewMode;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        GameEventReference.Instance.OnEnter360Mode.AddListener(Show360ModePanel);
+        GameEventReference.Instance.OnEnterTaskMode.AddListener(OnEnterTaskMode);
+        GameEventReference.Instance.OnClickInformationButton.AddListener(OnClickInformationButton);
+    }
+
+    private void SwitchMode(int mode)
+    {
+        m_CurrentMode = mode;
+
+        bool isViewMode = m_CurrentMode == PlayMode.ViewMode;
+        bool isTaskMode = m_CurrentMode == PlayMode.TaskMode;
+
+        UIElementReference.Instance.m_InfoPanel.SetActive(isViewMode);
+        UIElementReference.Instance.m_InformationButton.SetActive(isViewMode);
+
+        UIElementReference.Instance.m_360ButtonText.GetComponentInChildren<TMP_Text>().color = isViewMode?m_inactiveColor:m_activeColor;
+        UIElementReference.Instance.m_TaskButtonText.GetComponentInChildren<TMP_Text>().color = isTaskMode ? m_inactiveColor : m_activeColor;
+
+        NavigateManager.Instance.m_isEnterNavigatePhase = isTaskMode;
+        UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(isTaskMode);
+        UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(isTaskMode);
+        UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(isTaskMode);
+
+        UIElementReference.Instance.m_taskList.SetActive(isTaskMode);
     }
 
     private void Show360ModePanel(params object[] param)
     {
-        m_CurrentMode = "360";
-        UIElementReference.Instance.m_TopBar.SetActive(true);
-        UIElementReference.Instance.m_InfoPanel.SetActive(true);
-        UIElementReference.Instance.m_InformationButton.SetActive(true);
-
-
-        UIElementReference.Instance.m_360ButtonText.GetComponentInChildren<TMP_Text>().color = Color.gray;
-        UIElementReference.Instance.m_TaskButtonText.GetComponentInChildren<TMP_Text>().color = m_color1;
-
-        NavigateManager.Instance.m_isEnterNavigatePhase = false;
-        UIElementReference.Instance.m_confirmNavigateButton.gameObject.SetActive(false);
-        UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(false);
-        UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(false);
-
-        UIElementReference.Instance.m_taskList.SetActive(false);
-    }
-    private void ShowTaskModePanel(params object[] param)
-    {
-        m_CurrentMode = "Task";
-        UIElementReference.Instance.m_TopBar.SetActive(true);
-        UIElementReference.Instance.m_InfoPanel.SetActive(false);
-        UIElementReference.Instance.m_InformationButton.SetActive(false);
-
-        UIElementReference.Instance.m_360ButtonText.GetComponentInChildren<TMP_Text>().color = m_color1;
-        UIElementReference.Instance.m_TaskButtonText.GetComponentInChildren<TMP_Text>().color = Color.gray;
-
-        UIElementReference.Instance.m_taskList.SetActive(true);
-        GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
-
+        SwitchMode(PlayMode.ViewMode);
     }
 
-    private void ShowFloorPlanPanel(params object[] param)
+    private void OnEnterTaskMode(params object[] param)
     {
-        if (isFloorPlanPanel == false)
+        SwitchMode(PlayMode.TaskMode);
+    }
+
+    private void OnClickInformationButton(params object[] param)
+    {
+        isFloorPlanPanel = !isFloorPlanPanel;
+        if (isFloorPlanPanel)
         {
             UIElementReference.Instance.m_FloorPlanPanel.SetActive(true);
-            isFloorPlanPanel = true;
+            UIElementReference.Instance.m_FloorPlanButtonText.GetComponent<TMP_Text>().text = "Back";
+            UIElementReference.Instance.m_InfoPanel.SetActive(false);
         }
         else
         {
             UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
-            isFloorPlanPanel = false;
+            UIElementReference.Instance.m_FloorPlanButtonText.GetComponent<TMP_Text>().text = "Map";
+            UIElementReference.Instance.m_InfoPanel.SetActive(true);
         }
     }
 
