@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
@@ -9,13 +10,34 @@ public class CameraController : MonoBehaviour
     private float m_cameraRotationX = 0;
     private float m_cameraRotationY = 0;
 
+    private bool m_isMovingCamera = false;
+
     private void Start()
     {
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0) && (Input.GetAxisRaw("Mouse X") != 0 || Input.GetAxisRaw("Mouse Y") != 0))
+        HandleMoveDetecting();
+        HandleMoving();
+    }
+
+    private void HandleMoveDetecting()
+    {
+        if (!m_isMovingCamera && !EventSystem.current.IsPointerOverGameObject() && Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            m_isMovingCamera = true;
+        }
+
+        if (m_isMovingCamera && Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            m_isMovingCamera = false;
+        }
+    }
+
+    private void HandleMoving()
+    {
+        if (m_isMovingCamera && (Input.GetAxisRaw("Mouse X") != 0 || Input.GetAxisRaw("Mouse Y") != 0))
         {
             float deltaX = Input.GetAxisRaw("Mouse Y");
             float deltaY = Input.GetAxisRaw("Mouse X");

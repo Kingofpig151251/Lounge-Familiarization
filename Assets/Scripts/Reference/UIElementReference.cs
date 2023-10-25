@@ -15,12 +15,8 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;
-    public GameObject m_InformationButton;
+    public GameObject m_floorPlanButton;
     public GameObject m_FloorPlanButtonText;
-
-    public GameObject m_360ButtonText;
-    public GameObject m_TaskButtonText;
-
 
     public GameObject m_firstViewPoint;
     public GameObject m_nextViewPoint;
@@ -31,9 +27,7 @@ public class UIElementReference : Singleton<UIElementReference>
     public List<GameObject> m_infoPanel_ClassView = new List<GameObject>();
     public List<GameObject> m_infoPanel_ClassHeader = new List<GameObject>();
     public List<GameObject> m_infoPanel_ClassHeaderButton = new List<GameObject>();
-
-    public Sprite m_expandButton;
-    public Sprite m_collapseButton;
+    public List<GameObject> m_floorPlan_LocationButton = new List<GameObject>();
 
     public GameObject m_questionPanel;
     public GameObject m_questionBox;
@@ -50,4 +44,9 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_taskList;
     public TextMeshProUGUI m_taskText;
     public TextMeshProUGUI m_taskCorrectRate;
+
+    public Sprite m_expandButton;
+    public Sprite m_collapseButton;
+    public Sprite m_locationButton;
+    public Sprite m_activeLocationButton;
 }

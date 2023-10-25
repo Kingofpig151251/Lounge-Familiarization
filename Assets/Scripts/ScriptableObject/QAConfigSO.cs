@@ -12,5 +12,4 @@ public class QAConfigSO : ScriptableObject
     public string m_wrongAnswer2;
     public string m_correctAnswer;
     public int m_navigateIndex;
-
 }

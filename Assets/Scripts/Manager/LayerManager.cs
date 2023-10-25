@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,12 +48,12 @@ public class LayerManager : Singleton<LayerManager>
 
     public void OnEnterViewPoint(params object[] param)
     {
-        GameEventReference.Instance.OnClickInformationButton.Trigger();
+        UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
-        if (ModeManager.Instance.m_CurrentMode != PlayMode.TaskMode)
+
+        if (GameManager.Instance.GetCurrentMode() != Class_PlayMode.TaskMode)
         {
             GameEventReference.Instance.OnEnter360Mode.Trigger();
         }
     }
-
 }

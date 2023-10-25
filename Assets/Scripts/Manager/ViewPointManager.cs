@@ -58,18 +58,18 @@ public class ViewPointManager : Singleton<ViewPointManager>
         for (int i = 0; i < m_currentViewPoint.m_arrowSO.Length; i++)
         {
             m_currentIcons.Add(currentObj = Instantiate(m_arrowObect, m_firstViewPoint.transform));
-            currentObj.transform.localPosition = m_currentViewPoint.m_arrowSO[i].m_position / 5; // Modified: position => localPosition / 5
+            currentObj.transform.localPosition = m_currentViewPoint.m_arrowSO[i].m_position;
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_arrowSO[i].m_rotation;
-            currentObj.transform.localScale = m_currentViewPoint.m_arrowSO[i].m_size / 5; // Modified: localScale => localScale / 5
+            currentObj.transform.localScale = m_currentViewPoint.m_arrowSO[i].m_size;
             currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex = m_currentViewPoint.m_arrowSO[i].m_nextViewPointIndex;
-            currentObj.transform.GetChild(0).GetComponent<Renderer>().material.renderQueue = 3001;
+            currentObj.transform.GetComponent<Renderer>().material.renderQueue = 3001;
         }
         for (int i = 0; i < m_currentViewPoint.m_infoSO.Length; i++)
         {
             m_currentIcons.Add(currentObj = Instantiate(m_infoObect, m_firstViewPoint.transform));
-            currentObj.transform.localPosition = m_currentViewPoint.m_infoSO[i].m_position / 5; // Modified: position => localPosition / 5
+            currentObj.transform.localPosition = m_currentViewPoint.m_infoSO[i].m_position;
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_infoSO[i].m_rotation;
-            currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size / 5; // Modified: localScale => localScale / 5
+            currentObj.transform.localScale = m_currentViewPoint.m_infoSO[i].m_size;
             currentObj.GetComponent<InterfaceItem_Info>().m_info = m_currentViewPoint.m_infoSO[i];
             currentObj.GetComponent<Renderer>().material.renderQueue = 3002;
         }

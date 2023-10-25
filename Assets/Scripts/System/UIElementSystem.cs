@@ -6,18 +6,15 @@ public class UIElementSystem : MonoBehaviour
 {
     public void ShowMapLayer(int id)
     {    
-        if (NavigateManager.Instance.m_isEnterNavigatePhase || TestPanelManager.Instance.m_isQuestionPanelActive)
+        if (TestPanelManager.Instance.m_isQuestionPanelActive)
             return;
         LayerManager.Instance.m_isLayerActive = true;
         switch (id)
         {
             case 1:
-                UIElementReference.Instance.m_WorldMapPanel.SetActive(true);
-                break;
-            case 2:
                 UIElementReference.Instance.m_CityMapPanel.SetActive(true);
                 break;
-            case 3:
+            case 2:
                 UIElementReference.Instance.m_FloorPlanPanel.SetActive(true);
                 break;
         }
@@ -26,11 +23,13 @@ public class UIElementSystem : MonoBehaviour
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
     }
 
+
     public void OnClickNextQuestion()
     {
         TestPanelManager.Instance.m_isQuestionPanelActive = false;
         GameEventReference.Instance.OpenTestPanel.Trigger();
     }
+    public void OnGameReset() => GameEventReference.Instance.OnGameReset.Trigger();
     public void EnterViewPoint(int index) => GameEventReference.Instance.OnEnterViewPoint.Trigger(index);
     public void OnClickInfoButton(string message) => GameEventReference.Instance.OnInteractUIMessage.Trigger(message);
     public void OnClick360ModeButton(string message) => GameEventReference.Instance.OnEnter360Mode.Trigger(message);
@@ -45,5 +44,6 @@ public class UIElementSystem : MonoBehaviour
     public void OnEnterNavigatePhase() => GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
     public void OnExitNavigatePhase() => GameEventReference.Instance.OnExitNavigatePhase.Trigger();
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
-    public void OnClickInformationButton() => GameEventReference.Instance.OnClickInformationButton.Trigger();
+    public void OnClickFloorPlanButton() => GameEventReference.Instance.OnClickFloorPlanButton.Trigger();
+    public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
 }

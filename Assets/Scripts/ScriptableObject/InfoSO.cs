@@ -9,6 +9,10 @@ public class InfoSO : ScriptableObject
     public Vector3 m_rotation;
     public Vector3 m_size;
 
-    public string m_title;
-    public string m_content;
+    public string m_title_ENG;
+    public string m_title_TC;
+    public string m_title_SC;
+    public string m_content_ENG;
+    public string m_content_TC;
+    public string m_content_SC;
 }

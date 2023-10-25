@@ -20,7 +20,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
         GameEventReference.Instance.OnClickTestOption.AddListener(OnClickTestOption);
         GameEventReference.Instance.OnEnterNavigatePhase.AddListener(OnEnterNavigatePhase);
     }
-    
+
     private bool isQuestionIndexPremit()
     {
         switch (ViewPointManager.Instance.m_currentViewPoint.m_index)
@@ -29,7 +29,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
             case 2:
             case 3:
             case 4:
-                if (UIElementReference.Instance.m_questionList[m_questionIndex].m_Regionid == 0)
+                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_Regionid == 0)
                 {
                     return false;
                 }
@@ -43,7 +43,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
             case 8:
             case 9:
             case 10:
-                if (UIElementReference.Instance.m_questionList[m_questionIndex].m_Regionid == 1)
+                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_Regionid == 1)
                 {
                     return false;
                 }
@@ -59,7 +59,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
 
     private void OpenTestPanel(params object[] param)
     {
-        if (NavigateManager.Instance.m_isEnterNavigatePhase || m_isQuestionPanelActive || LayerManager.Instance.m_isLayerActive)
+        if (m_isQuestionPanelActive || LayerManager.Instance.m_isLayerActive)
             return;
 
         m_isQuestionPanelActive = true;
