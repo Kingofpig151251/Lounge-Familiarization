@@ -5,17 +5,18 @@ using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
-    private int m_CurrentMode = Class_PlayMode.ViewMode;
+    private int m_CurrentMode = Class_PlayMode.StartMode;
     private int m_currentLanguage = Class_Language.TraditionalChinese;
     private bool m_isCityMapPanelActive = true;
 
     private void Start()
     {
-        GameEventReference.Instance.OnEnter360Mode.AddListener(Show360ModePanel);
+        GameEventReference.Instance.OnEnter360Mode.AddListener(OnEnter360Mode);
         GameEventReference.Instance.OnEnterTaskMode.AddListener(OnEnterTaskMode);
         GameEventReference.Instance.OnChangeRegion.AddListener(OnChangeRegion);
         GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
+        HiedLanguageButton();
     }
 
     private void SwitchMode(int mode)
@@ -24,18 +25,21 @@ public class GameManager : Singleton<GameManager>
 
         bool isViewMode = m_CurrentMode == Class_PlayMode.ViewMode;
         bool isTaskMode = m_CurrentMode == Class_PlayMode.TaskMode;
+        bool isStartMode = m_CurrentMode == Class_PlayMode.StartMode;
 
         UIElementReference.Instance.m_TopBar.SetActive(isViewMode);
         UIElementReference.Instance.m_InfoPanel.SetActive(isViewMode);
-        UIElementReference.Instance.m_floorPlanButton.SetActive(isViewMode);
-
+        UIElementReference.Instance.m_FloorPlanButton.SetActive(isViewMode);
+        UIElementReference.Instance.m_GameModeSwitcher.SetActive(isViewMode);
+        
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(isTaskMode);
         UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(isTaskMode);
-
         UIElementReference.Instance.m_taskList.SetActive(isTaskMode);
+        
+        
     }
 
-    private void Show360ModePanel(params object[] param)
+    private void OnEnter360Mode(params object[] param)
     {
         m_CurrentMode = Class_PlayMode.ViewMode;
 
@@ -60,6 +64,7 @@ public class GameManager : Singleton<GameManager>
     {
         int language = (int)param[0];
         m_currentLanguage = language;
+        HiedLanguageButton();
     }
 
     private void OnGameReset(params object[] param)
@@ -69,13 +74,36 @@ public class GameManager : Singleton<GameManager>
 
         UIElementReference.Instance.m_CityMapPanel.SetActive(true);
 
-        UIElementReference.Instance.m_TopBar.SetActive(false);
+        UIElementReference.Instance.m_TopBar.SetActive(true);
+        UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
+        UIElementReference.Instance.m_GameModeSwitcher.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
+        
         //Application.Quit();
 
         //var process = System.Diagnostics.Process.GetCurrentProcess();
         //System.Diagnostics.Process.Start(process.ProcessName);
     }
+    private void HiedLanguageButton()
+    {
+        switch (m_currentLanguage)
+        {
+            case Class_Language.English:
+                UIElementReference.Instance.m_TopBarENG.SetActive(false);
+                UIElementReference.Instance.m_TopBarSC.SetActive(true);
+                UIElementReference.Instance.m_TopBarTC.SetActive(true);
+                break;
+            case Class_Language.SimplifiedChinese:
+                UIElementReference.Instance.m_TopBarENG.SetActive(true);
+                UIElementReference.Instance.m_TopBarSC.SetActive(false);
+                UIElementReference.Instance.m_TopBarTC.SetActive(true);
+                break;
+            case Class_Language.TraditionalChinese:
+                UIElementReference.Instance.m_TopBarENG.SetActive(true);
+                UIElementReference.Instance.m_TopBarSC.SetActive(true);
+                UIElementReference.Instance.m_TopBarTC.SetActive(false);
+                break;
+        }    }
 
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;
     public int GetCurrentMode() => m_CurrentMode;

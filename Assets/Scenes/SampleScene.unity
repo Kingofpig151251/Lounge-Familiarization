@@ -6526,7 +6526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -400, y: -40}
+  m_AnchoredPosition: {x: -275, y: -40}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664618653
@@ -7637,8 +7637,11 @@ MonoBehaviour:
   m_InfoPanel: {fileID: 1900771828}
   m_InfoPanelExpandButton: {fileID: 1958807989}
   m_TopBar: {fileID: 1418866557}
-  m_floorPlanButton: {fileID: 1596824052}
-  m_FloorPlanButtonText: {fileID: 1228163157}
+  m_TopBarENG: {fileID: 539365139}
+  m_TopBarSC: {fileID: 1721587253}
+  m_TopBarTC: {fileID: 260793865}
+  m_GameModeSwitcher: {fileID: 1139215750}
+  m_FloorPlanButton: {fileID: 1596824052}
   m_firstViewPoint: {fileID: 5170820326835619954}
   m_nextViewPoint: {fileID: 1180480561}
   m_waterMark: {fileID: 323864176}
@@ -13433,7 +13436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1139215751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13450,7 +13453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -275, y: 10}
+  m_AnchoredPosition: {x: -400, y: 10}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139215752
@@ -16021,7 +16024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1418866558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19417,7 +19420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1596824053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20660,9 +20663,9 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -21382,7 +21385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
+  m_Color: {r: 0.75881094, g: 0.7915353, b: 0.7924528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

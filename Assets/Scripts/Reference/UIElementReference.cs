@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class UIElementReference : Singleton<UIElementReference>
 {
@@ -15,8 +16,11 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;
-    public GameObject m_floorPlanButton;
-    public GameObject m_FloorPlanButtonText;
+    public GameObject m_TopBarENG;
+    public GameObject m_TopBarSC;
+    public GameObject m_TopBarTC;
+    public GameObject m_GameModeSwitcher; 
+    public GameObject m_FloorPlanButton;
 
     public GameObject m_firstViewPoint;
     public GameObject m_nextViewPoint;
