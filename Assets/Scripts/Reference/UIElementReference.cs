@@ -10,16 +10,20 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_CityMapPanel;
     public GameObject m_FloorPlanPanel;
     public GameObject m_MessagePanel;
+
     public GameObject m_Grid;
+
     //public GameObject m_Layer2sheKouBlock;
     //public GameObject m_Layer2hongKongBlock;
+    public GameObject m_IntroducePanel;
+    public List<GameObject> m_IntroduceText = new List<GameObject>();
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;
     public GameObject m_TopBarENG;
     public GameObject m_TopBarSC;
     public GameObject m_TopBarTC;
-    public GameObject m_GameModeSwitcher; 
+    public GameObject m_GameModeSwitcher;
     public GameObject m_FloorPlanButton;
 
     public GameObject m_firstViewPoint;

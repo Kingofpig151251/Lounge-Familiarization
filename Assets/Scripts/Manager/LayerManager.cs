@@ -22,7 +22,6 @@ public class LayerManager : Singleton<LayerManager>
     {
         string regionID = (string)param[0];
 
-
         if (regionID.Length == 1)
         {
             UIElementReference.Instance.m_WorldMapPanel.SetActive(false);

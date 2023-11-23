@@ -46,4 +46,6 @@ public class UIElementSystem : MonoBehaviour
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
     public void OnClickFloorPlanButton() => GameEventReference.Instance.OnClickFloorPlanButton.Trigger();
     public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
+    
+    public void OnClickNextButton() => GameEventReference.Instance.OnClickNextButton.Trigger();
 }

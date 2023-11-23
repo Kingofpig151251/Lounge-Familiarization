@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Manager;
 using UnityEngine;
 using TMPro;
 
@@ -31,12 +32,10 @@ public class GameManager : Singleton<GameManager>
         UIElementReference.Instance.m_InfoPanel.SetActive(isViewMode);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(isViewMode);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(isViewMode);
-        
+
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(isTaskMode);
         UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(isTaskMode);
         UIElementReference.Instance.m_taskList.SetActive(isTaskMode);
-        
-        
     }
 
     private void OnEnter360Mode(params object[] param)
@@ -72,18 +71,20 @@ public class GameManager : Singleton<GameManager>
         GameEventReference.Instance.OnEnter360Mode.Trigger();
         GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
 
-        UIElementReference.Instance.m_CityMapPanel.SetActive(true);
+        UIElementReference.Instance.m_InfoPanel.SetActive(true);
+        IntroducePanelManager.Instance.step = 0;
 
         UIElementReference.Instance.m_TopBar.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
-        
+
         //Application.Quit();
 
         //var process = System.Diagnostics.Process.GetCurrentProcess();
         //System.Diagnostics.Process.Start(process.ProcessName);
     }
+
     private void HiedLanguageButton()
     {
         switch (m_currentLanguage)
@@ -103,7 +104,8 @@ public class GameManager : Singleton<GameManager>
                 UIElementReference.Instance.m_TopBarSC.SetActive(true);
                 UIElementReference.Instance.m_TopBarTC.SetActive(false);
                 break;
-        }    }
+        }
+    }
 
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;
     public int GetCurrentMode() => m_CurrentMode;
