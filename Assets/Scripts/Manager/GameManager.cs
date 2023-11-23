@@ -71,8 +71,11 @@ public class GameManager : Singleton<GameManager>
         GameEventReference.Instance.OnEnter360Mode.Trigger();
         GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
 
+        UIElementReference.Instance.m_IntroducePanel.SetActive(true);
+
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
         IntroducePanelManager.Instance.step = 0;
+        UIElementReference.Instance.m_IntroduceText[IntroducePanelManager.Instance.step].SetActive(true);
 
         UIElementReference.Instance.m_TopBar.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
@@ -87,22 +90,23 @@ public class GameManager : Singleton<GameManager>
 
     private void HiedLanguageButton()
     {
+
         switch (m_currentLanguage)
         {
             case Class_Language.English:
-                UIElementReference.Instance.m_TopBarENG.SetActive(false);
-                UIElementReference.Instance.m_TopBarSC.SetActive(true);
-                UIElementReference.Instance.m_TopBarTC.SetActive(true);
+                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.red;
+                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.black;
                 break;
             case Class_Language.SimplifiedChinese:
-                UIElementReference.Instance.m_TopBarENG.SetActive(true);
-                UIElementReference.Instance.m_TopBarSC.SetActive(false);
-                UIElementReference.Instance.m_TopBarTC.SetActive(true);
+                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.red;
+                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.black;
                 break;
             case Class_Language.TraditionalChinese:
-                UIElementReference.Instance.m_TopBarENG.SetActive(true);
-                UIElementReference.Instance.m_TopBarSC.SetActive(true);
-                UIElementReference.Instance.m_TopBarTC.SetActive(false);
+                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.red;
                 break;
         }
     }

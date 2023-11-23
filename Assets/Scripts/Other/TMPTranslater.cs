@@ -5,41 +5,27 @@ using TMPro;
 
 public class TMPTranslater : MonoBehaviour
 {
-    [SerializeField]
-    private bool m_enable = true;
+    [SerializeField] private bool m_enable = true;
 
-    [SerializeField]
-    private float m_englishTextMargin = 0f;
-    [SerializeField]
-    private float m_chineseTextMargin = 0f;
+    [SerializeField] private float m_englishTextMargin = 0f;
+    [SerializeField] private float m_chineseTextMargin = 0f;
 
-    [SerializeField]
-    private bool m_updateMultiLanguageText = true;
-    [SerializeField]
-    private string m_englishText;
-    [SerializeField]
-    private string m_simplifiedChineseText;
-    [SerializeField]
-    private string m_traditionalChineseText;
+    [SerializeField] private bool m_updateMultiLanguageText = true;
+    [SerializeField] private string m_englishText;
+    [SerializeField] private string m_simplifiedChineseText;
+    [SerializeField] private string m_traditionalChineseText;
 
-    [SerializeField]
-    private bool m_isBold = false;
+    [SerializeField] private bool m_isBold = false;
 
     private FontAssetReference fontRefer;
 
-    private void Awake()
-    {
-        if (m_enable)
-        {
-            Init();
-        }
-    }
 
     private void Start()
     {
         if (m_enable)
         {
             SetUpListeners();
+            Init();
             UpdateTMP(GameManager.Instance.GetCurrentLanguage());
         }
     }
@@ -69,6 +55,7 @@ public class TMPTranslater : MonoBehaviour
                 {
                     GetComponent<TMP_Text>().text = m_englishText;
                 }
+
                 GetComponent<TMP_Text>().font = m_isBold ? fontRefer.m_englishBoldFont : fontRefer.m_englishRegularFont;
                 GetComponent<TMP_Text>().characterSpacing = m_englishTextMargin;
                 break;
@@ -77,6 +64,7 @@ public class TMPTranslater : MonoBehaviour
                 {
                     GetComponent<TMP_Text>().text = m_simplifiedChineseText;
                 }
+
                 GetComponent<TMP_Text>().font = m_isBold ? fontRefer.m_simplifiedChineseBoldFont : fontRefer.m_simplifiedChineseRegularFont;
                 GetComponent<TMP_Text>().characterSpacing = m_chineseTextMargin;
                 break;
@@ -85,6 +73,7 @@ public class TMPTranslater : MonoBehaviour
                 {
                     GetComponent<TMP_Text>().text = m_traditionalChineseText;
                 }
+
                 GetComponent<TMP_Text>().font = m_isBold ? fontRefer.m_traditionalChineseBoldFont : fontRefer.m_traditionalChineseRegularFont;
                 GetComponent<TMP_Text>().characterSpacing = m_chineseTextMargin;
                 break;
