@@ -90,23 +90,19 @@ public class GameManager : Singleton<GameManager>
 
     private void HiedLanguageButton()
     {
-
+        UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
+        UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
+        UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
         switch (m_currentLanguage)
         {
             case Class_Language.English:
-                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.red;
-                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.black;
-                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
                 break;
             case Class_Language.SimplifiedChinese:
-                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.black;
-                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.red;
-                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.black;
+                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
                 break;
             case Class_Language.TraditionalChinese:
-                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = Color.black;
-                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = Color.black;
-                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = Color.red;
+                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
                 break;
         }
     }
