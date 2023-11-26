@@ -19,4 +19,4 @@ MonoBehaviour:
   m_infoSO:
   - {fileID: 11400000, guid: ce89020d9f31bf9478d680dc915dbed6, type: 2}
   m_texture: {fileID: 2800000, guid: 8136d5ce089c96547b4f9dd31f311cb0, type: 3}
-  m_rotation: 0
+  m_rotation: 75

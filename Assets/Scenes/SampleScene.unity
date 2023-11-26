@@ -3498,7 +3498,7 @@ Transform:
   m_GameObject: {fileID: 323864176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.375, z: 0}
-  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children: []
   m_Father: {fileID: 1029065413}
   m_RootOrder: 2
@@ -16361,7 +16361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u982D\u7B49\u8CB4\u8CD3\u5BA4"
+  m_text: "\u8CB4\u8CD3\u5BA4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 206190688255be04cbceb68bfb2164e1, type: 2}
   m_sharedMaterial: {fileID: 8149353403753373143, guid: 206190688255be04cbceb68bfb2164e1, type: 2}
@@ -16510,9 +16510,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: First Class Lounge
-  m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
-  m_traditionalChineseText: "\u982D\u7B49\u8CB4\u8CD3\u5BA4"
+  m_englishText: Lounge
+  m_simplifiedChineseText: "\u8D35\u5BBE\u5BA4"
+  m_traditionalChineseText: "\u8CB4\u8CD3\u5BA4"
   m_isBold: 0
 --- !u!1 &1411717640
 GameObject:
@@ -20016,7 +20016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1596824053
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20034,7 +20034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1884.2356, y: -34.99994}
+  m_AnchoredPosition: {x: 2300, y: -30}
   m_SizeDelta: {x: 120, y: 55}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1596824054

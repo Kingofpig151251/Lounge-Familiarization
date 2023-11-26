@@ -77,7 +77,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
     private IEnumerator CrossViewPoint(int viewPointIndex)
     {
-        const float duration = 0.6f;
+        const float duration = 1f;
 
         float timer = 0;
 

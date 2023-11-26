@@ -15,11 +15,9 @@
             {
                 UIElementReference.Instance.m_IntroduceText[i].SetActive(false);
             }
-
-            if (step < UIElementReference.Instance.m_IntroduceText.Count)
+            if (step < UIElementReference.Instance.m_IntroduceText.Count-1)
             {
-                UIElementReference.Instance.m_IntroduceText[step].SetActive(true);
-                step++;
+                UIElementReference.Instance.m_IntroduceText[++step].SetActive(true);
             }
             else
             {
