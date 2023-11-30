@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc3035813af15e40a8b17e5342cd24a, type: 3}
+  m_Name: Dialogue1
+  m_EditorClassIdentifier: 
+  m_messageEng: This system will help you familiarize with the environment and the
+    various facilities in Cathay Pacific's lounges at Hong Kong International Airport
+    quickly.
+  m_messageSC: "\u8FD9\u4E2A\u7CFB\u7EDF\u53EF\u4EE5\u5E2E\u4F60\u5FEB\u901F\u8BA4\u8BC6\u56FD\u6CF0\u5728\u9999\u6E2F\u56FD\u9645\u673A\u573A\u7684\u8D35\u5BBE\u5BA4\u7684\u73AF\u5883\u53CA\u5404\u79CD\u8BBE\u5907\u3002"
+  m_messageTC: "\u9019\u500B\u7CFB\u7D71\u53EF\u4EE5\u5E6B\u4F60\u5FEB\u901F\u8A8D\u8B58\u570B\u6CF0\u5728\u9999\u6E2F\u570B\u969B\u6A5F\u5834\u7684\u8CB4\u8CD3\u5BA4\u7684\u74B0\u5883\u53CA\u5404\u7A2E\u8A2D\u5099\u3002"

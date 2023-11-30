@@ -6243,7 +6243,6 @@ RectTransform:
   m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 2}
   m_Children:
   - {fileID: 1605234434}
-  - {fileID: 2085077026}
   m_Father: {fileID: 1635801182}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8133,9 +8132,6 @@ MonoBehaviour:
   m_MessagePanel: {fileID: 1587760708}
   m_Grid: {fileID: 262535845}
   m_IntroducePanel: {fileID: 1305803327}
-  m_IntroduceText:
-  - {fileID: 1605234433}
-  - {fileID: 2085077025}
   m_InfoPanel: {fileID: 1900771828}
   m_InfoPanelExpandButton: {fileID: 1958807989}
   m_TopBar: {fileID: 1418866557}
@@ -8227,6 +8223,9 @@ MonoBehaviour:
   m_collapseButton: {fileID: 21300000, guid: 98f193ab891eff145b9ef83730ba3539, type: 3}
   m_locationButton: {fileID: 21300000, guid: 4f97b6b9d426fcb49b96b68d6488622f, type: 3}
   m_activeLocationButton: {fileID: 21300000, guid: 05f61eb10fe84c64b9f8322a1c37d47f, type: 3}
+  m_dialogueList:
+  - {fileID: 11400000, guid: 4cb9d5d19a8d52a498ce8ce3aa417165, type: 2}
+  - {fileID: 11400000, guid: 39d810e1ff7802c4eace083da81c0b3f, type: 2}
 --- !u!114 &732346932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20218,9 +20217,8 @@ GameObject:
   - component: {fileID: 1605234434}
   - component: {fileID: 1605234437}
   - component: {fileID: 1605234436}
-  - component: {fileID: 1605234435}
   m_Layer: 5
-  m_Name: IntroduceText0
+  m_Name: IntroduceTextDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20240,33 +20238,11 @@ RectTransform:
   m_Father: {fileID: 542318157}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.5, y: 0}
-  m_SizeDelta: {x: 2013, y: 794}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -120, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1605234435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605234433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0770b186779733e42a6631a6fb8de5e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_enable: 1
-  m_englishTextMargin: 0
-  m_chineseTextMargin: 0
-  m_updateMultiLanguageText: 1
-  m_englishText: Welcome to Cathay Pacific Lounge Staff Training System. My name
-    is Cindy and I will guide you through this system.
-  m_simplifiedChineseText: "\u6B22\u8FCE\u6765\u5230\u56FD\u6CF0\u822A\u7A7A\u4F11\u606F\u5BA4\u5458\u5DE5\u57F9\u8BAD\u7CFB\u7EDF\u3002\u6211\u53EB\u8F9B\u8FEA\uFF0C\u6211\u5C06\u4F1A\u6307\u5BFC\u60A8\u4F7F\u7528\u8FD9\u4E2A\u7CFB\u7EDF\u3002"
-  m_traditionalChineseText: "\u6B61\u8FCE\u4F86\u5230\u570B\u6CF0\u822A\u7A7A\u4F11\u606F\u5BA4\u54E1\u5DE5\u57F9\u8A13\u7CFB\u7D71\u3002
-    \u6211\u53EB\u8F9B\u8FEA\uFF0C\u6211\u5C07\u6703\u6307\u5C0E\u60A8\u4F7F\u7528\u9019\u500B\u7CFB\u7D71\u3002 "
-  m_isBold: 0
 --- !u!114 &1605234436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20696,7 +20672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f603ed2e624243881757a3b7417422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  step: 0
+  m_DialougueDisplay: {fileID: 1605234436}
 --- !u!1 &1635801181
 GameObject:
   m_ObjectHideFlags: 0
@@ -25818,166 +25794,6 @@ MonoBehaviour:
   m_simplifiedChineseText: "\u5546\u52A1\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u5546\u52D9\u8CB4\u8CD3\u5BA4"
   m_isBold: 0
---- !u!1 &2085077025
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2085077026}
-  - component: {fileID: 2085077029}
-  - component: {fileID: 2085077028}
-  - component: {fileID: 2085077027}
-  m_Layer: 5
-  m_Name: IntroduceText1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2085077026
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085077025}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 542318157}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.5, y: 0}
-  m_SizeDelta: {x: 2013, y: 794}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2085077027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085077025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0770b186779733e42a6631a6fb8de5e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_enable: 1
-  m_englishTextMargin: 0
-  m_chineseTextMargin: 0
-  m_updateMultiLanguageText: 1
-  m_englishText: "This system will help you familiarize yourself with the environment
-    and the various facilities in Cathay Pacific's lounges at Hong Kong International
-    Airport quickly. Let\u2019s start now."
-  m_simplifiedChineseText: "\u8FD9\u4E2A\u7CFB\u7EDF\u53EF\u4EE5\u5E2E\u4F60\u5FEB\u901F\u8BA4\u8BC6\u56FD\u6CF0\u5728\u9999\u6E2F\u56FD\u9645\u673A\u573A\u7684\u8D35\u5BBE\u5BA4\u7684\u73AF\u5883\u53CA\u5404\u79CD\u8BBE\u5907\u3002\u73B0\u5728\uFF0C\u8BA9\u6211\u5F00\u59CB\u5E26\u60A8\u719F\u6089\u8D35\u5BBE\u5BA4\u5427\u3002"
-  m_traditionalChineseText: "\u9019\u500B\u7CFB\u7D71\u53EF\u4EE5\u5E6B\u4F60\u5FEB\u901F\u8A8D\u8B58\u570B\u6CF0\u5728\u9999\u6E2F\u570B\u969B\u6A5F\u5834\u7684\u8CB4\u8CD3\u5BA4\u7684\u74B0\u5883\u53CA\u5404\u7A2E\u8A2D\u5099
-    \u73FE\u5728\uFF0C\u8B93\u6211\u958B\u59CB\u5E36\u60A8\u719F\u6089\u8CB4\u8CD3\u5BA4\u5427\u3002"
-  m_isBold: 0
---- !u!114 &2085077028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085077025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: '
-
-'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
-  m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 120
-  m_fontSizeBase: 160
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 100
-  m_fontSizeMax: 120
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 1
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2085077029
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085077025}
-  m_CullTransparentMesh: 1
 --- !u!1 &2096741114
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,6 @@ public class UIElementReference : Singleton<UIElementReference>
     //public GameObject m_Layer2sheKouBlock;
     //public GameObject m_Layer2hongKongBlock;
     public GameObject m_IntroducePanel;
-    public List<GameObject> m_IntroduceText = new List<GameObject>();
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
     public GameObject m_TopBar;
@@ -57,4 +56,6 @@ public class UIElementReference : Singleton<UIElementReference>
     public Sprite m_collapseButton;
     public Sprite m_locationButton;
     public Sprite m_activeLocationButton;
+
+    public List<DialogueSO> m_dialogueList;
 }

@@ -74,8 +74,6 @@ public class GameManager : Singleton<GameManager>
         UIElementReference.Instance.m_IntroducePanel.SetActive(true);
 
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
-        IntroducePanelManager.Instance.step = 0;
-        UIElementReference.Instance.m_IntroduceText[IntroducePanelManager.Instance.step].SetActive(true);
 
         UIElementReference.Instance.m_TopBar.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
