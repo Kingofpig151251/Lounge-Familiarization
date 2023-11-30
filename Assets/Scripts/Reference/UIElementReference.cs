@@ -18,10 +18,9 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_IntroducePanel;
     public GameObject m_InfoPanel;
     public GameObject m_InfoPanelExpandButton;
-    public GameObject m_TopBar;
-    public GameObject m_TopBarENG;
-    public GameObject m_TopBarSC;
-    public GameObject m_TopBarTC;
+    public GameObject m_ButtonENG;
+    public GameObject m_ButtonSC;
+    public GameObject m_ButtonTC;
     public GameObject m_GameModeSwitcher;
     public GameObject m_FloorPlanButton;
 

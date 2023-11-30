@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cc3035813af15e40a8b17e5342cd24a, type: 3}
-  m_Name: Dialogue1
+  m_Name: Dialogue 1
   m_EditorClassIdentifier: 
   m_messageEng: This system will help you familiarize with the environment and the
     various facilities in Cathay Pacific's lounges at Hong Kong International Airport

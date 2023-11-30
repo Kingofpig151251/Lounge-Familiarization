@@ -19,7 +19,6 @@ public class UIElementSystem : MonoBehaviour
                 break;
         }
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
-        UIElementReference.Instance.m_TopBar.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
     }
 

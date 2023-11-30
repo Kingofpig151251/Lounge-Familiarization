@@ -39,7 +39,6 @@ public class LayerManager : Singleton<LayerManager>
         }
         if (regionID.Length == 2)
         {
-            UIElementReference.Instance.m_TopBar.SetActive(true);
             UIElementReference.Instance.m_CityMapPanel.SetActive(false);
             GameEventReference.Instance.OnEnter360Mode.Trigger();
         }

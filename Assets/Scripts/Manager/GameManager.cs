@@ -28,7 +28,6 @@ public class GameManager : Singleton<GameManager>
         bool isTaskMode = m_CurrentMode == Class_PlayMode.TaskMode;
         bool isStartMode = m_CurrentMode == Class_PlayMode.StartMode;
 
-        UIElementReference.Instance.m_TopBar.SetActive(isViewMode);
         UIElementReference.Instance.m_InfoPanel.SetActive(isViewMode);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(isViewMode);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(isViewMode);
@@ -75,7 +74,6 @@ public class GameManager : Singleton<GameManager>
 
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
 
-        UIElementReference.Instance.m_TopBar.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
@@ -88,19 +86,19 @@ public class GameManager : Singleton<GameManager>
 
     private void HiedLanguageButton()
     {
-        UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
-        UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
-        UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = new Color(0.184f, 0.310f, 0.306f, 1f);
+        UIElementReference.Instance.m_ButtonENG.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+        UIElementReference.Instance.m_ButtonSC.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+        UIElementReference.Instance.m_ButtonTC.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
         switch (m_currentLanguage)
         {
             case Class_Language.English:
-                UIElementReference.Instance.m_TopBarENG.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
+                UIElementReference.Instance.m_ButtonENG.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
                 break;
             case Class_Language.SimplifiedChinese:
-                UIElementReference.Instance.m_TopBarSC.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
+                UIElementReference.Instance.m_ButtonSC.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
                 break;
             case Class_Language.TraditionalChinese:
-                UIElementReference.Instance.m_TopBarTC.GetComponent<TMP_Text>().color = new Color(0.329f, 0.502f, 0.498f, 1f);
+                UIElementReference.Instance.m_ButtonTC.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
                 break;
         }
     }
