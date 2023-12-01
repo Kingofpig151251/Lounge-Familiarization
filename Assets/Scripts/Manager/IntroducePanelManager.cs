@@ -27,6 +27,7 @@ namespace Manager
             {
                 UIElementReference.Instance.m_IntroducePanel.SetActive(false);
                 UIElementReference.Instance.m_CityMapPanel.SetActive(true);
+                m_currentDialogueIndex = 0;
             }
             else
             {
