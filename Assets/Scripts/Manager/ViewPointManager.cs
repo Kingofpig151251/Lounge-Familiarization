@@ -10,6 +10,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
     [SerializeField] private GameObject m_firstViewPoint;
 
     public ViewPoint m_currentViewPoint;
+    public Lounge m_currentLounge;
     private List<GameObject> m_currentIcons = new List<GameObject>();
 
     protected override void Init()
@@ -21,6 +22,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
     {
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnInteractInfo.AddListener(OnInteractInfo);
+        GameEventReference.Instance.OnChangeRegion.AddListener(OnChangeRegion);
     }
 
     private void OnEnterViewPoint(params object[] param)
@@ -35,6 +37,25 @@ public class ViewPointManager : Singleton<ViewPointManager>
     private void OnInteractInfo(params object[] param)
     {
         InfoSO info = (InfoSO)param[0];
+    }
+
+    private void OnChangeRegion(params object[] param)
+    {
+        string regionIndex = (string)param[0];
+        switch (regionIndex)
+        {
+            case "10":
+                m_currentLounge = Lounge.Deck;
+                break;
+            case "11":
+                m_currentLounge = Lounge.Wing;
+                break;
+            case "12":
+                m_currentLounge = Lounge.Pier;
+                break;
+        }
+
+        GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
     }
 
     private void EnterViewPoint(int viewPointIndex)
@@ -85,7 +106,8 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
         Camera.main.GetComponent<RapidBlurEffect>().enabled = true;
 
-        m_currentViewPoint = ViewPointReference.Instance.m_viewPointSO[viewPointIndex];
+        m_currentViewPoint = ViewPointReference.Instance.m_viewPointSO[viewPointIndex + ViewPointReference.Instance.m_loungeStartIndex[(int)m_currentLounge]];
+
         UIElementReference.Instance.m_nextViewPoint.GetComponent<Renderer>().material.SetTexture("mainTexture", m_currentViewPoint.m_texture);
 
         UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, m_currentViewPoint.m_rotation, this.transform.localEulerAngles.z);

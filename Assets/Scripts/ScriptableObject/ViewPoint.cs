@@ -6,6 +6,7 @@ using UnityEngine;
 public class ViewPoint : ScriptableObject
 {
     public int m_index;
+    public Lounge m_loungeName;
     public int[] m_relation;
     public ArrowSO[] m_arrowSO;
     public InfoSO[] m_infoSO;

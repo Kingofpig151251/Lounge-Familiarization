@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
+  m_Name: Deck VP 9
+  m_EditorClassIdentifier: 
+  m_index: 9
+  m_loungeName: 0
+  m_relation: 01000000
+  m_arrowSO:
+  - {fileID: 11400000, guid: 7817bc44593fa994193cb87175fce0ed, type: 2}
+  m_infoSO: []
+  m_texture: {fileID: 2800000, guid: 6e58bc0b825846d49a3c411ceaa9887b, type: 3}
+  m_rotation: -20
