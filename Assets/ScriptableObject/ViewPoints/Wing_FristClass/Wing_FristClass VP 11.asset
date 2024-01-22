@@ -18,4 +18,4 @@ MonoBehaviour:
   m_arrowSO: []
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 8dc266bb1eb657747bfafd8812b86ed3, type: 3}
-  m_rotation: -60
+  m_rotation: 90

@@ -101,8 +101,9 @@ public class ViewPointManager : Singleton<ViewPointManager>
         const float duration = 1f;
 
         float timer = 0;
+        float fEffectReduceVal = 45f;
 
-        Camera.main.fieldOfView = 150f;
+        Camera.main.fieldOfView = (150f - fEffectReduceVal);
 
         Camera.main.GetComponent<RapidBlurEffect>().enabled = true;
 
@@ -134,7 +135,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
                 timer += Time.deltaTime;
                 UIElementReference.Instance.m_firstViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(1f, 0f, timer / duration));
                 UIElementReference.Instance.m_nextViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(0f, 1f, timer / duration));
-                Camera.main.fieldOfView = 150f - (timer / duration) * 90f;
+                Camera.main.fieldOfView = (150f - fEffectReduceVal ) - (timer / duration) * (90f - fEffectReduceVal);
             }
             yield return null;
         }
