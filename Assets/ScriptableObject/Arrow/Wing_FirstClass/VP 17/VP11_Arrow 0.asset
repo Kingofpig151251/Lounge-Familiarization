@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 527cdb33b69da1543a6ec4c7f443d529, type: 3}
-  m_Name: VP10_Arrow 2
+  m_Name: VP11_Arrow 0
   m_EditorClassIdentifier: 
-  m_position: {x: -0.144, y: -0.152, z: 0.61}
+  m_position: {x: -0.3813, y: -0.1468, z: 0.2336}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.01, y: 0.01, z: 0.01}
-  m_nextViewPointIndex: 18
+  m_nextViewPointIndex: 12
