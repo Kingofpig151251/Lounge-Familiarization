@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ViewPointManager : Singleton<ViewPointManager>
 {
     [SerializeField] private GameObject m_arrowObect;
     [SerializeField] private GameObject m_infoObect;
-    
+
     [SerializeField] private GameObject m_firstViewPoint;
 
     public ViewPoint m_currentViewPoint;
@@ -23,6 +25,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnInteractInfo.AddListener(OnInteractInfo);
         GameEventReference.Instance.OnChangeRegion.AddListener(OnChangeRegion);
+        GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.AddListener(OnFeaturePointListExpandButtonClicked);
     }
 
     private void OnEnterViewPoint(params object[] param)
@@ -135,7 +138,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
                 timer += Time.deltaTime;
                 UIElementReference.Instance.m_firstViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(1f, 0f, timer / duration));
                 UIElementReference.Instance.m_nextViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(0f, 1f, timer / duration));
-                Camera.main.fieldOfView = (150f - fEffectReduceVal ) - (timer / duration) * (90f - fEffectReduceVal);
+                Camera.main.fieldOfView = (150f - fEffectReduceVal) - (timer / duration) * (90f - fEffectReduceVal);
             }
             yield return null;
         }
@@ -143,5 +146,30 @@ public class ViewPointManager : Singleton<ViewPointManager>
         Camera.main.GetComponent<RapidBlurEffect>().enabled = false;
 
         InstantiateInterfaceItem();
+    }
+
+    private void OnFeaturePointListExpandButtonClicked(params object[] param)
+    {
+        ViewPoint viewPoint = (ViewPoint)param[0];
+
+        UIElementReference.Instance.m_popupWindow.SetActive(true);
+
+        UIElementReference.Instance.m_popupWindowTitle.GetComponent<TMP_Text>().text = viewPoint.m_loungeName.ToString();
+        UIElementReference.Instance.m_popupWindowMessage.GetComponent<TMP_Text>().text = viewPoint.m_popupWindowMessage;
+
+        UIElementReference.Instance.m_popupWindowEnterButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        UIElementReference.Instance.m_popupWindowExitButton.GetComponent<Button>().onClick.RemoveAllListeners();
+
+        UIElementReference.Instance.m_popupWindowEnterButton.GetComponent<Button>().onClick.AddListener(() =>
+        {
+            GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
+            m_currentLounge = viewPoint.m_loungeName;
+            EnterViewPoint(viewPoint.m_index);
+            UIElementReference.Instance.m_popupWindow.SetActive(false);
+        });
+        UIElementReference.Instance.m_popupWindowExitButton.GetComponent<Button>().onClick.AddListener(() =>
+        {
+            UIElementReference.Instance.m_popupWindow.SetActive(false);
+        });
     }
 }

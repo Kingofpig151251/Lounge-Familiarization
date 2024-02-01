@@ -15,7 +15,8 @@ public class InteractManager : Singleton<InteractManager>
 
         if (Physics.Raycast(ray, out RaycastHit hit, float.MaxValue, LayerMask.GetMask("InterfaceItem")) && Input.GetKeyDown(KeyCode.Mouse0)
             && !GameManager.Instance.IsCityMapPanelActive()
-            && !FloorPlanManager.Instance.IsFloorPlanPanelActive())
+            && !FloorPlanManager.Instance.IsFloorPlanPanelActive()
+            && !InfoPanelManager.Instance.IsExpanded())
         {
             int index = hit.collider.gameObject.GetComponent<InterfaceItem>().GetIndex();
             GameEventReference.Instance.OnInteract.Trigger(index);

@@ -48,14 +48,16 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
         float panelWidth = UIElementReference.Instance.m_InfoPanel.GetComponent<RectTransform>().sizeDelta.x;
 
+        UIElementReference.Instance.m_popupWindow.SetActive(false);
+
         if (!m_isPanelExpanded)
         {
-            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, panelWidth/2, -panelWidth));
+            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, panelWidth / 2, -panelWidth));
             UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_expandButton;
         }
         else
         {
-            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, -panelWidth/2, panelWidth));
+            StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, -panelWidth / 2, panelWidth));
             UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_collapseButton;
         }
     }
@@ -279,4 +281,5 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         }
     }
 
+    public bool IsExpanded() => m_isPanelExpanded;
 }

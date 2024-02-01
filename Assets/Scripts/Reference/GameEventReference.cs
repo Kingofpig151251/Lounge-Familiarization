@@ -24,14 +24,16 @@ public class GameEventReference : Singleton<GameEventReference>
     public GameEvent OnClickFloorPlanButton = new GameEvent();
     public GameEvent OnClickNextButton = new GameEvent();
 
-    public readonly GameEvent OnTaskListExpand = new GameEvent();
-    public readonly GameEvent OnTaskListCollapse = new GameEvent();
+    public GameEvent OnFeaturePointListExpandButtonClicked = new GameEvent();
 
-    public readonly GameEvent OnTaskAdded = new GameEvent();
-    public readonly GameEvent OnTaskCompleted = new GameEvent();
-    public readonly GameEvent OnTaskUpdate = new GameEvent();
-    public readonly GameEvent OnTaskRemoved = new GameEvent();
+    public GameEvent OnTaskListExpand = new GameEvent();
+    public GameEvent OnTaskListCollapse = new GameEvent();
 
-    public readonly GameEvent OnLanguageChanged = new GameEvent();
-    public readonly GameEvent OnGameReset = new GameEvent();
+    public GameEvent OnTaskAdded = new GameEvent();
+    public GameEvent OnTaskCompleted = new GameEvent();
+    public GameEvent OnTaskUpdate = new GameEvent();
+    public GameEvent OnTaskRemoved = new GameEvent();
+
+    public GameEvent OnLanguageChanged = new GameEvent();
+    public GameEvent OnGameReset = new GameEvent();
 }

@@ -47,4 +47,6 @@ public class UIElementSystem : MonoBehaviour
     public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
     
     public void OnClickNextButton() => GameEventReference.Instance.OnClickNextButton.Trigger();
+
+    public void OnClickFeatureListExpand(ViewPoint vp) => GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
 }
