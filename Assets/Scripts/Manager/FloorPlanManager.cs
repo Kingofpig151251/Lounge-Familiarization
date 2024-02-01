@@ -44,6 +44,8 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
             UIElementReference.Instance.m_InfoPanel.SetActive(true);
         }
+
+
     }
 
     private void OnEnterTaskMode(params object[] param)
