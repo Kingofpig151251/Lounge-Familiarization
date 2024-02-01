@@ -15,7 +15,10 @@ MonoBehaviour:
   m_index: 17
   m_loungeName: 1
   m_relation: 
-  m_arrowSO: []
+  m_arrowSO:
+  - {fileID: 11400000, guid: 21be16d134f76e54e8a40944efd28ee3, type: 2}
+  - {fileID: 11400000, guid: a894cfef0f99b4848a14149045239ce1, type: 2}
+  - {fileID: 11400000, guid: 776b8a50beb6ff846ba31805dbb547ba, type: 2}
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 2f7bd570be7a4554081bf643595aa708, type: 3}
   m_rotation: 0
