@@ -57,4 +57,10 @@ public class UIElementReference : Singleton<UIElementReference>
     public Sprite m_activeLocationButton;
 
     public List<DialogueSO> m_dialogueList;
+
+    public GameObject m_popupWindow;
+    public GameObject m_popupWindowTitle;
+    public GameObject m_popupWindowMessage;
+    public GameObject m_popupWindowEnterButton;
+    public GameObject m_popupWindowExitButton;
 }
