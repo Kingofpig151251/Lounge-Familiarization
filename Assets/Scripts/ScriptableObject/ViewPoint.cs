@@ -32,6 +32,8 @@ public class ViewPoint : ScriptableObject
     [ContextMenu("Create and link arrow")]
     public void CreateArrow()
     {
+        // Configuration not required
+        
         // Get the parent folder name
         var parentFolderName = AssetDatabase.GetAssetPath(this).Split('/').Reverse().Skip(1).First();
         
@@ -41,6 +43,7 @@ public class ViewPoint : ScriptableObject
             if (AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath) is null)
             {
                 var newArrow = CreateInstance<ArrowSO>();
+                newArrow.m_size = Vector3.one * .01f;
                 AssetDatabase.CreateAsset(newArrow, destinationPath);
             }
             m_arrowSO[i] = AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath);

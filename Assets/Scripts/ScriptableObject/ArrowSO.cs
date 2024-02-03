@@ -12,12 +12,4 @@ public class ArrowSO : ScriptableObject
     public Vector3 m_size;
 
     public int m_nextViewPointIndex;
-
-#if UNITY_EDITOR
-    [ContextMenu("Sorry I forgot to set the size")]
-    public void SetSize()
-    {
-        m_size = Vector3.one * .01f;
-    }
-#endif
 }

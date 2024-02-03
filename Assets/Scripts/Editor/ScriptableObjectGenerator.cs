@@ -50,18 +50,18 @@ public class Test1
     public static void CreateViewPointsAuto()
     {
         // Configurations
-        const int viewPointCount = 21;
-        const string loungeName = "Pier_Business";
-        const string assetNamePrefix = "Pier_Business VP ";
-        const string photoNamePrefix = "The Pier B ";
+        const int viewPointCount = 35; // Largest number in the photo folder
+        const string loungeName = "Pier_FirstClass";
+        const string assetNamePrefix = "Pier_FirstClass VP ";
+        const string photoNamePrefix = "The Pier FCL ";
         const Lounge lounge = Lounge.Pier;
         
         // Assets creation
         for (var i = 1; i <= viewPointCount; i++)
         {
             var newViewpoint = ScriptableObject.CreateInstance<ViewPoint>();
-            var destinationPath = $"Assets/ScriptableObject/ViewPoints/{loungeName}/{assetNamePrefix} {i}.asset";
-            var texturePath = $"Assets/Photo/{loungeName}/{photoNamePrefix} {i}.png";
+            var destinationPath = $"Assets/ScriptableObject/ViewPoints/{loungeName}/{assetNamePrefix}{i}.asset";
+            var texturePath = $"Assets/Photo/{loungeName}/{photoNamePrefix}{i}.png";
             
             // Set texture
             newViewpoint.m_index = i - 1;
@@ -70,7 +70,7 @@ public class Test1
             if (texture is null)
             {
                 Debug.Log("Texture not found");
-                continue;
+                continue; // Skip the item if the texture is missing (i.e. A number is skipped)
             }
             newViewpoint.m_texture = AssetDatabase.LoadAssetAtPath<Texture>(texturePath);
             
@@ -85,8 +85,8 @@ public class Test1
     public static void CreateFoldersAuto()
     {
         // Configurations
-        const int viewPointCount = 21;
-        const string destinationPath = "Assets/ScriptableObject/Arrow/Pier_Business";
+        const int viewPointCount = 35;
+        const string destinationPath = "Assets/ScriptableObject/Arrow/Pier_FirstClass";
 
         // Folders creation
         for (var i = 1; i <= viewPointCount; i++)
