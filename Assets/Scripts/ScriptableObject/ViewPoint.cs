@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewViewPoint", menuName = "New ViewPoint", order = 0)]
@@ -13,4 +15,36 @@ public class ViewPoint : ScriptableObject
     public Texture m_texture;
     public float m_rotation;
     public string m_popupWindowMessage;
+
+#if UNITY_EDITOR
+    // 3rd step
+    // 1st and 2nd step must be done before running this function
+    // Ignoring this instruction may cause unexpected behavior
+    
+    /*
+     * Configure the m_arrowSO[] length of each viewpoint in the inspector
+     * Select all viewpoints in the lounge you're working on
+     * Find and run this method in the context menu
+     *
+     * If you don't understand what this is about, don't touch this.
+     * Also remove this method in production if you'd like, it won't compile anyway.
+     */
+    [ContextMenu("Create and link arrow")]
+    public void CreateArrow()
+    {
+        // Get the parent folder name
+        var parentFolderName = AssetDatabase.GetAssetPath(this).Split('/').Reverse().Skip(1).First();
+        
+        for(var i = 0; i < m_arrowSO.Length; i++)
+        {
+            var destinationPath = $"Assets/ScriptableObject/Arrow/{parentFolderName}/VP{m_index + 1}/VP{m_index + 1} Arrow {i}.asset";
+            if (AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath) is null)
+            {
+                var newArrow = CreateInstance<ArrowSO>();
+                AssetDatabase.CreateAsset(newArrow, destinationPath);
+            }
+            m_arrowSO[i] = AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath);
+        }
+    }
+#endif
 }
