@@ -50,21 +50,21 @@ public class Test1
     public static void CreateViewPointsAuto()
     {
         // Configurations
-        const int viewPointCount = 35; // Largest number in the photo folder
-        const string loungeName = "Pier_FirstClass";
-        const string assetNamePrefix = "Pier_FirstClass VP ";
-        const string photoNamePrefix = "The Pier FCL ";
+        const int viewPointCount = 21; // Largest number in the photo folder
+        const string loungeName = "Pier_Business";
+        const string assetNamePrefix = "Pier_Business VP ";
+        const string photoNamePrefix = "The Pier B ";
         const Lounge lounge = Lounge.Pier;
         
         // Assets creation
-        for (var i = 1; i <= viewPointCount; i++)
+        for (var i = 0; i <= viewPointCount; i++)
         {
             var newViewpoint = ScriptableObject.CreateInstance<ViewPoint>();
             var destinationPath = $"Assets/ScriptableObject/ViewPoints/{loungeName}/{assetNamePrefix}{i}.asset";
-            var texturePath = $"Assets/Photo/{loungeName}/{photoNamePrefix}{i}.png";
+            var texturePath = $"Assets/Photo/{loungeName}/{photoNamePrefix}{i + 1}.png";
             
             // Set texture
-            newViewpoint.m_index = i - 1;
+            newViewpoint.m_index = i;
             newViewpoint.m_loungeName = lounge;
             var texture = AssetDatabase.LoadAssetAtPath<Texture>(texturePath);
             if (texture is null)
@@ -85,11 +85,11 @@ public class Test1
     public static void CreateFoldersAuto()
     {
         // Configurations
-        const int viewPointCount = 35;
-        const string destinationPath = "Assets/ScriptableObject/Arrow/Pier_FirstClass";
+        const int viewPointCount = 21;
+        const string destinationPath = "Assets/ScriptableObject/Arrow/Pier_Business";
 
         // Folders creation
-        for (var i = 1; i <= viewPointCount; i++)
+        for (var i = 0; i < viewPointCount; i++)
         {
             AssetDatabase.CreateFolder(destinationPath, $"VP{i}");
         }

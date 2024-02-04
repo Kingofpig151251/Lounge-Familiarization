@@ -9329,7 +9329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ec4aabc7546824fbef46a8fd4588c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_loungeStartIndex: 000000001300000000000000
+  m_loungeStartIndex: 000000001300000028000000
   m_viewPointSO:
   - {fileID: 11400000, guid: c71aa78bf6a995046ac91de3e11703ce, type: 2}
   - {fileID: 11400000, guid: 6a3548478ee1d5242a992913932e0325, type: 2}
@@ -9371,6 +9371,27 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 40813fa307b06e64492eb9bd5e907661, type: 2}
   - {fileID: 11400000, guid: 57c3beaa8c2bf294e9d01f21b24d9cea, type: 2}
   - {fileID: 11400000, guid: e3c3c424eb5e26e4a983fa060d022038, type: 2}
+  - {fileID: 11400000, guid: 0b369a5c9f0741544b4810faa6fe678b, type: 2}
+  - {fileID: 11400000, guid: 48183890e80934b42b995d253f6596cb, type: 2}
+  - {fileID: 11400000, guid: be230fde3f995b0408ed8bbc0b53c29a, type: 2}
+  - {fileID: 11400000, guid: bad0caab147cd3341a1ee08dfb566600, type: 2}
+  - {fileID: 11400000, guid: d788c6afa138f0242875cfe520c10fa2, type: 2}
+  - {fileID: 11400000, guid: 0f4d137e1c938234895f7177f1dce206, type: 2}
+  - {fileID: 11400000, guid: e4ba5f2207c20e84489b2050029d8f0c, type: 2}
+  - {fileID: 11400000, guid: 72cddc7c6b2e2b6429bd54e64f2a7dd9, type: 2}
+  - {fileID: 11400000, guid: 537bb039d3ab7f2468d3c9c202beaff3, type: 2}
+  - {fileID: 11400000, guid: c46b0cc764fdd6342956cb0492bd258e, type: 2}
+  - {fileID: 11400000, guid: 19a807513e612a34e8b04c94483d485c, type: 2}
+  - {fileID: 11400000, guid: c220678ed3d77c643b098f37fb374496, type: 2}
+  - {fileID: 11400000, guid: 3d593f618a811bf41ba76c8f350625c1, type: 2}
+  - {fileID: 11400000, guid: d6fb28245327e7c43aeb6b951bbe8253, type: 2}
+  - {fileID: 11400000, guid: 0c7315a669d2e194bb3973d7a5cfb8e1, type: 2}
+  - {fileID: 11400000, guid: 768d85c4065e7864b80c705ba72bb436, type: 2}
+  - {fileID: 11400000, guid: c368c15a025d96e469d0c498e637efc6, type: 2}
+  - {fileID: 11400000, guid: 4d07f3e2fee726248a7e5bf28282d43d, type: 2}
+  - {fileID: 11400000, guid: dfa31e2acc1363b4a9481d5b5004b84c, type: 2}
+  - {fileID: 11400000, guid: 7f85e23b342c4294890eb394178c0749, type: 2}
+  - {fileID: 11400000, guid: 5417ab80b1a3c804eb2c48b1ad62ced6, type: 2}
 --- !u!114 &732346929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27692,7 +27713,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5170820326835619954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.6087614, z: 0, w: 0.7933533}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
