@@ -11,7 +11,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
     [SerializeField] private GameObject m_arrowObect;
     [SerializeField] private GameObject m_infoObect;
 
-    [SerializeField] private GameObject m_firstViewPoint;
+    [SerializeField] public GameObject m_firstViewPoint;
 
     public ViewPoint m_currentViewPoint;
     public Lounge m_currentLounge;
@@ -221,7 +221,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         for (var i = 0; i < arrows.Length; i++)
         {
             var recordedPosition = arrows[i].transform.localPosition;
-            var path = $"Assets/ScriptableObject/Arrow/Pier_Business/VP{Instance.m_currentViewPoint.m_index + 1}/VP{Instance.m_currentViewPoint.m_index + 1} Arrow {i}.asset";
+            var path = $"Assets/ScriptableObject/Arrow/Pier_Business/VP{Instance.m_currentViewPoint.m_index}/VP{Instance.m_currentViewPoint.m_index} Arrow {i}.asset";
             var targetAsset = AssetDatabase.LoadAssetAtPath<ArrowSO>(path);
             if (targetAsset is null)
             {
@@ -247,7 +247,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             var rectTransform = indicator.AddComponent<RectTransform>();
             rectTransform.anchorMax = new Vector2(0.5f, 0);
             rectTransform.anchorMin = new Vector2(0.5f, 0);
-            rectTransform.anchoredPosition = new Vector2(Camera.main.WorldToScreenPoint(t.transform.position).x - 150, Camera.main.WorldToScreenPoint(t.transform.position).y) * 1.15f;
+            rectTransform.position = Camera.main.WorldToScreenPoint(t.transform.position);
             indicator.AddComponent<TextMeshProUGUI>().text = t.m_nextViewPointIndex.ToString();
             indicator.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
             indicator.GetComponent<TextMeshProUGUI>().horizontalAlignment = HorizontalAlignmentOptions.Center;
