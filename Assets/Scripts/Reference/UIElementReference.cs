@@ -9,6 +9,7 @@ public class UIElementReference : Singleton<UIElementReference>
     public GameObject m_WorldMapPanel;
     public GameObject m_CityMapPanel;
     public GameObject m_FloorPlanPanel;
+    public List<GameObject> m_FloorPlanImage = new List<GameObject>(); // For Floor Plan image. by King
     public GameObject m_MessagePanel;
 
     public GameObject m_Grid;
