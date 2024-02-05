@@ -214,10 +214,11 @@ public class ViewPointManager : Singleton<ViewPointManager>
     // Apply the changes on the arrows to the ScriptableObjects
     // Useful when the arrows are moved in the scene
     // For development use only
-    [MenuItem("GameObject/View Point Manager/Burn data to ScriptableObjects")]
+    [MenuItem("Tools/Burn data to ScriptableObjects")]
     public static void ApplyDataToScriptableObjectsWithRespectToValueChangeInGameObjects()
     {
         var arrows = Instance.m_firstViewPoint.GetComponentsInChildren<InterfaceItem_Arrow>();
+        AssetDatabase.StartAssetEditing();
         for (var i = 0; i < arrows.Length; i++)
         {
             var recordedPosition = arrows[i].transform.localPosition;
@@ -229,7 +230,9 @@ public class ViewPointManager : Singleton<ViewPointManager>
                 continue;
             }
             targetAsset.m_position = recordedPosition;
+            EditorUtility.SetDirty(targetAsset);
         }
+        AssetDatabase.StopAssetEditing(); // Stupid Unity
         AssetDatabase.SaveAssets();
     }
 
