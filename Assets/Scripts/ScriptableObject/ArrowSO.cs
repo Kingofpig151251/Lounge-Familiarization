@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 [CreateAssetMenu(fileName = "NewArrow", menuName = "New Arrow", order = 1)]
 public class ArrowSO : ScriptableObject
 {

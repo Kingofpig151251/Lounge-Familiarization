@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +11,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
     [SerializeField] private GameObject m_arrowObect;
     [SerializeField] private GameObject m_infoObect;
 
-    [SerializeField] private GameObject m_firstViewPoint;
+    [SerializeField] public GameObject m_firstViewPoint;
 
     public ViewPoint m_currentViewPoint;
     public Lounge m_currentLounge;
@@ -172,4 +174,89 @@ public class ViewPointManager : Singleton<ViewPointManager>
             UIElementReference.Instance.m_popupWindow.SetActive(false);
         });
     }
+
+#if UNITY_EDITOR
+    // Reload All arrows on current viewpoint
+    // @Jason please forgive me orz orz
+    [ContextMenu("Live reload")] 
+    public void ReloadViewPointDrawArrowsAndInfoWithRespectToChangesOnScriptableObjects()
+    {
+        if (m_currentViewPoint == null) return;
+        foreach (var item in m_currentIcons)
+        {
+            Destroy(item);
+        }
+        m_currentIcons.Clear();
+        
+        GameObject currentObj;
+        foreach (var t in m_currentViewPoint.m_arrowSO)
+        {
+            m_currentIcons.Add(currentObj = Instantiate(m_arrowObect, m_firstViewPoint.transform));
+            currentObj.transform.localPosition = t.m_position;
+            currentObj.transform.localEulerAngles = t.m_rotation;
+            currentObj.transform.localScale = t.m_size;
+            currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex = t.m_nextViewPointIndex;
+            currentObj.transform.GetComponent<Renderer>().material.renderQueue = 3001;
+        }
+        foreach (var t in m_currentViewPoint.m_infoSO)
+        {
+            m_currentIcons.Add(currentObj = Instantiate(m_infoObect, m_firstViewPoint.transform));
+            currentObj.transform.localPosition = t.m_position;
+            currentObj.transform.localEulerAngles = t.m_rotation;
+            currentObj.transform.localScale = t.m_size;
+            
+            
+            currentObj.GetComponent<InterfaceItem_Info>().m_info = t;
+            currentObj.GetComponent<Renderer>().material.renderQueue = 3002;
+        }
+    }
+
+    // Apply the changes on the arrows to the ScriptableObjects
+    // Useful when the arrows are moved in the scene
+    // For development use only
+    [MenuItem("Tools/Burn data to ScriptableObjects")]
+    public static void ApplyDataToScriptableObjectsWithRespectToValueChangeInGameObjects()
+    {
+        var arrows = Instance.m_firstViewPoint.GetComponentsInChildren<InterfaceItem_Arrow>();
+        AssetDatabase.StartAssetEditing();
+        for (var i = 0; i < arrows.Length; i++)
+        {
+            var recordedPosition = arrows[i].transform.localPosition;
+            var path = $"Assets/ScriptableObject/Arrow/Pier_Business/VP{Instance.m_currentViewPoint.m_index}/VP{Instance.m_currentViewPoint.m_index} Arrow {i}.asset";
+            var targetAsset = AssetDatabase.LoadAssetAtPath<ArrowSO>(path);
+            if (targetAsset is null)
+            {
+                Debug.LogWarning($"Asset not found at {path}");
+                continue;
+            }
+            targetAsset.m_position = recordedPosition;
+            EditorUtility.SetDirty(targetAsset);
+        }
+        AssetDatabase.StopAssetEditing(); // Stupid Unity
+        AssetDatabase.SaveAssets();
+    }
+
+    
+    // Display the next view point index on the arrows
+    // For development use only
+    [ContextMenu("Display arrow destination")]
+    public void FlexArrowDestination()
+    {
+        var arrows = Instance.m_firstViewPoint.GetComponentsInChildren<InterfaceItem_Arrow>();
+        foreach (var t in arrows)
+        {
+            if (!Application.isPlaying) return;
+            var indicator = Instantiate(new GameObject(), GameObject.Find("Canvas").transform);
+            var rectTransform = indicator.AddComponent<RectTransform>();
+            rectTransform.anchorMax = new Vector2(0.5f, 0);
+            rectTransform.anchorMin = new Vector2(0.5f, 0);
+            rectTransform.position = Camera.main.WorldToScreenPoint(t.transform.position);
+            indicator.AddComponent<TextMeshProUGUI>().text = t.m_nextViewPointIndex.ToString();
+            indicator.GetComponent<TextMeshProUGUI>().alignment = TextAlignmentOptions.Center;
+            indicator.GetComponent<TextMeshProUGUI>().horizontalAlignment = HorizontalAlignmentOptions.Center;
+            indicator.GetComponent<TextMeshProUGUI>().fontSize = 72;
+            Destroy(indicator, 2.5f);
+        }
+    }
+#endif
 }
