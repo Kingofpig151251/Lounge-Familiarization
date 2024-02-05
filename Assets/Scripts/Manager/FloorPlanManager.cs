@@ -44,8 +44,23 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
             UIElementReference.Instance.m_InfoPanel.SetActive(true);
         }
-        
+        foreach (GameObject floorPlan in UIElementReference.Instance.m_FloorPlanImage)
+        {
+            floorPlan.SetActive(false);
+        }
 
+        switch (ViewPointManager.Instance.m_currentLounge)
+        {
+            case Lounge.Deck:
+                UIElementReference.Instance.m_FloorPlanImage[0].SetActive(true);
+                break;
+            case Lounge.Wing:
+                UIElementReference.Instance.m_FloorPlanImage[1].SetActive(true);
+                break;
+            case Lounge.Pier:
+                UIElementReference.Instance.m_FloorPlanImage[3].SetActive(true);
+                break;
+        }
     }
 
     private void OnEnterTaskMode(params object[] param)
