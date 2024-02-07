@@ -42,7 +42,7 @@ public class NavigateManager : Singleton<NavigateManager>
     private void OnConfirmNavigate(params object[] param)
     {
         ++m_totalQuestionGenerate;
-        if (ViewPointManager.Instance.m_currentViewPoint.m_index == m_currentTaskSO.m_navigateIndex)
+        if (m_currentTaskSO.m_navigateIndex.Contains(ViewPointManager.Instance.m_currentViewPoint.m_index))
         {
             ++m_correctRate;
         }

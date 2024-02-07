@@ -10,5 +10,5 @@ public class TaskSO : ScriptableObject
     public string m_question_TC;
     public string m_question_SC;
     public string m_question_ENG;
-    public int m_navigateIndex;
+    public List<int> m_navigateIndex;
 }

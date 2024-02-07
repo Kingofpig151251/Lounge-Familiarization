@@ -7,7 +7,7 @@ using TMPro;
 public class GameManager : Singleton<GameManager>
 {
     private int m_CurrentMode = Class_PlayMode.StartMode;
-    private int m_currentLanguage = Class_Language.TraditionalChinese;
+    private int m_currentLanguage = Class_Language.English;
     private bool m_isCityMapPanelActive = true;
 
     private void Start()

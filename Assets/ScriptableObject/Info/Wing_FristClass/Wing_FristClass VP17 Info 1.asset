@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Wing_FristClass VP17 Info 1
+  m_EditorClassIdentifier: 
+  m_position: {x: -2.14, y: 0.19437002, z: 0.599}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Atrium
+  m_title_TC: "\u5BEB\u610F\u5EAD"
+  m_title_SC: "\u5199\u610F\u5EAD"
+  m_content_ENG: "The Atrium allows self-service dining experience. \nThere are 3
+    food counters offering at the Atrium:   \n-Self-service counter\n-Healthy Deli\n-Coffee
+    and tea"
+  m_content_TC: "\u5BEB\u610F\u5EAD\u7232\u4E58\u5BA2\u63D0\u4F9B\u81EA\u52A9\u7528\u9910\u9AD4\u9A57\u3002\n\u5171\u8A2D\u6709
+    3 \u500B\u98DF\u54C1\u6AC3\u6AAF\uFF1A\n-\u81EA\u52A9\u6AC3\u6AAF\n-\u5065\u5EB7\u7CBE\u9078\n-\u5496\u5561\u548C\u8336  "
+  m_content_SC: "\u5199\u610F\u5EAD\u4E3A\u4E58\u5BA2\u63D0\u4F9B\u81EA\u52A9\u7528\u9910\u4F53\u9A8C\u3002\n\u5171\u8BBE\u6709
+    3 \u4E2A\u98DF\u54C1\u67DC\u53F0\uFF1A\n-\u81EA\u52A9\u67DC\u53F0\n-\u5065\u5EB7\u7CBE\u9009\n-\u5496\u5561\u548C\u8336"

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class FloorPlanManager : Singleton<FloorPlanManager>
 {
     private bool m_isFloorPlanPanelActive = false;
-
+    private bool m_isFirstClass = true;
     private int m_currentViewPointIndex = 0;
 
     private void Start()
@@ -19,6 +19,7 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnEnterTaskMode.AddListener(OnEnterTaskMode);
         GameEventReference.Instance.OnClickFloorPlanButton.AddListener(OnClickFloorPlanButton);
+        GameEventReference.Instance.OnClickSwitchClassButton.AddListener(OnClickSwitchClassButton);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
     }
 
@@ -44,10 +45,8 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             UIElementReference.Instance.m_FloorPlanPanel.SetActive(false);
             UIElementReference.Instance.m_InfoPanel.SetActive(true);
         }
-        foreach (GameObject floorPlan in UIElementReference.Instance.m_FloorPlanImage)
-        {
-            floorPlan.SetActive(false);
-        }
+
+        SetListActiveFalse(UIElementReference.Instance.m_FloorPlanImage);
 
         switch (ViewPointManager.Instance.m_currentLounge)
         {
@@ -60,6 +59,37 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             case Lounge.Pier:
                 UIElementReference.Instance.m_FloorPlanImage[3].SetActive(true);
                 break;
+        }
+
+
+    }
+
+    private void OnClickSwitchClassButton(params object[] param)
+    {
+        SetListActiveFalse(UIElementReference.Instance.m_FloorPlanImage);
+
+        m_isFirstClass = !m_isFirstClass;
+
+        if (m_isFirstClass)
+        {
+            switch (ViewPointManager.Instance.m_currentLounge)
+            {
+                case Lounge.Wing:
+                    UIElementReference.Instance.m_FloorPlanImage[2].SetActive(true);
+                    break;
+                case Lounge.Pier:
+                    UIElementReference.Instance.m_FloorPlanImage[4].SetActive(true);
+                    break;
+            }
+        }
+
+    }
+
+    private void SetListActiveFalse(List<GameObject> gameObjectList)// set all obj'active in a list to false.
+    {
+        foreach (GameObject gameObject in gameObjectList)
+        {
+            gameObject.SetActive(false);
         }
     }
 
@@ -76,4 +106,6 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
     }
 
     public bool IsFloorPlanPanelActive() => m_isFloorPlanPanelActive;
+
+    
 }

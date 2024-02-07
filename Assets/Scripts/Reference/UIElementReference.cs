@@ -35,6 +35,7 @@ public class UIElementReference : Singleton<UIElementReference>
     public List<GameObject> m_infoPanel_ClassHeader = new List<GameObject>();
     public List<GameObject> m_infoPanel_ClassHeaderButton = new List<GameObject>();
     public List<GameObject> m_floorPlan_LocationButton = new List<GameObject>();
+    public GameObject m_teachingPanel;
 
     public GameObject m_questionPanel;
     public GameObject m_questionBox;
