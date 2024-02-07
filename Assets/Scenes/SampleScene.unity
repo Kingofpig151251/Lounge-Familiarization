@@ -12455,8 +12455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_taskConfigSO:
   - {fileID: 11400000, guid: 954bd86fa85ac53469ada7037bb10792, type: 2}
-  - {fileID: 11400000, guid: 954bd86fa85ac53469ada7037bb10792, type: 2}
-  - {fileID: 11400000, guid: 954bd86fa85ac53469ada7037bb10792, type: 2}
+  - {fileID: 11400000, guid: 7a6b12e838e2cb3489f3e327be40c42d, type: 2}
 --- !u!1 &734999289
 GameObject:
   m_ObjectHideFlags: 0
