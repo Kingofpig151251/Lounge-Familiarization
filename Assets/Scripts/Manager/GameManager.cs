@@ -26,8 +26,9 @@ public class GameManager : Singleton<GameManager>
 
         bool isViewMode = m_CurrentMode == Class_PlayMode.ViewMode;
         bool isTaskMode = m_CurrentMode == Class_PlayMode.TaskMode;
-        bool isStartMode = m_CurrentMode == Class_PlayMode.StartMode;
-
+        
+        UIElementReference.Instance.m_homeButton.SetActive(true);
+        
         UIElementReference.Instance.m_InfoPanel.SetActive(isViewMode);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(isViewMode);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(isViewMode);
@@ -70,8 +71,9 @@ public class GameManager : Singleton<GameManager>
         GameEventReference.Instance.OnEnter360Mode.Trigger();
         GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
 
+        UIElementReference.Instance.m_homeButton.SetActive(false);
         UIElementReference.Instance.m_IntroducePanel.SetActive(true);
-
+        UIElementReference.Instance.m_CityMapPanel.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
 
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);

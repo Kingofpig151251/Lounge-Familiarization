@@ -75,10 +75,10 @@ public class NavigateManager : Singleton<NavigateManager>
                 text = string.Format($"Correct Rate : {m_correctRate} /  {m_totalQuestionGenerate}");
                 break;
             case Class_Language.SimplifiedChinese:
-                text = string.Format($"¥¿ÚÌ²v : {m_correctRate} /  {m_totalQuestionGenerate}");
+                text = string.Format($"æ­£ç¡®çŽ‡ : {m_correctRate} /  {m_totalQuestionGenerate}");
                 break;
             case Class_Language.TraditionalChinese:
-                text = string.Format($"¥¿½T²v : {m_correctRate} /  {m_totalQuestionGenerate}");
+                text = string.Format($"æ­£ç¢ºçŽ‡ : {m_correctRate} /  {m_totalQuestionGenerate}");
                 break;
             default:
                 text = "NA";
