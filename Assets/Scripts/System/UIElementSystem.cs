@@ -44,9 +44,12 @@ public class UIElementSystem : MonoBehaviour
     public void OnExitNavigatePhase() => GameEventReference.Instance.OnExitNavigatePhase.Trigger();
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
     public void OnClickFloorPlanButton() => GameEventReference.Instance.OnClickFloorPlanButton.Trigger();
+    public void OnClickSwitchClassButton() => GameEventReference.Instance.OnClickSwitchClassButton.Trigger();
     public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
     
     public void OnClickNextButton() => GameEventReference.Instance.OnClickNextButton.Trigger();
 
     public void OnClickFeatureListExpand(ViewPoint vp) => GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
+
+    public void OnOpenTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(false);
 }

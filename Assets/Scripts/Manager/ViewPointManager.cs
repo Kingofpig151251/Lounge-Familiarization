@@ -13,6 +13,8 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
     [SerializeField] public GameObject m_firstViewPoint;
 
+    [SerializeField] private GameObject m_camera;
+
     public ViewPoint m_currentViewPoint;
     public Lounge m_currentLounge;
     private List<GameObject> m_currentIcons = new List<GameObject>();
@@ -27,7 +29,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnInteractInfo.AddListener(OnInteractInfo);
         GameEventReference.Instance.OnChangeRegion.AddListener(OnChangeRegion);
-        GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.AddListener(OnFeaturePointListExpandButtonClicked);
+
     }
 
     private void OnEnterViewPoint(params object[] param)
@@ -37,6 +39,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
         LayerManager.Instance.m_isLayerActive = false;
     }
+
 
 
     private void OnInteractInfo(params object[] param)
@@ -150,35 +153,10 @@ public class ViewPointManager : Singleton<ViewPointManager>
         InstantiateInterfaceItem();
     }
 
-    private void OnFeaturePointListExpandButtonClicked(params object[] param)
-    {
-        ViewPoint viewPoint = (ViewPoint)param[0];
-
-        UIElementReference.Instance.m_popupWindow.SetActive(true);
-
-        UIElementReference.Instance.m_popupWindowTitle.GetComponent<TMP_Text>().text = viewPoint.m_loungeName.ToString();
-        UIElementReference.Instance.m_popupWindowMessage.GetComponent<TMP_Text>().text = viewPoint.m_popupWindowMessage;
-
-        UIElementReference.Instance.m_popupWindowEnterButton.GetComponent<Button>().onClick.RemoveAllListeners();
-        UIElementReference.Instance.m_popupWindowExitButton.GetComponent<Button>().onClick.RemoveAllListeners();
-
-        UIElementReference.Instance.m_popupWindowEnterButton.GetComponent<Button>().onClick.AddListener(() =>
-        {
-            GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
-            m_currentLounge = viewPoint.m_loungeName;
-            EnterViewPoint(viewPoint.m_index);
-            UIElementReference.Instance.m_popupWindow.SetActive(false);
-        });
-        UIElementReference.Instance.m_popupWindowExitButton.GetComponent<Button>().onClick.AddListener(() =>
-        {
-            UIElementReference.Instance.m_popupWindow.SetActive(false);
-        });
-    }
-
 #if UNITY_EDITOR
     // Reload All arrows on current viewpoint
     // @Jason please forgive me orz orz
-    [ContextMenu("Live reload")] 
+    [ContextMenu("Live reload")]
     public void ReloadViewPointDrawArrowsAndInfoWithRespectToChangesOnScriptableObjects()
     {
         if (m_currentViewPoint == null) return;
@@ -187,7 +165,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             Destroy(item);
         }
         m_currentIcons.Clear();
-        
+
         GameObject currentObj;
         foreach (var t in m_currentViewPoint.m_arrowSO)
         {
@@ -204,8 +182,8 @@ public class ViewPointManager : Singleton<ViewPointManager>
             currentObj.transform.localPosition = t.m_position;
             currentObj.transform.localEulerAngles = t.m_rotation;
             currentObj.transform.localScale = t.m_size;
-            
-            
+
+
             currentObj.GetComponent<InterfaceItem_Info>().m_info = t;
             currentObj.GetComponent<Renderer>().material.renderQueue = 3002;
         }
@@ -236,7 +214,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         AssetDatabase.SaveAssets();
     }
 
-    
+
     // Display the next view point index on the arrows
     // For development use only
     [ContextMenu("Display arrow destination")]

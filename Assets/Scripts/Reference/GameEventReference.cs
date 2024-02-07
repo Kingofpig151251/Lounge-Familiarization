@@ -22,6 +22,7 @@ public class GameEventReference : Singleton<GameEventReference>
     public GameEvent OnExitNavigatePhase = new GameEvent();
     public GameEvent OnConfirmNavigate = new GameEvent();
     public GameEvent OnClickFloorPlanButton = new GameEvent();
+    public GameEvent OnClickSwitchClassButton = new GameEvent();
     public GameEvent OnClickNextButton = new GameEvent();
 
     public GameEvent OnFeaturePointListExpandButtonClicked = new GameEvent();

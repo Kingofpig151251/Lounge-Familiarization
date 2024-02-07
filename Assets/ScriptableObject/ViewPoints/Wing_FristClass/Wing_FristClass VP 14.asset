@@ -19,7 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c60fac0b742204d4e81dec2afbc6345a, type: 2}
   - {fileID: 11400000, guid: 525a317a96875134185506ff810742ba, type: 2}
   - {fileID: 11400000, guid: c832d9e30146f484a9bf79d8a1858dd3, type: 2}
-  m_infoSO: []
+  m_infoSO:
+  - {fileID: 11400000, guid: 16ede2dfa3bb78e4883d99be8fcd42c4, type: 2}
   m_texture: {fileID: 2800000, guid: f743d8f85192f2c4787e234461a6cbe7, type: 3}
   m_rotation: 25
+  m_popupWindowTittle: 
   m_popupWindowMessage: 

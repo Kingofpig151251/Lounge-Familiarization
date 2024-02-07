@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cd6ddfe21859f4c8b239e5323b386e, type: 3}
   m_Name: QAConfig 3
   m_EditorClassIdentifier: 
-  m_id: 0
+  m_Regionid: 0
   m_question: "\u4E58\u5BA2\uFF1A\u6211\u60F3\u559D\u4E00\u676F\u9999\u6AB3\u6216\u8005\u5690\u5690\u4F60\u5011\u7684\u62DB\u724C\u96DE\u5C3E\u9152\uFF0C\u6211\u8A72\u53BB\u54EA\u88E1\uFF1F"
   m_wrongAnswer1: Wrong
   m_wrongAnswer2: Wrong
   m_correctAnswer: "\u9577\u5824\u5427"
-  m_navigateIndex: 3
+  m_navigateIndex: 03000000

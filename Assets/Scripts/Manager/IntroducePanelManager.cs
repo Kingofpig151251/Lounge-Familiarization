@@ -8,7 +8,7 @@ namespace Manager
 
         private DialogueSO m_currentDialogue;
         private int m_currentDialogueIndex;
-        private int m_currentLanguage = Class_Language.TraditionalChinese;
+        private int m_currentLanguage = Class_Language.English;
 
         private void Start()
         {

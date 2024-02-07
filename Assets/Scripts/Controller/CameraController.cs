@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CameraController : MonoBehaviour
+public class CameraController : Singleton<CameraController>
 {
     private const float m_rotationSpeed = 500f;
 
@@ -65,5 +65,19 @@ public class CameraController : MonoBehaviour
         m_cameraRotationX = Mathf.Clamp(m_cameraRotationX, -45, 90);
 
         transform.eulerAngles = new Vector3(m_cameraRotationX, m_cameraRotationY, 0);
+    }
+
+    public void SetRotation(Vector3 pointPos)
+    {
+        Vector3 cameraPos = Camera.main.transform.position;
+        Vector3 direction = Vector3.Normalize(pointPos - cameraPos);
+        Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+
+        // Extract the Euler angles from the rotation
+        Vector3 eulerAngles = rotation.eulerAngles;
+
+        // Set the camera rotation angles
+        m_cameraRotationX = eulerAngles.z;
+        m_cameraRotationY = eulerAngles.y + ViewPointManager.Instance.m_currentViewPoint.m_rotation;
     }
 }
