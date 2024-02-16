@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Reference;
 using TMPro;
 using UnityEngine;
 
@@ -12,9 +13,8 @@ namespace Manager
         private int m_currentDialogueIndex;
         private int m_currentLanguage = Class_Language.English;
         private bool m_isCoroutineRunning = false;
-        [SerializeField]
-        private float delay = 0.01f;// adjust the delay for the text to appear speed
-        
+        [SerializeField] private float delay = 0.01f; // adjust the delay for the text to appear speed
+
 
         private void Start()
         {
@@ -36,7 +36,7 @@ namespace Manager
             foreach (char letter in dialogue.ToCharArray())
             {
                 m_DialougueDisplay.text += letter;
-                yield return new WaitForSeconds(delay); 
+                yield return new WaitForSeconds(delay);
             }
 
             m_isCoroutineRunning = false;
@@ -52,7 +52,7 @@ namespace Manager
             m_currentDialogueIndex++;
             if (m_currentDialogueIndex == list.Count)
             {
-                UIElementReference.Instance.m_IntroducePanel.SetActive(false);
+                Destroy(UIElementReference.Instance.m_IntroducePanel);
                 UIElementReference.Instance.m_CityMapPanel.SetActive(true);
                 m_currentDialogueIndex = 0;
             }

@@ -54,7 +54,7 @@ public class Test1
         const string loungeName = "Pier_Business";
         const string assetNamePrefix = "Pier_Business VP ";
         const string photoNamePrefix = "The Pier B ";
-        const Lounge lounge = Lounge.Pier;
+        const Lounge lounge = Lounge.PierBusinessLounge;
         
         // Assets creation
         for (var i = 0; i <= viewPointCount; i++)

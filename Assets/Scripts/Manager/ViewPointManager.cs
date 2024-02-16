@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Reference;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -53,13 +54,13 @@ public class ViewPointManager : Singleton<ViewPointManager>
         switch (regionIndex)
         {
             case "10":
-                m_currentLounge = Lounge.Deck;
+                m_currentLounge = Lounge.DeckBusinessLounge;
                 break;
             case "11":
-                m_currentLounge = Lounge.Wing;
+                m_currentLounge = Lounge.WingFristClassLounge;
                 break;
             case "12":
-                m_currentLounge = Lounge.Pier;
+                m_currentLounge = Lounge.PierBusinessLounge;
                 break;
         }
 

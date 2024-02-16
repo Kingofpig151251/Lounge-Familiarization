@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Reference;
 using UnityEngine;
 
 public class LayerManager : Singleton<LayerManager>
