@@ -1,8 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class TaskReference : Singleton<TaskReference>
+namespace Reference
 {
-    public List<TaskSO> m_taskConfigSO = new List<TaskSO>();
+    public class TaskReference : Singleton<TaskReference>
+    {
+        public List<TaskSO> m_taskConfigSO = new List<TaskSO>();
+    }
 }

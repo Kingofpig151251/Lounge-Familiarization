@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Reference;
 using UnityEngine;
 
 public class InterfaceItemMananger : Singleton<InterfaceItemMananger>

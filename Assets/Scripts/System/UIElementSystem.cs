@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using Reference;
 using UnityEngine;
 
 public class UIElementSystem : MonoBehaviour
 {
-    // Navigation related methods
+    #region Navigation
+
     public void EnterViewPoint(int index) => GameEventReference.Instance.OnEnterViewPoint.Trigger(index);
     public void OnEnterNavigatePhase() => GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
     public void OnExitNavigatePhase() => GameEventReference.Instance.OnExitNavigatePhase.Trigger();
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
 
-    // Language related methods
+    #endregion
+
+    #region Language
+
     public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
 
-    // Panel operation related methods
+    #endregion
+
+    #region Panel
+
     public void ShowMapLayer(int id)
     {
         if (TestPanelManager.Instance.m_isQuestionPanelActive)
@@ -40,8 +46,6 @@ public class UIElementSystem : MonoBehaviour
     }
 
     public void OnGameReset() => GameEventReference.Instance.OnGameReset.Trigger();
-    public void OnClickInfoButton(string message) => GameEventReference.Instance.OnInteractUIMessage.Trigger(message);
-    public void OnClick360ModeButton(string message) => GameEventReference.Instance.OnEnter360Mode.Trigger(message);
     public void OnClickTaskModeButton(string message) => GameEventReference.Instance.OnEnterTaskMode.Trigger(message);
     public void OnClickInfoExpandButton() => GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
     public void OnClickRegion(string regionID) => GameEventReference.Instance.OnChangeRegion.Trigger(regionID);
@@ -59,4 +63,6 @@ public class UIElementSystem : MonoBehaviour
         GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
 
     public void OnOpenTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(false);
+
+    #endregion
 }

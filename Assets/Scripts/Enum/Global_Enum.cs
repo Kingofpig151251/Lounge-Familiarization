@@ -8,7 +8,9 @@ public class Global_Enum : MonoBehaviour
 }
 public enum Lounge
 {
-    Deck,
-    Wing,    
-    Pier
+    DeckBusinessLounge,
+    WingFristClassLounge,
+    WingBusinessLounge,
+    PierFirstClassLounge,
+    PierBusinessLounge
 }
