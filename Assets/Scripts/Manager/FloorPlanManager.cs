@@ -19,7 +19,6 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnEnterTaskMode.AddListener(OnEnterTaskMode);
         GameEventReference.Instance.OnClickFloorPlanButton.AddListener(OnClickFloorPlanButton);
-        GameEventReference.Instance.OnClickSwitchClassButton.AddListener(OnClickSwitchClassButton);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
     }
 
@@ -67,29 +66,15 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             case Lounge.WingFristClassLounge:
                 UIElementReference.Instance.m_FloorPlanImage[1].SetActive(true);
                 break;
-            case Lounge.PierBusinessLounge:
+            case Lounge.WingBusinessLounge:
+                UIElementReference.Instance.m_FloorPlanImage[2].SetActive(true);
+                break;
+            case Lounge.PierFirstClassLounge:
                 UIElementReference.Instance.m_FloorPlanImage[3].SetActive(true);
                 break;
-        }
-    }
-
-    private void OnClickSwitchClassButton(params object[] param)
-    {
-        SetListActiveFalse(UIElementReference.Instance.m_FloorPlanImage);
-
-        m_isFirstClass = !m_isFirstClass;
-
-        if (m_isFirstClass)
-        {
-            switch (ViewPointManager.Instance.m_currentLounge)
-            {
-                case Lounge.WingFristClassLounge:
-                    UIElementReference.Instance.m_FloorPlanImage[2].SetActive(true);
-                    break;
-                case Lounge.PierBusinessLounge:
-                    UIElementReference.Instance.m_FloorPlanImage[4].SetActive(true);
-                    break;
-            }
+            case Lounge.PierBusinessLounge:
+                UIElementReference.Instance.m_FloorPlanImage[4].SetActive(true);
+                break;
         }
     }
 

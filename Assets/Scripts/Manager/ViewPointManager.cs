@@ -60,6 +60,12 @@ public class ViewPointManager : Singleton<ViewPointManager>
                 m_currentLounge = Lounge.WingFristClassLounge;
                 break;
             case "12":
+                m_currentLounge = Lounge.WingBusinessLounge;
+                break;
+            case "13":
+                m_currentLounge = Lounge.PierFirstClassLounge;
+                break;
+            case "14":
                 m_currentLounge = Lounge.PierBusinessLounge;
                 break;
         }

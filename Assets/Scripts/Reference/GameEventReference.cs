@@ -21,7 +21,6 @@ namespace Reference
         public GameEvent OnClickClassHeader = new GameEvent();
         public GameEvent OnClickTestOption = new GameEvent();
         public GameEvent OnClickFloorPlanButton = new GameEvent();
-        public GameEvent OnClickSwitchClassButton = new GameEvent();
         public GameEvent OnClickIntroducePanelNextButton = new GameEvent();
         public GameEvent OnFeaturePointListExpandButtonClicked = new GameEvent();
         #endregion

@@ -25,7 +25,6 @@ public class LayerManager : Singleton<LayerManager>
 
         if (regionID.Length == 1)
         {
-            UIElementReference.Instance.m_WorldMapPanel.SetActive(false);
             UIElementReference.Instance.m_CityMapPanel.SetActive(true);
             //if (regionID == "0")
             //{

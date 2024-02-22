@@ -7,7 +7,6 @@ namespace Reference
     public class UIElementReference : Singleton<UIElementReference>
     {
         [Header("UI Panels")] 
-        public GameObject m_WorldMapPanel;
         public GameObject m_CityMapPanel;
         public GameObject m_FloorPlanPanel;
         public GameObject m_MessagePanel;
