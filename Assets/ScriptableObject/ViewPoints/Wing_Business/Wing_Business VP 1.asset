@@ -20,6 +20,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 40c70f930e8a7494795b259b0c414cf7, type: 2}
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: abd1ca46d57759348a07fd7557fae7d4, type: 3}
-  m_rotation: 0
+  m_rotation: -75.88
   m_popupWindowTittle: 
   m_popupWindowMessage: 
