@@ -16,9 +16,11 @@ MonoBehaviour:
   m_loungeName: 2
   m_relation: 01000000
   m_arrowSO:
-  - {fileID: 11400000, guid: a57ceb5463dfb4040a04c819bd634b00, type: 2}
+  - {fileID: 11400000, guid: 8c2784b7ae5ff2648a7919c6733f12db, type: 2}
+  - {fileID: 11400000, guid: e73db574e62f739438f877f9103e6fe2, type: 2}
+  - {fileID: 11400000, guid: 7307dd1670afe5c4b8fb7fb9ce31afc3, type: 2}
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 5cc00bfe9ba2066499cbebf1d93ef629, type: 3}
-  m_rotation: 0
+  m_rotation: 304.96
   m_popupWindowTittle: 
   m_popupWindowMessage: 
