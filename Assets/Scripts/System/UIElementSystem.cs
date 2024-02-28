@@ -62,7 +62,8 @@ public class UIElementSystem : MonoBehaviour
     public void OnClickFeatureListExpand(ViewPoint vp) =>
         GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
 
-    public void OnOpenTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(false);
+    public void ActiveTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(true);
+    public void DeactiveTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(false);
 
     #endregion
 }
