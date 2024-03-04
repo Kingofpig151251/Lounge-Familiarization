@@ -33,6 +33,7 @@ public class NavigateManager : Singleton<NavigateManager>
         GenerateTask();
         ChangeCorrectRateText();
     }
+
     private void OnExitNavigatePhase(params object[] param)
     {
         UIElementReference.Instance.m_navigatePanel.SetActive(false);
@@ -46,12 +47,12 @@ public class NavigateManager : Singleton<NavigateManager>
         if (m_currentTaskSO.m_navigateIndex.Contains(ViewPointManager.Instance.m_currentViewPoint.m_index))
         {
             ++m_correctRate;
-        }
-        else
+            UIElementReference.Instance.m_correctPanel.SetActive(true);
+        }else
         {
-
+            UIElementReference.Instance.m_wrongPanel.SetActive(true);
         }
-        GenerateTask();
+        
         ChangeCorrectRateText();
     }
 
@@ -63,6 +64,7 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             UpdateTaskText(language);
         }
+        
         ChangeCorrectRateText();
     }
 
@@ -85,10 +87,11 @@ public class NavigateManager : Singleton<NavigateManager>
                 text = "NA";
                 break;
         }
+
         UIElementReference.Instance.m_taskCorrectRate.text = text;
     }
 
-    private void GenerateTask()
+    public void GenerateTask()
     {
         System.DateTime now = System.DateTime.Now;
 
@@ -97,7 +100,8 @@ public class NavigateManager : Singleton<NavigateManager>
 
         int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
         Random.InitState(seed);
-        m_questionIndex = Mathf.Clamp(Random.Range(0, TaskReference.Instance.m_taskConfigSO.Count), 0, TaskReference.Instance.m_taskConfigSO.Count - 1);
+        m_questionIndex = Mathf.Clamp(Random.Range(0, TaskReference.Instance.m_taskConfigSO.Count), 0,
+            TaskReference.Instance.m_taskConfigSO.Count - 1);
 
 
         //} while (isQuestionIndexPremit());
@@ -146,4 +150,6 @@ public class NavigateManager : Singleton<NavigateManager>
         m_correctRate = 0;
         m_totalQuestionGenerate = 0;
     }
+
+    public TaskSO GetCurrentTaskSO() => m_currentTaskSO;
 }

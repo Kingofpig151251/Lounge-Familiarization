@@ -16,7 +16,8 @@ public class Test1
         testData.m_position = Selection.activeTransform.gameObject.transform.position;
         testData.m_rotation = Selection.activeTransform.gameObject.transform.localEulerAngles;
         testData.m_size = Selection.activeTransform.gameObject.transform.localScale;
-        testData.m_nextViewPointIndex = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex;
+        testData.m_nextViewPointIndex = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Arrow>()
+            .m_nextViewPointIndex;
 
         string fullPath = "Assets/ScriptableObject/Arrow/VP.asset";
         UnityEditor.AssetDatabase.DeleteAsset(fullPath);
@@ -31,12 +32,16 @@ public class Test1
         testData.m_position = Selection.activeTransform.gameObject.transform.position;
         testData.m_rotation = Selection.activeTransform.gameObject.transform.localEulerAngles;
         testData.m_size = Selection.activeTransform.gameObject.transform.localScale;
-        testData.m_title_ENG = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_title_ENG;
+        testData.m_title_ENG =
+            Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_title_ENG;
         testData.m_title_SC = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_title_SC;
         testData.m_title_TC = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_title_TC;
-        testData.m_content_ENG = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_ENG;
-        testData.m_content_SC = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_SC;
-        testData.m_content_TC = Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_TC;
+        testData.m_content_ENG =
+            Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_ENG;
+        testData.m_content_SC =
+            Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_SC;
+        testData.m_content_TC =
+            Selection.activeTransform.gameObject.GetComponent<InterfaceItem_Info>().m_info.m_content_TC;
 
         string fullPath = "Assets/ScriptableObject/Info/VP.asset";
         UnityEditor.AssetDatabase.DeleteAsset(fullPath);
@@ -55,14 +60,14 @@ public class Test1
         const string assetNamePrefix = "Pier_Business VP ";
         const string photoNamePrefix = "The Pier B ";
         const Lounge lounge = Lounge.PierBusinessLounge;
-        
+
         // Assets creation
         for (var i = 0; i <= viewPointCount; i++)
         {
             var newViewpoint = ScriptableObject.CreateInstance<ViewPoint>();
             var destinationPath = $"Assets/ScriptableObject/ViewPoints/{loungeName}/{assetNamePrefix}{i}.asset";
             var texturePath = $"Assets/Photo/{loungeName}/{photoNamePrefix}{i + 1}.png";
-            
+
             // Set texture
             newViewpoint.m_index = i;
             newViewpoint.m_loungeName = lounge;
@@ -72,13 +77,14 @@ public class Test1
                 Debug.Log("Texture not found");
                 continue; // Skip the item if the texture is missing (i.e. A number is skipped)
             }
+
             newViewpoint.m_texture = AssetDatabase.LoadAssetAtPath<Texture>(texturePath);
-            
+
             // Add to asset database
             AssetDatabase.CreateAsset(newViewpoint, destinationPath);
         }
     }
-    
+
     // 2nd step
     // Modify and run this function to Create arrow objects after the viewpoints are created
     [MenuItem("GameObject/CreateSO/2. Create Arrow folders (CONFIGURE BEFORE RUNNING)")]

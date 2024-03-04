@@ -7,6 +7,8 @@ public class GameManager : Singleton<GameManager>
     private int m_CurrentMode = Class_PlayMode.StartMode;
     private int m_currentLanguage = Class_Language.English;
     private bool m_isCityMapPanelActive = true;
+    private bool m_is360FristTime = true;
+    private bool m_isTaskFristTime = true;
 
     private void Start()
     {
@@ -45,15 +47,29 @@ public class GameManager : Singleton<GameManager>
 
     private void EnterTaskMode()
     {
+        if (m_isTaskFristTime)
+        {
+            UIElementReference.Instance.m_TaskteachingPanel.SetActive(true);
+            m_isTaskFristTime = false;
+        }
+
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(true);
         UIElementReference.Instance.m_navigatePanel.gameObject.SetActive(true);
         UIElementReference.Instance.m_taskList.SetActive(true);
+        UIElementReference.Instance.m_taskModeButton.SetActive(false);
+        UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
+        UIElementReference.Instance.m_InfoPanel.SetActive(false);
         GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
     }
 
     private void OnChangeRegion(params object[] param)
     {
         m_isCityMapPanelActive = false;
+        if (m_is360FristTime)
+        {
+            UIElementReference.Instance.m_360teachingPanel.SetActive(true);
+            m_is360FristTime = false;
+        }
     }
 
     private void OnLanguageChanged(params object[] param)

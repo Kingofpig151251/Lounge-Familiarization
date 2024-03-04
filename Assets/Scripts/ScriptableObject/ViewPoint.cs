@@ -22,7 +22,7 @@ public class ViewPoint : ScriptableObject
     // 3rd step
     // 1st and 2nd step must be done before running this function
     // Ignoring this instruction may cause unexpected behavior
-    
+
     /*
      * Configure the m_arrowSO[] length of each viewpoint in the inspector
      * Select all viewpoints in the lounge you're working on
@@ -35,19 +35,21 @@ public class ViewPoint : ScriptableObject
     public void CreateArrow()
     {
         // Configuration not required
-        
+
         // Get the parent folder name
         var parentFolderName = AssetDatabase.GetAssetPath(this).Split('/').Reverse().Skip(1).First();
-        
-        for(var i = 0; i < m_arrowSO.Length; i++)
+
+        for (var i = 0; i < m_arrowSO.Length; i++)
         {
-            var destinationPath = $"Assets/ScriptableObject/Arrow/{parentFolderName}/VP{m_index}/VP{m_index} Arrow {i}.asset";
+            var destinationPath =
+                $"Assets/ScriptableObject/Arrow/{parentFolderName}/VP{m_index}/VP{m_index} Arrow {i}.asset";
             if (AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath) is null)
             {
                 var newArrow = CreateInstance<ArrowSO>();
                 newArrow.m_size = Vector3.one * .01f;
                 AssetDatabase.CreateAsset(newArrow, destinationPath);
             }
+
             m_arrowSO[i] = AssetDatabase.LoadAssetAtPath<ArrowSO>(destinationPath);
         }
     }
@@ -56,7 +58,10 @@ public class ViewPoint : ScriptableObject
     {
         if (!Application.isPlaying) return;
         if (ViewPointManager.Instance.m_currentViewPoint.name != name) return;
-        ViewPointManager.Instance.m_firstViewPoint.transform.localEulerAngles = new Vector3(ViewPointManager.Instance.transform.localEulerAngles.x, ViewPointManager.Instance.m_currentViewPoint.m_rotation, ViewPointManager.Instance.transform.transform.localEulerAngles.z);
+        ViewPointManager.Instance.m_firstViewPoint.transform.localEulerAngles = new Vector3(
+            ViewPointManager.Instance.transform.localEulerAngles.x,
+            ViewPointManager.Instance.m_currentViewPoint.m_rotation,
+            ViewPointManager.Instance.transform.transform.localEulerAngles.z);
     }
 #endif
 }

@@ -27,6 +27,7 @@ public class LayerManager : Singleton<LayerManager>
         {
             UIElementReference.Instance.m_CityMapPanel.SetActive(true);
         }
+
         if (regionID.Length == 2)
         {
             UIElementReference.Instance.m_CityMapPanel.SetActive(false);

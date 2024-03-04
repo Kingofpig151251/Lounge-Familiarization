@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameEvent
 {
     public delegate void m_gameEventHandler(params object[] param);
+
     public event m_gameEventHandler m_onGameEvent;
 
     public void AddListener(m_gameEventHandler func) => m_onGameEvent += func;

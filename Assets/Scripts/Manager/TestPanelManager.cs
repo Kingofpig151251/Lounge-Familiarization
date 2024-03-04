@@ -30,7 +30,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
             case 2:
             case 3:
             case 4:
-                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_Regionid == 0)
+                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_lounge == Lounge.WingBusinessLounge)
                 {
                     return false;
                 }
@@ -44,7 +44,7 @@ public class TestPanelManager : Singleton<TestPanelManager>
             case 8:
             case 9:
             case 10:
-                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_Regionid == 1)
+                if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_lounge == Lounge.WingBusinessLounge)
                 {
                     return false;
                 }
@@ -77,10 +77,12 @@ public class TestPanelManager : Singleton<TestPanelManager>
         {
             int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
             Random.InitState(seed);
-            m_questionIndex = Mathf.Clamp(Random.Range(0, UIElementReference.Instance.m_questionList.Count), 0, UIElementReference.Instance.m_questionList.Count - 1);
+            m_questionIndex = Mathf.Clamp(Random.Range(0, UIElementReference.Instance.m_questionList.Count), 0,
+                UIElementReference.Instance.m_questionList.Count - 1);
             m_correctAnswerIndex = Mathf.Clamp(Random.Range(0, 3), 0, 2);
 
-            UIElementReference.Instance.m_questionBox.GetComponentInChildren<TMP_Text>().text = UIElementReference.Instance.m_questionList[m_questionIndex].m_question;
+            UIElementReference.Instance.m_questionBox.GetComponentInChildren<TMP_Text>().text =
+                UIElementReference.Instance.m_questionList[m_questionIndex].m_question;
         } while (isQuestionIndexPremit());
 
 
@@ -89,16 +91,19 @@ public class TestPanelManager : Singleton<TestPanelManager>
         {
             if (i == m_correctAnswerIndex)
             {
-                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text = UIElementReference.Instance.m_questionList[m_questionIndex].m_correctAnswer;
+                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text =
+                    UIElementReference.Instance.m_questionList[m_questionIndex].m_correctAnswer;
             }
             else if (wrongAnswerUsed == false)
             {
-                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text = UIElementReference.Instance.m_questionList[m_questionIndex].m_wrongAnswer1;
+                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text =
+                    UIElementReference.Instance.m_questionList[m_questionIndex].m_wrongAnswer1;
                 wrongAnswerUsed = true;
             }
             else
             {
-                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text = UIElementReference.Instance.m_questionList[m_questionIndex].m_wrongAnswer2;
+                UIElementReference.Instance.m_answerList[i].GetComponentInChildren<TMP_Text>().text =
+                    UIElementReference.Instance.m_questionList[m_questionIndex].m_wrongAnswer2;
             }
         }
     }

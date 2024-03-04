@@ -1,24 +1,26 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Reference
 {
     public class UIElementReference : Singleton<UIElementReference>
     {
-        [Header("UI Panels")] 
-        public GameObject m_CityMapPanel;
+        [Header("UI Panels")] public GameObject m_CityMapPanel;
         public GameObject m_FloorPlanPanel;
         public GameObject m_MessagePanel;
         public GameObject m_IntroducePanel;
         public GameObject m_InfoPanel;
-        public GameObject m_teachingPanel;
+        public GameObject m_360teachingPanel;
+        public GameObject m_TaskteachingPanel;
         public GameObject m_questionPanel;
         public GameObject m_navigatePanel;
         public GameObject m_popupWindow;
+        public GameObject m_correctPanel;
+        public GameObject m_wrongPanel;
 
-        [Header("UI Buttons")] 
-        public GameObject m_InfoPanelExpandButton;
+        [Header("UI Buttons")] public GameObject m_InfoPanelExpandButton;
         public GameObject m_ButtonENG;
         public GameObject m_ButtonSC;
         public GameObject m_ButtonTC;
@@ -27,20 +29,17 @@ namespace Reference
         public GameObject m_firstViewPoint;
         public GameObject m_nextViewPoint;
         public GameObject m_homeButton;
+        public GameObject m_taskModeButton;
         public GameObject m_enterNavigateButton;
         public GameObject m_exitNavigateButton;
         public GameObject m_confirmNavigateButton;
         public GameObject m_popupWindowEnterButton;
         public GameObject m_popupWindowExitButton;
-        public GameObject m_IntroducePanelNextButton;
-        public GameObject m_IntroducePanelSkipButton;
 
-        [Header("UI Texts")] 
-        public TextMeshProUGUI m_taskText;
+        [Header("UI Texts")] public TextMeshProUGUI m_taskText;
         public TextMeshProUGUI m_taskCorrectRate;
 
-        [Header("UI Lists")] 
-        public List<GameObject> m_FloorPlanImage = new List<GameObject>();
+        [Header("UI Lists")] public List<GameObject> m_FloorPlanImage = new List<GameObject>();
         public List<GameObject> m_infoPanel_LoungeView = new List<GameObject>();
         public List<GameObject> m_infoPanel_LoungeHeaderButton = new List<GameObject>();
         public List<GameObject> m_infoPanel_ClassView = new List<GameObject>();
@@ -51,14 +50,12 @@ namespace Reference
         public List<QAConfigSO> m_questionList;
         public List<DialogueSO> m_dialogueList;
 
-        [Header("Sprites")] 
-        public Sprite m_expandButton;
+        [Header("Sprites")] public Sprite m_expandButton;
         public Sprite m_collapseButton;
         public Sprite m_locationButton;
         public Sprite m_activeLocationButton;
 
-        [Header("Others")] 
-        public GameObject m_Grid;
+        [Header("Others")] public GameObject m_Grid;
         public GameObject m_waterMark;
         public GameObject m_questionBox;
         public GameObject m_nextQuestionButton;

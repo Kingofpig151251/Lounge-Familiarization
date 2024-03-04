@@ -12,7 +12,6 @@ public class ResetSo
     {
         if (Selection.activeObject is ArrowSO || Selection.activeObject is InfoSO)
         {
-
             if (Selection.assetGUIDs.Length > 0)
             {
                 for (int i = 0; i < Selection.assetGUIDs.Length; i++)

@@ -30,7 +30,6 @@ public class ViewPointManager : Singleton<ViewPointManager>
         GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
         GameEventReference.Instance.OnInteractInfo.AddListener(OnInteractInfo);
         GameEventReference.Instance.OnChangeRegion.AddListener(OnChangeRegion);
-
     }
 
     private void OnEnterViewPoint(params object[] param)
@@ -40,7 +39,6 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
         LayerManager.Instance.m_isLayerActive = false;
     }
-
 
 
     private void OnInteractInfo(params object[] param)
@@ -82,6 +80,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             {
                 Destroy(item);
             }
+
             m_currentIcons.Clear();
         }
 
@@ -97,9 +96,11 @@ public class ViewPointManager : Singleton<ViewPointManager>
             currentObj.transform.localPosition = m_currentViewPoint.m_arrowSO[i].m_position;
             currentObj.transform.localEulerAngles = m_currentViewPoint.m_arrowSO[i].m_rotation;
             currentObj.transform.localScale = m_currentViewPoint.m_arrowSO[i].m_size;
-            currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex = m_currentViewPoint.m_arrowSO[i].m_nextViewPointIndex;
+            currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex =
+                m_currentViewPoint.m_arrowSO[i].m_nextViewPointIndex;
             currentObj.transform.GetComponent<Renderer>().material.renderQueue = 3001;
         }
+
         for (int i = 0; i < m_currentViewPoint.m_infoSO.Length; i++)
         {
             m_currentIcons.Add(currentObj = Instantiate(m_infoObect, m_firstViewPoint.transform));
@@ -122,11 +123,15 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
         Camera.main.GetComponent<RapidBlurEffect>().enabled = true;
 
-        m_currentViewPoint = ViewPointReference.Instance.m_viewPointSO[viewPointIndex + ViewPointReference.Instance.m_loungeStartIndex[(int)m_currentLounge]];
+        m_currentViewPoint =
+            ViewPointReference.Instance.m_viewPointSO[
+                viewPointIndex + ViewPointReference.Instance.m_loungeStartIndex[(int)m_currentLounge]];
 
-        UIElementReference.Instance.m_nextViewPoint.GetComponent<Renderer>().material.SetTexture("mainTexture", m_currentViewPoint.m_texture);
+        UIElementReference.Instance.m_nextViewPoint.GetComponent<Renderer>().material
+            .SetTexture("mainTexture", m_currentViewPoint.m_texture);
 
-        UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, m_currentViewPoint.m_rotation, this.transform.localEulerAngles.z);
+        UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles = new Vector3(
+            this.transform.localEulerAngles.x, m_currentViewPoint.m_rotation, this.transform.localEulerAngles.z);
 
         UIElementReference.Instance.m_waterMark.SetActive(false);
 
@@ -134,12 +139,14 @@ public class ViewPointManager : Singleton<ViewPointManager>
         {
             if (timer >= duration)
             {
-                UIElementReference.Instance.m_firstViewPoint.GetComponent<Renderer>().material.SetTexture("mainTexture", m_currentViewPoint.m_texture);
+                UIElementReference.Instance.m_firstViewPoint.GetComponent<Renderer>().material
+                    .SetTexture("mainTexture", m_currentViewPoint.m_texture);
                 UIElementReference.Instance.m_firstViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", 1);
                 UIElementReference.Instance.m_nextViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", 0);
 
                 Vector3 temp = UIElementReference.Instance.m_firstViewPoint.transform.localEulerAngles;
-                UIElementReference.Instance.m_firstViewPoint.transform.localEulerAngles = UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles;
+                UIElementReference.Instance.m_firstViewPoint.transform.localEulerAngles =
+                    UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles;
                 UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles = temp;
 
                 UIElementReference.Instance.m_waterMark.SetActive(true);
@@ -148,10 +155,13 @@ public class ViewPointManager : Singleton<ViewPointManager>
             else
             {
                 timer += Time.deltaTime;
-                UIElementReference.Instance.m_firstViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(1f, 0f, timer / duration));
-                UIElementReference.Instance.m_nextViewPoint.GetComponent<MeshRenderer>().material.SetFloat("Alpha", Mathf.Lerp(0f, 1f, timer / duration));
+                UIElementReference.Instance.m_firstViewPoint.GetComponent<MeshRenderer>().material
+                    .SetFloat("Alpha", Mathf.Lerp(1f, 0f, timer / duration));
+                UIElementReference.Instance.m_nextViewPoint.GetComponent<MeshRenderer>().material
+                    .SetFloat("Alpha", Mathf.Lerp(0f, 1f, timer / duration));
                 Camera.main.fieldOfView = (150f - fEffectReduceVal) - (timer / duration) * (90f - fEffectReduceVal);
             }
+
             yield return null;
         }
 
@@ -171,6 +181,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         {
             Destroy(item);
         }
+
         m_currentIcons.Clear();
 
         GameObject currentObj;
@@ -183,6 +194,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
             currentObj.GetComponent<InterfaceItem_Arrow>().m_nextViewPointIndex = t.m_nextViewPointIndex;
             currentObj.transform.GetComponent<Renderer>().material.renderQueue = 3001;
         }
+
         foreach (var t in m_currentViewPoint.m_infoSO)
         {
             m_currentIcons.Add(currentObj = Instantiate(m_infoObect, m_firstViewPoint.transform));
@@ -207,16 +219,19 @@ public class ViewPointManager : Singleton<ViewPointManager>
         for (var i = 0; i < arrows.Length; i++)
         {
             var recordedPosition = arrows[i].transform.localPosition;
-            var path = $"Assets/ScriptableObject/Arrow/Pier_Business/VP{Instance.m_currentViewPoint.m_index}/VP{Instance.m_currentViewPoint.m_index} Arrow {i}.asset";
+            var path =
+                $"Assets/ScriptableObject/Arrow/Pier_Business/VP{Instance.m_currentViewPoint.m_index}/VP{Instance.m_currentViewPoint.m_index} Arrow {i}.asset";
             var targetAsset = AssetDatabase.LoadAssetAtPath<ArrowSO>(path);
             if (targetAsset is null)
             {
                 Debug.LogWarning($"Asset not found at {path}");
                 continue;
             }
+
             targetAsset.m_position = recordedPosition;
             EditorUtility.SetDirty(targetAsset);
         }
+
         AssetDatabase.StopAssetEditing(); // Stupid Unity
         AssetDatabase.SaveAssets();
     }

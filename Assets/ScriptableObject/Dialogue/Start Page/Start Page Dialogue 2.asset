@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc3035813af15e40a8b17e5342cd24a, type: 3}
   m_Name: Start Page Dialogue 2
   m_EditorClassIdentifier: 
-  m_messageEng: Hong Kong International Airport (HKIA) is our travel hub, and the
+  m_messageEng: 'Hong Kong International Airport (HKIA) is our travel hub, and the
     airport is home to some of our most beautiful and award-winning lounges.
+
+'
   m_messageSC: "\u56FD\u6CF0\u822A\u7A7A\u4EE5\u9999\u6E2F\u4F5C\u4E3A\u822A\u8FD0\u67A2\u7EBD\uFF0C\u65D7\u4E0B\u6570\u4E2A\u6700\u9AD8\u7EA7\u7684\u4E13\u5C5E\u8D35\u5BBE\u5BA4\u4EA6\u8BBE\u5728\u8FD9\u91CC\u3002"
-  m_messageTC: "\u570B\u6CF0\u822A\u7A7A\u4EE5\u9999\u6E2F\u4F5C\u70BA\u822A\u904B\u6A1E\u9215\uFF0C\u65D7\u4E0B\u6578\u500B\u6700\u9AD8\u7D1A\u7684\u5C08\u5C6C\u8CB4\u8CD3\u5BA4\u4EA6\u8A2D\u5728\u9019\u88E1\u3002"
+  m_messageTC: "\u570B\u6CF0\u822A\u7A7A\u4EE5\u9999\u6E2F\u4F5C\u70BA\u822A\u904B\u6A1E\u9215\uFF0C\u65D7\u4E0B\u6578\u500B\u6700\u9AD8\u7D1A\u7684\u5C08\u5C6C\u8CB4\u8CD3\u5BA4\u4EA6\u8A2D\u5728\u9019\u88E1\u3002\r"
