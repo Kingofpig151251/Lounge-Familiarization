@@ -1,7 +1,5 @@
 using Reference;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Rendering;
 
 public class UIElementSystem : MonoBehaviour
 {
@@ -68,8 +66,24 @@ public class UIElementSystem : MonoBehaviour
 
     #endregion
 
-    public void OnClickNeedAnswerButton() =>
+    public void OnClickNeedAnswerButton()
+    {
         GameEventReference.Instance.OnEnterViewPoint.Trigger(
             NavigateManager.Instance.GetCurrentTaskSO().m_navigateIndex[0]);
+        UIElementReference.Instance.m_nextTaskButton.SetActive(true);
+        UIElementReference.Instance.m_confirmButton.SetActive(false);
+    }
 
+    public void SkipIntroduce()
+    {
+        UIElementReference.Instance.m_IntroducePanel.SetActive(false);
+        UIElementReference.Instance.m_CityMapPanel.SetActive(true);
+    }
+
+    public void ClickNextTaskButton()
+    {
+        NavigateManager.Instance.GenerateTask();
+        UIElementReference.Instance.m_nextTaskButton.SetActive(false);
+        UIElementReference.Instance.m_confirmButton.SetActive(true);
+    }
 }

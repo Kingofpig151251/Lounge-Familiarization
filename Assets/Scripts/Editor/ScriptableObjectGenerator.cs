@@ -1,10 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
-using System.Linq;
+﻿using UnityEngine;
 #if UNITY_EDITOR
-using Unity.VisualScripting;
 using UnityEditor;
 
 public class Test1

@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using Reference;
-using TMPro;
 using UnityEngine;
 
 public class NavigateManager : Singleton<NavigateManager>
@@ -9,6 +6,7 @@ public class NavigateManager : Singleton<NavigateManager>
     private int m_correctRate = 0;
     private int m_totalQuestionGenerate = 0;
     private int m_questionIndex;
+    private int m_previousQuestionIndex;
 
     private TaskSO m_currentTaskSO;
 
@@ -23,6 +21,7 @@ public class NavigateManager : Singleton<NavigateManager>
         GameEventReference.Instance.OnExitNavigatePhase.AddListener(OnExitNavigatePhase);
         GameEventReference.Instance.OnConfirmNavigate.AddListener(OnConfirmNavigate);
         GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
+        GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
     }
 
     private void OnEnterNavigatePhase(params object[] param)
@@ -48,11 +47,12 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             ++m_correctRate;
             UIElementReference.Instance.m_correctPanel.SetActive(true);
-        }else
+        }
+        else
         {
             UIElementReference.Instance.m_wrongPanel.SetActive(true);
         }
-        
+
         ChangeCorrectRateText();
     }
 
@@ -64,7 +64,7 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             UpdateTaskText(language);
         }
-        
+
         ChangeCorrectRateText();
     }
 
@@ -95,17 +95,15 @@ public class NavigateManager : Singleton<NavigateManager>
     {
         System.DateTime now = System.DateTime.Now;
 
-        //do
-        //{
+        do
+        {
+            int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
+            Random.InitState(seed);
+            m_questionIndex = Mathf.Clamp(Random.Range(0, TaskReference.Instance.m_taskConfigSO.Count), 0,
+                TaskReference.Instance.m_taskConfigSO.Count - 1);
+        } while (!isQuestionIndexPremit());
 
-        int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
-        Random.InitState(seed);
-        m_questionIndex = Mathf.Clamp(Random.Range(0, TaskReference.Instance.m_taskConfigSO.Count), 0,
-            TaskReference.Instance.m_taskConfigSO.Count - 1);
-
-
-        //} while (isQuestionIndexPremit());
-
+        m_previousQuestionIndex = m_questionIndex;
         m_currentTaskSO = TaskReference.Instance.m_taskConfigSO[m_questionIndex];
         UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
     }
@@ -128,27 +126,17 @@ public class NavigateManager : Singleton<NavigateManager>
 
     private bool isQuestionIndexPremit()
     {
-        switch (m_questionIndex)
+        if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_lounge == ViewPointManager.Instance.m_currentLounge && m_previousQuestionIndex != m_questionIndex)
         {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 10:
-            default:
-                return true;
+            return true;
         }
+
+        return false;
     }
 
     private void OnGameReset(params object[] param)
     {
-        m_correctRate = 0;
-        m_totalQuestionGenerate = 0;
+        UIElementReference.Instance.m_navigatePanel.SetActive(false);
     }
 
     public TaskSO GetCurrentTaskSO() => m_currentTaskSO;

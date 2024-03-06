@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 public static class Class_PlayMode
 {
     public const int ViewMode = 1;

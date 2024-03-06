@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using Reference;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
 
 public class TestPanelManager : Singleton<TestPanelManager>

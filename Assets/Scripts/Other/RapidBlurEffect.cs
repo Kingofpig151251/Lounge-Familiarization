@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 //设置在编辑模式下也执行该脚本
 [ExecuteInEditMode]

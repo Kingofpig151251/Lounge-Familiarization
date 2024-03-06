@@ -100,7 +100,8 @@ public class GameManager : Singleton<GameManager>
             switch (m_currentLanguage)
             {
                 case Class_Language.English:
-                    UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color =
+                        new Color(0, 0, 0, 0.5f);
                     break;
                 case Class_Language.SimplifiedChinese:
                     UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c32e86d71c29824eab56801473f2756, type: 3}
-  m_Name: TaskConfig 3
+  m_Name: TaskConfig 7
   m_EditorClassIdentifier: 
-  m_lounge: 1
-  m_question_TC: "\u8D77\u98DB\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u88E1\u68B3\u6D17\u4E00\u4E0B\uFF1F"
-  m_question_SC: "\u8D77\u98DE\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u91CC\u68B3\u6D17\u4E00\u4E0B\uFF1F"
-  m_question_ENG: 'Where can I freshen up myself before my flight? '
-  m_navigateIndex: 0a000000
+  m_lounge: 3
+  m_question_TC: "\u822A\u73ED\u8D77\u98DB\u524D\u54EA\u88E1\u53EF\u5403\u4E00\u9813\u96C5\u7DFB\u7684\u9910\u98F2\uFF1F"
+  m_question_SC: "\u822A\u73ED\u8D77\u98DE\u524D\u54EA\u91CC\u53EF\u5403\u4E00\u987F\u96C5\u81F4\u7684\u9910\u996E\uFF1F"
+  m_question_ENG: Where can I enjoy a decent meal before my journey?
+  m_navigateIndex: 
