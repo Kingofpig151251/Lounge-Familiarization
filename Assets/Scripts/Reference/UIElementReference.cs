@@ -35,6 +35,7 @@ namespace Reference
         public GameObject m_confirmNavigateButton;
         public GameObject m_popupWindowEnterButton;
         public GameObject m_popupWindowExitButton;
+        public GameObject m_OkButton;
 
         [Header("UI Texts")] public TextMeshProUGUI m_taskText;
         public TextMeshProUGUI m_taskCorrectRate;
@@ -62,5 +63,8 @@ namespace Reference
         public GameObject m_taskList;
         public GameObject m_popupWindowTitle;
         public GameObject m_popupWindowMessage;
+
+        [Header("SO")]
+        public InfoSO m_LoungeInfoSo;
     }
 }

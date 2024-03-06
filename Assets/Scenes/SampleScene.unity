@@ -1413,7 +1413,7 @@ RectTransform:
   - {fileID: 506556425}
   - {fileID: 339953598}
   m_Father: {fileID: 866048537}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15372,6 +15372,7 @@ MonoBehaviour:
   m_confirmNavigateButton: {fileID: 1496797605}
   m_popupWindowEnterButton: {fileID: 112083825}
   m_popupWindowExitButton: {fileID: 756514507}
+  m_OkButton: {fileID: 436645175}
   m_taskText: {fileID: 1313445804}
   m_taskCorrectRate: {fileID: 1786906110}
   m_FloorPlanImage:
@@ -15464,6 +15465,7 @@ MonoBehaviour:
   m_taskList: {fileID: 54485665208756942}
   m_popupWindowTitle: {fileID: 862365584}
   m_popupWindowMessage: {fileID: 462819589}
+  m_LoungeInfoSo: {fileID: 11400000, guid: 878ca6a5b3bbc1b40b72c9cf990ae5da, type: 2}
 --- !u!114 &732346932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18600,11 +18602,11 @@ RectTransform:
   m_Children:
   - {fileID: 999875642}
   - {fileID: 1603669864}
+  - {fileID: 1725054458}
   - {fileID: 1891105182}
   - {fileID: 1217643729}
   - {fileID: 73900606}
   - {fileID: 2039123099}
-  - {fileID: 1725054458}
   m_Father: {fileID: 401536481}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25421,7 +25423,7 @@ RectTransform:
   m_Children:
   - {fileID: 350800289}
   m_Father: {fileID: 866048537}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25481,7 +25483,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 12
+          m_StringArgument: 13
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1217643731
@@ -36298,7 +36300,7 @@ RectTransform:
   - {fileID: 1802834466}
   - {fileID: 1424371010}
   m_Father: {fileID: 866048537}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36358,7 +36360,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 10
+          m_StringArgument: 13
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1725054460
@@ -39173,7 +39175,7 @@ RectTransform:
   - {fileID: 1360139693}
   - {fileID: 470510056}
   m_Father: {fileID: 866048537}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39233,7 +39235,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 11
+          m_StringArgument: 13
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1891105184
@@ -42937,7 +42939,7 @@ RectTransform:
   m_Children:
   - {fileID: 2001817609}
   m_Father: {fileID: 866048537}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -42997,7 +42999,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 14
+          m_StringArgument: 13
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2039123101

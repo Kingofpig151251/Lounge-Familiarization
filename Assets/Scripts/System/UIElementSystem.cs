@@ -1,5 +1,7 @@
 using Reference;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class UIElementSystem : MonoBehaviour
 {
@@ -69,4 +71,5 @@ public class UIElementSystem : MonoBehaviour
     public void OnClickNeedAnswerButton() =>
         GameEventReference.Instance.OnEnterViewPoint.Trigger(
             NavigateManager.Instance.GetCurrentTaskSO().m_navigateIndex[0]);
+
 }

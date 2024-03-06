@@ -1,6 +1,7 @@
 using Reference;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -64,11 +65,21 @@ public class GameManager : Singleton<GameManager>
 
     private void OnChangeRegion(params object[] param)
     {
+        InfoSO info = UIElementReference.Instance.m_LoungeInfoSo;
+
         m_isCityMapPanelActive = false;
         if (m_is360FristTime)
         {
             UIElementReference.Instance.m_360teachingPanel.SetActive(true);
+            UIElementReference.Instance.m_OkButton.GetComponent<Button>().onClick.AddListener(delegate
+            {
+                GameEventReference.Instance.OnInteractInfo.Trigger(info);
+            });
             m_is360FristTime = false;
+        }
+        else
+        {
+            GameEventReference.Instance.OnInteractInfo.Trigger(info);
         }
     }
 
@@ -117,4 +128,5 @@ public class GameManager : Singleton<GameManager>
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;
     public int GetCurrentMode() => m_CurrentMode;
     public int GetCurrentLanguage() => m_currentLanguage;
+    public bool GetIsFirstEnter() => m_is360FristTime;
 }
