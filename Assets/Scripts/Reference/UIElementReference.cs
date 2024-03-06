@@ -21,9 +21,9 @@ namespace Reference
         public GameObject m_wrongPanel;
 
         [Header("UI Buttons")] public GameObject m_InfoPanelExpandButton;
-        public GameObject m_ButtonENG;
-        public GameObject m_ButtonSC;
-        public GameObject m_ButtonTC;
+        public List<GameObject> m_ButtonENG;
+        public List<GameObject> m_ButtonSC;
+        public List<GameObject> m_ButtonTC;
         public GameObject m_GameModeSwitcher;
         public GameObject m_FloorPlanButton;
         public GameObject m_firstViewPoint;

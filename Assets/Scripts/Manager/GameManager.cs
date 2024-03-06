@@ -81,20 +81,23 @@ public class GameManager : Singleton<GameManager>
 
     private void HiedLanguageButton()
     {
-        UIElementReference.Instance.m_ButtonENG.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
-        UIElementReference.Instance.m_ButtonSC.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
-        UIElementReference.Instance.m_ButtonTC.GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
-        switch (m_currentLanguage)
+        for (int i = 0; i < UIElementReference.Instance.m_ButtonSC.Count; i++)
         {
-            case Class_Language.English:
-                UIElementReference.Instance.m_ButtonENG.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
-                break;
-            case Class_Language.SimplifiedChinese:
-                UIElementReference.Instance.m_ButtonSC.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
-                break;
-            case Class_Language.TraditionalChinese:
-                UIElementReference.Instance.m_ButtonTC.GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
-                break;
+            UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+            UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+            UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+            switch (m_currentLanguage)
+            {
+                case Class_Language.English:
+                    UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    break;
+                case Class_Language.SimplifiedChinese:
+                    UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    break;
+                case Class_Language.TraditionalChinese:
+                    UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    break;
+            }
         }
     }
 
