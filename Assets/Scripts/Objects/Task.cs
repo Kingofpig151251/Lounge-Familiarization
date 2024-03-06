@@ -5,7 +5,7 @@ public class Task
 {
     public readonly GameObject TaskListItem;
     public LanguagePlus TaskName;
-    
+
     public Task(ref GameObject taskListItem, LanguagePlus taskName)
     {
         TaskListItem = taskListItem;

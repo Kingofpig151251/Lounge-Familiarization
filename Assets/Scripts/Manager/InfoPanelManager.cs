@@ -10,7 +10,8 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
     private bool[] m_isLoungeHeaderExpanded = { false, false, false };
     private bool[] m_isClassHeaderExpanded = { false, false, false, false, false, false };
 
-    private float[] m_loungeViewSizeYOffset = { 100, 100, 45 }; //each class need 45px eg. first class(45px) + business(45px) = 90px
+    private float[]
+        m_loungeViewSizeYOffset = { 100, 100, 45 }; //each class need 45px eg. first class(45px) + business(45px) = 90px
 
     private float[] m_loungeViewSizeY = new float[5];
 
@@ -22,7 +23,8 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
     {
         for (int i = 0; i < UIElementReference.Instance.m_infoPanel_ClassView.Count; i++)
         {
-            m_loungeViewSizeY[i] = UIElementReference.Instance.m_infoPanel_ClassView[i].transform.childCount * m_viewportSizeY;
+            m_loungeViewSizeY[i] = UIElementReference.Instance.m_infoPanel_ClassView[i].transform.childCount *
+                                   m_viewportSizeY;
         }
 
         SetUpListeners();
@@ -53,14 +55,17 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         if (!m_isPanelExpanded)
         {
             StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, panelWidth / 2, -panelWidth));
-            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_expandButton;
+            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite =
+                UIElementReference.Instance.m_expandButton;
         }
         else
         {
             StartCoroutine(ChangeViewLocationX(UIElementReference.Instance.m_InfoPanel, -panelWidth / 2, panelWidth));
-            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_collapseButton;
+            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite =
+                UIElementReference.Instance.m_collapseButton;
         }
     }
+
     private void OnClickLoungeHeader(params object[] param)
     {
         int headerIndex = (int)param[0];
@@ -73,11 +78,15 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         m_isLoungeHeaderExpanded[headerIndex] = !m_isLoungeHeaderExpanded[headerIndex];
         StartRotateButton(UIElementReference.Instance.m_infoPanel_LoungeHeaderButton[headerIndex]);
 
-        float targetDeltaSizeY = m_isLoungeHeaderExpanded[headerIndex] ? m_loungeViewSizeYOffset[headerIndex] : -m_loungeViewSizeYOffset[headerIndex];
+        float targetDeltaSizeY = m_isLoungeHeaderExpanded[headerIndex]
+            ? m_loungeViewSizeYOffset[headerIndex]
+            : -m_loungeViewSizeYOffset[headerIndex];
 
         GameObject LoungeView = UIElementReference.Instance.m_infoPanel_LoungeView[headerIndex];
-        StartCoroutine(ChangeViewSize(LoungeView, LoungeView.GetComponent<RectTransform>().sizeDelta.y, targetDeltaSizeY));
+        StartCoroutine(ChangeViewSize(LoungeView, LoungeView.GetComponent<RectTransform>().sizeDelta.y,
+            targetDeltaSizeY));
     }
+
     private void OnClickClassHeader(params object[] param)
     {
         int classIndex = (int)param[0];
@@ -92,7 +101,9 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
         float targetDeltaSizeY = -1f;
 
-        GameObject nextClassView = classIndex + 1 >= UIElementReference.Instance.m_infoPanel_ClassHeader.Count ? null : UIElementReference.Instance.m_infoPanel_ClassHeader[classIndex + 1];
+        GameObject nextClassView = classIndex + 1 >= UIElementReference.Instance.m_infoPanel_ClassHeader.Count
+            ? null
+            : UIElementReference.Instance.m_infoPanel_ClassHeader[classIndex + 1];
         GameObject LoungeView = UIElementReference.Instance.m_infoPanel_LoungeView[classIndex / 2];
 
 
@@ -100,14 +111,16 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         {
             case 0:
                 targetDeltaSizeY = m_isClassHeaderExpanded[classIndex] ? m_loungeViewSizeY[0] : -m_loungeViewSizeY[0];
-                StartCoroutine(ChangeViewLocationY(nextClassView, nextClassView.GetComponent<RectTransform>().anchoredPosition.y, -targetDeltaSizeY));
+                StartCoroutine(ChangeViewLocationY(nextClassView,
+                    nextClassView.GetComponent<RectTransform>().anchoredPosition.y, -targetDeltaSizeY));
                 break;
             case 1:
                 targetDeltaSizeY = m_isClassHeaderExpanded[classIndex] ? m_loungeViewSizeY[1] : -m_loungeViewSizeY[1];
                 break;
             case 2:
                 targetDeltaSizeY = m_isClassHeaderExpanded[classIndex] ? m_loungeViewSizeY[2] : -m_loungeViewSizeY[2];
-                StartCoroutine(ChangeViewLocationY(nextClassView, nextClassView.GetComponent<RectTransform>().anchoredPosition.y, -targetDeltaSizeY));
+                StartCoroutine(ChangeViewLocationY(nextClassView,
+                    nextClassView.GetComponent<RectTransform>().anchoredPosition.y, -targetDeltaSizeY));
                 break;
             case 3:
                 targetDeltaSizeY = m_isClassHeaderExpanded[classIndex] ? m_loungeViewSizeY[3] : -m_loungeViewSizeY[3];
@@ -120,8 +133,10 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         m_loungeViewSizeYOffset[classIndex / 2] += targetDeltaSizeY;
 
         GameObject ClassView = UIElementReference.Instance.m_infoPanel_ClassView[classIndex];
-        StartCoroutine(ChangeViewSize(LoungeView, LoungeView.GetComponent<RectTransform>().sizeDelta.y, targetDeltaSizeY));
-        StartCoroutine(ChangeViewSize(ClassView, ClassView.GetComponent<RectTransform>().sizeDelta.y, targetDeltaSizeY));
+        StartCoroutine(ChangeViewSize(LoungeView, LoungeView.GetComponent<RectTransform>().sizeDelta.y,
+            targetDeltaSizeY));
+        StartCoroutine(ChangeViewSize(ClassView, ClassView.GetComponent<RectTransform>().sizeDelta.y,
+            targetDeltaSizeY));
     }
 
     private void StartRotateButton(GameObject button)
@@ -129,7 +144,6 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         if (button.GetComponent<RectTransform>().rotation.eulerAngles.z == 0f)
         {
             StartCoroutine(RotateButton(button, 0f, -180f));
-
         }
         else if (button.GetComponent<RectTransform>().rotation.eulerAngles.z == 180f)
         {
@@ -157,8 +171,10 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
             GameObject infoPanel = UIElementReference.Instance.m_InfoPanel;
             float panelWidth = UIElementReference.Instance.m_InfoPanel.GetComponent<RectTransform>().sizeDelta.x;
-            infoPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(-panelWidth / 2, infoPanel.GetComponent<RectTransform>().anchoredPosition.y);
-            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite = UIElementReference.Instance.m_collapseButton;
+            infoPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(-panelWidth / 2,
+                infoPanel.GetComponent<RectTransform>().anchoredPosition.y);
+            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite =
+                UIElementReference.Instance.m_collapseButton;
         }
     }
 
@@ -171,6 +187,7 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
                 ClosePanel();
                 break;
             }
+
             yield return null;
         }
     }
@@ -198,9 +215,11 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
                 currentAngleZ = Mathf.Lerp(originalTargetAngleZ, targetAngleZ, timeCounter / duration);
                 button.GetComponent<RectTransform>().rotation = Quaternion.Euler(new Vector3(0, 0, currentAngleZ));
             }
+
             yield return null;
         }
     }
+
     private IEnumerator ChangeViewLocationX(GameObject view, float originalPosX, float targetPosX)
     {
         m_isAnimating = true;
@@ -215,18 +234,22 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
             if (timeCounter >= duration)
             {
-                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(originalPosX + targetPosX, view.GetComponent<RectTransform>().anchoredPosition.y);
+                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(originalPosX + targetPosX,
+                    view.GetComponent<RectTransform>().anchoredPosition.y);
                 m_isAnimating = false;
                 break;
             }
             else
             {
                 currentPosX = Mathf.Lerp(0, targetPosX, timeCounter / duration);
-                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(originalPosX + currentPosX, view.GetComponent<RectTransform>().anchoredPosition.y);
+                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(originalPosX + currentPosX,
+                    view.GetComponent<RectTransform>().anchoredPosition.y);
             }
+
             yield return null;
         }
     }
+
     private IEnumerator ChangeViewLocationY(GameObject view, float originalPosY, float targetPosY)
     {
         m_isAnimating = true;
@@ -241,18 +264,22 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
             if (timeCounter >= duration)
             {
-                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(view.GetComponent<RectTransform>().anchoredPosition.x, originalPosY + targetPosY);
+                view.GetComponent<RectTransform>().anchoredPosition =
+                    new Vector2(view.GetComponent<RectTransform>().anchoredPosition.x, originalPosY + targetPosY);
                 m_isAnimating = false;
                 break;
             }
             else
             {
                 currentPosY = Mathf.Lerp(0, targetPosY, timeCounter / duration);
-                view.GetComponent<RectTransform>().anchoredPosition = new Vector2(view.GetComponent<RectTransform>().anchoredPosition.x, originalPosY + currentPosY);
+                view.GetComponent<RectTransform>().anchoredPosition =
+                    new Vector2(view.GetComponent<RectTransform>().anchoredPosition.x, originalPosY + currentPosY);
             }
+
             yield return null;
         }
     }
+
     private IEnumerator ChangeViewSize(GameObject view, float originalSizeY, float targetSizeY)
     {
         m_isAnimating = true;
@@ -268,15 +295,18 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
 
             if (timeCounter >= duration)
             {
-                view.GetComponent<RectTransform>().sizeDelta = new Vector2(view.GetComponent<RectTransform>().sizeDelta.x, originalSizeY + targetSizeY);
+                view.GetComponent<RectTransform>().sizeDelta =
+                    new Vector2(view.GetComponent<RectTransform>().sizeDelta.x, originalSizeY + targetSizeY);
                 m_isAnimating = false;
                 break;
             }
             else
             {
                 currentSizeY = Mathf.Lerp(0, targetSizeY, timeCounter / duration);
-                view.GetComponent<RectTransform>().sizeDelta = new Vector2(view.GetComponent<RectTransform>().sizeDelta.x, originalSizeY + currentSizeY);
+                view.GetComponent<RectTransform>().sizeDelta =
+                    new Vector2(view.GetComponent<RectTransform>().sizeDelta.x, originalSizeY + currentSizeY);
             }
+
             yield return null;
         }
     }

@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class FloorPlanManager : Singleton<FloorPlanManager>
 {
     private bool m_isFloorPlanPanelActive = false;
-    private bool m_isFirstClass = true;
     private int m_currentViewPointIndex = 0;
 
     private void Start()

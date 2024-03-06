@@ -19,7 +19,8 @@ namespace Manager
         // Register event listeners
         private void RegisterEvents()
         {
-            GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.AddListener(OnFeaturePointListExpandButtonClicked);
+            GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.AddListener(
+                OnFeaturePointListExpandButtonClicked);
             GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
             GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
         }

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Deck_Business VP15 Info
+  m_EditorClassIdentifier: 
+  m_position: {x: 2, y: 0, z: -1}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Noodle Bar
+  m_title_TC: "\u98A8\u5473\u574A"
+  m_title_SC: "\u98CE\u5473\u574A"
+  m_content_ENG: "Dine in comfort and style at our iconic Noodle Bar which is an
+    open-kitchen concept that serves a selection of local classics, plus regional
+    and Asian specialties such as Sichuanese\_Dan Dan\_noodles, Singapore Laksa,
+    and Taiwanese beef noodles.  \n\nOur noodle dish selections are freshly made-to-order
+    and rotate regularly. \_Savour popular, locally inspired dishes including dumplings,\_char
+    siu\_buns,\_and two of Hong Kong's favourites: wonton noodle soup and fish ball
+    noodle soup.\r"
+  m_content_TC: "\u4EAB\u8CA0\u76DB\u540D\u7684\u300C\u98A8\u5473\u574A\u300D\u4EE5\u958B\u653E\u5F0F\u5EDA\u623F\u8A2D\u8A08\uFF0C\u8B93\u65C5\u5BA2\u8212\u9069\u5730\u7D30\u5473\u591A\u6B3E\u5730\u9053\u7D93\u5178\u83DC\u5F0F\uFF0C\u9084\u6709\u4E9E\u6D32\u7279\u8272\u7F8E\u98DF\u5982\u56DB\u5DDD\u64D4\u64D4\u9EB5\u3001\u65B0\u52A0\u5761\u53FB\u6C99\u53CA\u53F0\u7063\u725B\u8089\u9EB5\u3002\n\r\n\u6211\u5011\u70BA\u65C5\u5BA2\u70F9\u8ABF\u5373\u9EDE\u5373\u88FD\u9EB5\u98DF\uFF0C\u6B3E\u5F0F\u4EA6\u6703\u5B9A\u671F\u66F4\u65B0\u3002\u53E6\u5916\u66F4\u6709\u5EE3\u53D7\u6B61\u8FCE\u7684\u5730\u9053\u7F8E\u98DF\uFF0C\u7576\u4E2D\u5305\u62EC\u9903\u5B50\u3001\u53C9\u71D2\u5305\uFF0C\u4EE5\u53CA\u9999\u6E2F\u71B1\u9580\u4E4B\u9078\u7684\u96F2\u541E\u9EB5\u548C\u9B5A\u86CB\u6E6F\u9EB5\u3002\r"
+  m_content_SC: "\u4EAB\u8D1F\u76DB\u540D\u7684\u300C\u98CE\u5473\u574A\u300D\u4EE5\u5F00\u653E\u5F0F\u53A8\u623F\u8BBE\u8BA1\uFF0C\u8BA9\u65C5\u5BA2\u8212\u9002\u5730\u7EC6\u5473\u591A\u6B3E\u5730\u9053\u7ECF\u5178\u83DC\u5F0F\uFF0C\u8FD8\u6709\u4E9A\u6D32\u7279\u8272\u7F8E\u98DF\u5982\u56DB\u5DDD\u62C5\u62C5\u9762\u3001\u65B0\u52A0\u5761\u53FB\u6C99\u53CA\u53F0\u6E7E\u725B\u8089\u9762\u3002\r\n\r\n\u6211\u4EEC\u4E3A\u65C5\u5BA2\u70F9\u8C03\u5373\u70B9\u5373\u5236\u9762\u98DF\uFF0C\u6B3E\u5F0F\u4EA6\u4F1A\u5B9A\u671F\u66F4\u65B0\u3002
+    \u53E6\u5916\u66F4\u6709\u5E7F\u53D7\u6B22\u8FCE\u7684\u5730\u9053\u7F8E\u98DF\uFF0C\u5F53\u4E2D\u5305\u62EC\u997A\u5B50\u3001\u53C9\u70E7\u5305\uFF0C\u4EE5\u53CA\u9999\u6E2F\u70ED\u95E8\u4E4B\u9009\u7684\u4E91\u541E\u9762\u548C\u9C7C\u86CB\u6C64\u9762\u3002"

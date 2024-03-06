@@ -62,7 +62,28 @@ public class UIElementSystem : MonoBehaviour
     public void OnClickFeatureListExpand(ViewPoint vp) =>
         GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
 
-    public void OnOpenTeachingPanel() => UIElementReference.Instance.m_teachingPanel.SetActive(false);
+    public void Deactive(GameObject gameObject) => gameObject.SetActive(false);
 
     #endregion
+
+    public void OnClickNeedAnswerButton()
+    {
+        GameEventReference.Instance.OnEnterViewPoint.Trigger(
+            NavigateManager.Instance.GetCurrentTaskSO().m_navigateIndex[0]);
+        UIElementReference.Instance.m_nextTaskButton.SetActive(true);
+        UIElementReference.Instance.m_confirmButton.SetActive(false);
+    }
+
+    public void SkipIntroduce()
+    {
+        UIElementReference.Instance.m_IntroducePanel.SetActive(false);
+        UIElementReference.Instance.m_CityMapPanel.SetActive(true);
+    }
+
+    public void ClickNextTaskButton()
+    {
+        NavigateManager.Instance.GenerateTask();
+        UIElementReference.Instance.m_nextTaskButton.SetActive(false);
+        UIElementReference.Instance.m_confirmButton.SetActive(true);
+    }
 }

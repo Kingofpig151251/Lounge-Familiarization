@@ -12,10 +12,12 @@ public class UIElement_LoungeHeader : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(OnClick);
     }
+
     private void OnClick()
     {
         GameEventReference.Instance.OnClickHeaderButton.Trigger(m_index);
     }
+
     private void OnDestroy()
     {
         GetComponent<Button>().onClick.RemoveAllListeners();

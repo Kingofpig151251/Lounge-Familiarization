@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -49,14 +47,17 @@ public class CameraController : Singleton<CameraController>
         {
             m_cameraRotationX -= m_rotationSpeed * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.S))
         {
             m_cameraRotationX += m_rotationSpeed * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.A))
         {
             m_cameraRotationY -= m_rotationSpeed * Time.deltaTime;
         }
+
         if (Input.GetKey(KeyCode.D))
         {
             m_cameraRotationY += m_rotationSpeed * Time.deltaTime;

@@ -15,7 +15,6 @@ namespace Manager
         private bool m_isCoroutineRunning = false;
         [SerializeField] private float delay = 0.01f; // adjust the delay for the text to appear speed
 
-
         private void Start()
         {
             GameEventReference.Instance.OnClickIntroducePanelNextButton.AddListener(OnClickNextButton);
@@ -52,7 +51,7 @@ namespace Manager
             m_currentDialogueIndex++;
             if (m_currentDialogueIndex == list.Count)
             {
-                Destroy(UIElementReference.Instance.m_IntroducePanel);
+                UIElementReference.Instance.m_IntroducePanel.SetActive(false);
                 UIElementReference.Instance.m_CityMapPanel.SetActive(true);
                 m_currentDialogueIndex = 0;
             }
@@ -66,6 +65,8 @@ namespace Manager
         // Update the dialogue and start a new coroutine when the language changes
         private void OnLanguageChanged(params object[] param)
         {
+            if (m_isCoroutineRunning)
+                return;
             SetCurrentLanguage((int)param[0]);
             StartCoroutine(RefreshDisplay());
         }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c32e86d71c29824eab56801473f2756, type: 3}
   m_Name: TaskConfig 0
   m_EditorClassIdentifier: 
-  m_Regionid: 0
+  m_lounge: 0
   m_question_TC: "\u54EA\u88E1\u53EF\u4EE5\u770B\u5230\u822A\u904B\u5927\u6A13\u548C\u8DD1\u9053\u7684\u7F8E\u9E97\u666F\u8272\uFF1F"
   m_question_SC: "\u54EA\u91CC\u53EF\u4EE5\u770B\u5230\u822A\u8FD0\u5927\u697C\u548C\u8DD1\u9053\u7684\u7F8E\u4E3D\u666F\u8272?"
   m_question_ENG: 'Where can I see the magnificent view of the terminal and the runway?   '
-  m_navigateIndex: 050000000a00000006000000
+  m_navigateIndex: 050000000a0000000600000011000000

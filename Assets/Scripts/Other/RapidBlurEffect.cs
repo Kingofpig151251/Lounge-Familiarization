@@ -1,6 +1,4 @@
-﻿
-using UnityEngine;
-using System.Collections;
+﻿using UnityEngine;
 
 //设置在编辑模式下也执行该脚本
 [ExecuteInEditMode]
@@ -9,8 +7,9 @@ using System.Collections;
 public class RapidBlurEffect : MonoBehaviour
 {
     //-------------------变量声明部分-------------------
+
     #region Variables
-    
+
     //指定Shader名称
     private string ShaderName = "Learning Unity Shader/Lecture 15/RapidBlurEffect";
 
@@ -26,9 +25,11 @@ public class RapidBlurEffect : MonoBehaviour
     //降采样次数
     [Range(0, 6), Tooltip("[降采样次数]向下采样的次数。此值越大,则采样间隔越大,需要处理的像素点越少,运行速度越快。")]
     public int DownSampleNum = 2;
+
     //模糊扩散度
     [Range(0.0f, 20.0f), Tooltip("[模糊扩散度]进行高斯模糊时，相邻像素点的间隔。此值越大相邻像素间隔越远，图像越模糊。但过大的值会导致失真。")]
     public float BlurSpreadSize = 3.0f;
+
     //迭代次数
     [Range(0, 8), Tooltip("[迭代次数]此值越大,则模糊操作的迭代次数越多，模糊效果越好，但消耗越大。")]
     public int BlurIterations = 3;
@@ -36,7 +37,9 @@ public class RapidBlurEffect : MonoBehaviour
     #endregion
 
     //-------------------------材质的get&set----------------------------
+
     #region MaterialGetAndSet
+
     Material material
     {
         get
@@ -46,12 +49,15 @@ public class RapidBlurEffect : MonoBehaviour
                 CurMaterial = new Material(CurShader);
                 CurMaterial.hideFlags = HideFlags.HideAndDontSave;
             }
+
             return CurMaterial;
         }
     }
+
     #endregion
 
     #region Functions
+
     //-----------------------------------------【Start()函数】---------------------------------------------  
     // 说明：此函数仅在Update函数第一次被调用前被调用
     //--------------------------------------------------------------------------------------------------------
@@ -111,13 +117,14 @@ public class RapidBlurEffect : MonoBehaviour
 
                 // 【2.2】处理Shader的通道1，垂直方向模糊处理 || Pass1,for vertical blur
                 // 定义一个临时渲染的缓存tempBuffer
-                RenderTexture tempBuffer = RenderTexture.GetTemporary(renderWidth, renderHeight, 0, sourceTexture.format);
+                RenderTexture tempBuffer =
+                    RenderTexture.GetTemporary(renderWidth, renderHeight, 0, sourceTexture.format);
                 // 拷贝renderBuffer中的渲染数据到tempBuffer,并仅绘制指定的pass1的纹理数据
                 Graphics.Blit(renderBuffer, tempBuffer, material, 1);
                 //  清空renderBuffer
                 RenderTexture.ReleaseTemporary(renderBuffer);
                 // 将tempBuffer赋给renderBuffer，此时renderBuffer里面pass0和pass1的数据已经准备好
-                 renderBuffer = tempBuffer;
+                renderBuffer = tempBuffer;
 
                 // 【2.3】处理Shader的通道2，竖直方向模糊处理 || Pass2,for horizontal blur
                 // 获取临时渲染纹理
@@ -136,7 +143,6 @@ public class RapidBlurEffect : MonoBehaviour
             Graphics.Blit(renderBuffer, destTexture);
             //清空renderBuffer
             RenderTexture.ReleaseTemporary(renderBuffer);
-
         }
 
         //着色器实例为空，直接拷贝屏幕上的效果。此情况下是没有实现屏幕特效的
@@ -179,7 +185,6 @@ public class RapidBlurEffect : MonoBehaviour
             CurShader = Shader.Find(ShaderName);
         }
 #endif
-
     }
 
     //-----------------------------------------【OnDisable()函数】---------------------------------------  
@@ -192,9 +197,7 @@ public class RapidBlurEffect : MonoBehaviour
             //立即销毁材质实例
             DestroyImmediate(CurMaterial);
         }
-
     }
 
- #endregion
-
+    #endregion
 }

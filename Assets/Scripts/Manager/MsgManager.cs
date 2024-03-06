@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using Reference;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+
 public class MsgManager : Singleton<MsgManager>
 {
     [SerializeField] private TextMeshProUGUI m_titleText;
@@ -62,4 +60,3 @@ public class MsgManager : Singleton<MsgManager>
         UIElementReference.Instance.m_MessagePanel.SetActive(false);
     }
 }
-
