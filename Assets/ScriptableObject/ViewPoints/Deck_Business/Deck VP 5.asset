@@ -19,7 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c1b26d1845234b246af114ccd9669ba7, type: 2}
   - {fileID: 11400000, guid: 20c17981ed34e6a4db9a9e6d845fe7f9, type: 2}
   - {fileID: 11400000, guid: a11212886708fed4ca6add7c3382fea2, type: 2}
-  m_infoSO: []
+  m_infoSO:
+  - {fileID: 11400000, guid: a20b595b92c7a974fbb2d4767fa66bab, type: 2}
   m_texture: {fileID: 2800000, guid: b13457fb8b031c54c8311bb8977cc38e, type: 3}
   m_rotation: 12
+  m_popupWindowTittle: 
   m_popupWindowMessage: This is Deck VP 5
