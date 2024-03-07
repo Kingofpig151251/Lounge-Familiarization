@@ -11,8 +11,8 @@ public class TMPTranslater : MonoBehaviour
 
     [SerializeField] private bool m_updateMultiLanguageText = true;
     [SerializeField] [TextAreaAttribute] private string m_englishText;
-    [SerializeField] [TextAreaAttribute] private string m_simplifiedChineseText;
     [SerializeField] [TextAreaAttribute] private string m_traditionalChineseText;
+    [SerializeField] [TextAreaAttribute] private string m_simplifiedChineseText;
 
     [SerializeField] private bool m_isBold = false;
 

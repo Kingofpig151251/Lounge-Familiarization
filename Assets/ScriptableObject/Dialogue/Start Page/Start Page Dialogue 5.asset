@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc3035813af15e40a8b17e5342cd24a, type: 3}
   m_Name: Start Page Dialogue 5
   m_EditorClassIdentifier: 
-  m_messageEng: Now, let me begin to familiarise you with the lounge.
-  m_messageSC: "\u73B0\u5728\uFF0C\u8BA9\u6211\u5F00\u59CB\u5E26\u60A8\u719F\u6089\u8D35\u5BBE\u5BA4\u5427\u3002"
-  m_messageTC: "\u73FE\u5728\uFF0C\u8B93\u6211\u958B\u59CB\u5E36\u60A8\u719F\u6089\u8CB4\u8CD3\u5BA4\u5427\u3002"
+  m_messageEng: "First Class lounges :\nThe Wing / The Pier\r\n\nBusiness Class lounges
+    :\nThe Wing / The Pier / The Deck\r"
+  m_messageTC: "\u982D\u7B49\u8CB4\u8CD3\u5BA4 - \u5BF0\u5B87\u5802 /\u7389\u8861\u5802\r\n\u5546\u52D9\u8CB4\u8CD3\u5BA4
+    - \u5BF0\u5B87\u5802 / \u7389\u8861\u5802 / \u73B2\u74CF\u5802\r\n"
+  m_messageSC: "\u5934\u7B49\u8D35\u5BBE\u5BA4 - \u5BF0\u5B87\u5802 /\u7389\u8861\u5802\r\n\u5546\u52A1\u8D35\u5BBE\u5BA4
+    - \u5BF0\u5B87\u5802 / \u7389\u8861\u5802 / \u73B2\u73D1\u5802"

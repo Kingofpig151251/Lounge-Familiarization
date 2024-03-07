@@ -716,8 +716,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Hallway"
-  m_simplifiedChineseText: "  \u2022  \u7384\u5173"
   m_traditionalChineseText: "  \u2022  \u7384\u95DC"
+  m_simplifiedChineseText: "  \u2022  \u7384\u5173"
   m_isBold: 0
 --- !u!1 &27319191
 GameObject:
@@ -1280,8 +1280,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: YES
-  m_simplifiedChineseText: "\u9700\u8981"
   m_traditionalChineseText: "\u9700\u8981"
+  m_simplifiedChineseText: "\u9700\u8981"
   m_isBold: 0
 --- !u!114 &67059922
 MonoBehaviour:
@@ -1702,8 +1702,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &87513093
 MonoBehaviour:
@@ -2036,8 +2036,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "Go to \nHome page"
-  m_simplifiedChineseText: "\u8FD4\u56DE\u9996\u9875"
   m_traditionalChineseText: "\u8FD4\u56DE\u9996\u9801"
+  m_simplifiedChineseText: "\u8FD4\u56DE\u9996\u9875"
   m_isBold: 0
 --- !u!114 &111885368
 MonoBehaviour:
@@ -2168,7 +2168,7 @@ RectTransform:
   m_Children:
   - {fileID: 1005479633}
   m_Father: {fileID: 2057117068}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -2750,8 +2750,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Library"
-  m_simplifiedChineseText: "  \u2022  \u9759\u9605\u820D"
   m_traditionalChineseText: "  \u2022  \u975C\u95B1\u820D"
+  m_simplifiedChineseText: "  \u2022  \u9759\u9605\u820D"
   m_isBold: 0
 --- !u!1 &155248186
 GameObject:
@@ -2980,8 +2980,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Day Suites"
-  m_simplifiedChineseText: "  \u2022  \u606C\u9038\u95F4"
   m_traditionalChineseText: "  \u2022  \u606C\u9038\u9593"
+  m_simplifiedChineseText: "  \u2022  \u606C\u9038\u95F4"
   m_isBold: 0
 --- !u!1 &173660036
 GameObject:
@@ -3180,8 +3180,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Dining Room"
-  m_simplifiedChineseText: "  \u2022  \u9994\u835F\u5385"
   m_traditionalChineseText: "  \u2022  \u994C\u8588\u5EF3"
+  m_simplifiedChineseText: "  \u2022  \u9994\u835F\u5385"
   m_isBold: 0
 --- !u!1 &184769867
 GameObject:
@@ -3238,8 +3238,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &184769870
 MonoBehaviour:
@@ -3393,8 +3393,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Map
-  m_simplifiedChineseText: "\u5730\u56FE"
   m_traditionalChineseText: "\u5730\u5716"
+  m_simplifiedChineseText: "\u5730\u56FE"
   m_isBold: 0
 --- !u!114 &187425161
 MonoBehaviour:
@@ -3812,8 +3812,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Main Lounge"
-  m_simplifiedChineseText: "  \u2022  \u4E3B\u5385"
   m_traditionalChineseText: "  \u2022  \u4E3B\u5EF3"
+  m_simplifiedChineseText: "  \u2022  \u4E3B\u5385"
   m_isBold: 0
 --- !u!114 &225952054
 MonoBehaviour:
@@ -4383,8 +4383,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Pier
-  m_simplifiedChineseText: "\u300C\u7389\u8861\u5802\u300D"
   m_traditionalChineseText: "\u300C\u7389\u8861\u5802\u300D"
+  m_simplifiedChineseText: "\u300C\u7389\u8861\u5802\u300D"
   m_isBold: 0
 --- !u!1 &262535845
 GameObject:
@@ -6010,11 +6010,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enable: 1
   m_englishTextMargin: 0
-  m_chineseTextMargin: 10
+  m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Wing (Business)
-  m_simplifiedChineseText: "\u5BF0\u5B87\u5802 (\u5546\u52A1)"
   m_traditionalChineseText: "\u5BF0\u5B87\u5802 (\u5546\u52D9)"
+  m_simplifiedChineseText: "\u5BF0\u5B87\u5802 (\u5546\u52A1)"
   m_isBold: 1
 --- !u!114 &350800291
 MonoBehaviour:
@@ -6324,8 +6324,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Business Class Lounge
-  m_simplifiedChineseText: "\u5546\u52A1\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u5546\u52D9\u8CB4\u8CD3\u5BA4"
+  m_simplifiedChineseText: "\u5546\u52A1\u8D35\u5BBE\u5BA4"
   m_isBold: 0
 --- !u!1 &358325067
 GameObject:
@@ -6804,8 +6804,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Next
-  m_simplifiedChineseText: "\u4E0B\u4E00\u6B65"
   m_traditionalChineseText: "\u4E0B\u4E00\u6B65"
+  m_simplifiedChineseText: "\u4E0B\u4E00\u6B65"
   m_isBold: 0
 --- !u!1 &389031686
 GameObject:
@@ -7861,6 +7861,96 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &454986183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454986184}
+  - component: {fileID: 454986187}
+  - component: {fileID: 454986186}
+  - component: {fileID: 454986185}
+  m_Layer: 5
+  m_Name: Viewport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &454986184
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454986183}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 504519580}
+  m_Father: {fileID: 942393449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &454986185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454986183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &454986186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454986183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &454986187
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454986183}
+  m_CullTransparentMesh: 1
 --- !u!1 &458614137
 GameObject:
   m_ObjectHideFlags: 0
@@ -7966,13 +8056,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2057117068}
-  m_RootOrder: 1
+  m_Father: {fileID: 504519580}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: -150, y: -240}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135.1, y: 0}
+  m_SizeDelta: {x: 270.2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462819591
 MonoBehaviour:
@@ -7991,8 +8081,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &462819592
 MonoBehaviour:
@@ -8014,9 +8104,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In The Deck, you can pamper yourself before your flight, people-watch
-    from atop, enjoy cocktails and sunset views from The Terrace, or savour your
-    favourite dishes from our signature Noodle Bar. Opening Hours: 05:30 - 00:30 '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -8043,7 +8131,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 32
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8079,7 +8167,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -362.0737, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8283,8 +8371,8 @@ MonoBehaviour:
   m_englishText: 'Browse
 
     Feature points'
-  m_simplifiedChineseText: "\u6D4F\u89C8\u7279\u8272\u5730\u70B9"
   m_traditionalChineseText: "\u700F\u89BD\u7279\u8272\u5730\u9EDE"
+  m_simplifiedChineseText: "\u6D4F\u89C8\u7279\u8272\u5730\u70B9"
   m_isBold: 0
 --- !u!114 &469250715
 MonoBehaviour:
@@ -8935,8 +9023,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Bar"
-  m_simplifiedChineseText: "  \u2022  \u914C\u9187\u5427"
   m_traditionalChineseText: "  \u2022  \u914C\u9187\u5427"
+  m_simplifiedChineseText: "  \u2022  \u914C\u9187\u5427"
   m_isBold: 0
 --- !u!1 &480836879
 GameObject:
@@ -9029,8 +9117,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Confirm answer
-  m_simplifiedChineseText: "\u786E\u8BA4\u7B54\u6848"
   m_traditionalChineseText: "\u78BA\u8A8D\u7B54\u6848"
+  m_simplifiedChineseText: "\u786E\u8BA4\u7B54\u6848"
   m_isBold: 0
 --- !u!114 &484861142
 MonoBehaviour:
@@ -9186,8 +9274,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &486456296
 MonoBehaviour:
@@ -9696,6 +9784,84 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &504519579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504519580}
+  - component: {fileID: 504519582}
+  - component: {fileID: 504519581}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &504519580
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504519579}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 462819590}
+  m_Father: {fileID: 454986184}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &504519581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504519579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &504519582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504519579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &506556424
 GameObject:
   m_ObjectHideFlags: 0
@@ -9748,11 +9914,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enable: 1
   m_englishTextMargin: 0
-  m_chineseTextMargin: 10
+  m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Pier  (Frist)
-  m_simplifiedChineseText: "\u7389\u8861\u5802 (\u5934\u7B49)"
   m_traditionalChineseText: "\u7389\u8861\u5802 (\u982D\u7B49)"
+  m_simplifiedChineseText: "\u7389\u8861\u5802 (\u5934\u7B49)"
   m_isBold: 1
 --- !u!114 &506556427
 MonoBehaviour:
@@ -10095,7 +10261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -265, y: 125}
+  m_AnchoredPosition: {x: -265, y: 100}
   m_SizeDelta: {x: 530, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &524931626
@@ -10118,7 +10284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Correct Location ?
+  m_text: Go to the location and click "Confirm"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -10145,13 +10311,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
+  m_fontSize: 30
   m_fontSizeBase: 28
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -10211,9 +10377,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Correct Location ?
-  m_simplifiedChineseText: "\u6B63\u786E\u5730\u70B9 ?"
-  m_traditionalChineseText: "\u6B63\u78BA\u5730\u9EDE ?"
+  m_englishText: Go to the location and click "Confirm"
+  m_traditionalChineseText: "\u524D\u5F80\u8A72\u4F4D\u7F6E\u4E26\u9EDE\u64CA\u201C\u78BA\u8A8D\u201D"
+  m_simplifiedChineseText: "\u524D\u5F80\u8BE5\u4F4D\u7F6E\u5E76\u5355\u51FB\u201C\u786E\u8BA4\u201D"
   m_isBold: 0
 --- !u!1 &525047757
 GameObject:
@@ -11296,8 +11462,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Long Bar"
-  m_simplifiedChineseText: "  \u2022  \u957F\u5824\u5427"
   m_traditionalChineseText: "  \u2022  \u9577\u5824\u5427"
+  m_simplifiedChineseText: "  \u2022  \u957F\u5824\u5427"
   m_isBold: 0
 --- !u!1 &584117827
 GameObject:
@@ -11381,8 +11547,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029663719}
   m_HandleRect: {fileID: 2029663718}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.76220757
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -11613,8 +11779,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "Please click the lounge and let\u2019s explore it together"
-  m_simplifiedChineseText: "\u8BF7\u70B9\u51FB\u4F11\u606F\u5BA4\uFF0C\u8BA9\u6211\u4EEC\u4E00\u8D77\u63A2\u7D22\u5427"
   m_traditionalChineseText: "\u8ACB\u9EDE\u64CA\u4F11\u606F\u5BA4\uFF0C\u8B93\u6211\u5011\u4E00\u8D77\u63A2\u7D22\u5427"
+  m_simplifiedChineseText: "\u8BF7\u70B9\u51FB\u4F11\u606F\u5BA4\uFF0C\u8BA9\u6211\u4EEC\u4E00\u8D77\u63A2\u7D22\u5427"
   m_isBold: 0
 --- !u!114 &597825428
 MonoBehaviour:
@@ -11976,8 +12142,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &627419257
 MonoBehaviour:
@@ -12573,7 +12739,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 409.5}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &659599152
 MonoBehaviour:
@@ -12803,8 +12969,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Shower Room"
-  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u8BBE\u65BD"
   m_traditionalChineseText: "  \u2022  \u6DCB\u6D74\u8A2D\u65BD"
+  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u8BBE\u65BD"
   m_isBold: 0
 --- !u!114 &665913387
 MonoBehaviour:
@@ -12983,7 +13149,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 316.5, y: 0}
-  m_SizeDelta: {x: 633, y: 409.5}
+  m_SizeDelta: {x: 633, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &671480089
 MonoBehaviour:
@@ -13005,9 +13171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'In The Deck, you can pamper yourself before your flight, people-watch
-    from atop, enjoy cocktails and sunset views from The Terrace, or savour your
-    favourite dishes from our signature Noodle Bar. Opening Hours: 05:30 - 00:30 '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -13034,7 +13198,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13101,8 +13265,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &673580644
 GameObject:
@@ -13234,8 +13398,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "You're right! \nHere is the Correct Location !"
-  m_simplifiedChineseText: "\u4F60\u8BF4\u5F97\u5BF9\uFF01\r\n\u8FD9\u662F\u6B63\u786E\u7684\u5730\u70B9\uFF01"
   m_traditionalChineseText: "\u4F60\u8AAA\u5F97\u5C0D\uFF01\r\n\u9019\u662F\u6B63\u78BA\u7684\u5730\u9EDE\uFF01"
+  m_simplifiedChineseText: "\u4F60\u8BF4\u5F97\u5BF9\uFF01\r\n\u8FD9\u662F\u6B63\u786E\u7684\u5730\u70B9\uFF01"
   m_isBold: 0
 --- !u!114 &677304887
 MonoBehaviour:
@@ -14409,8 +14573,8 @@ MonoBehaviour:
   m_updateMultiLanguageText: 1
   m_englishText: "Welcome to our Lounge.\nLet's familiarize ourselves with the 360\xB0
     navigation mode first."
-  m_simplifiedChineseText: "\u6B22\u8FCE\u6765\u5230\u6211\u4EEC\u7684\u8D35\u5BBE\u5BA4\u3002\r\n\u6211\u4EEC\u5148\u6765\u719F\u6089\u4E00\u4E0B360\xB0\u5BFC\u822A\u6A21\u5F0F\u3002"
   m_traditionalChineseText: "\u6B61\u8FCE\u4F86\u5230\u6211\u5011\u7684\u8CB4\u8CD3\u5BA4\u3002\r\n\u6211\u5011\u5148\u4F86\u719F\u6089\u4E00\u4E0B360\xB0\u5C0E\u822A\u6A21\u5F0F\u3002"
+  m_simplifiedChineseText: "\u6B22\u8FCE\u6765\u5230\u6211\u4EEC\u7684\u8D35\u5BBE\u5BA4\u3002\r\n\u6211\u4EEC\u5148\u6765\u719F\u6089\u4E00\u4E0B360\xB0\u5BFC\u822A\u6A21\u5F0F\u3002"
   m_isBold: 0
 --- !u!114 &709475362
 MonoBehaviour:
@@ -14840,8 +15004,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Relaxation Room"
-  m_simplifiedChineseText: "  \u2022  \u60A0\u7136\u8F69"
   m_traditionalChineseText: "  \u2022  \u60A0\u7136\u8ED2"
+  m_simplifiedChineseText: "  \u2022  \u60A0\u7136\u8F69"
   m_isBold: 0
 --- !u!1 &732346927
 GameObject:
@@ -15119,6 +15283,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 39d810e1ff7802c4eace083da81c0b3f, type: 2}
   - {fileID: 11400000, guid: d50a60c27cc7f264d85f04cbad367501, type: 2}
   - {fileID: 11400000, guid: 5c62cddd91b5e8341af47cdeb72281ca, type: 2}
+  - {fileID: 11400000, guid: 374a72e56ef30e948b587e84cd3b8429, type: 2}
   - {fileID: 11400000, guid: d5634d1f94caf1348855577ad9d5e748, type: 2}
   - {fileID: 11400000, guid: 8002ba7d90958a746a43581165f3bc25, type: 2}
   m_expandButton: {fileID: 21300000, guid: 723eb3334722baa4ab93c5df711f8827, type: 3}
@@ -15376,8 +15541,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Food Hall"
-  m_simplifiedChineseText: "  \u2022  \u5C1D\u5473\u574A"
   m_traditionalChineseText: "  \u2022  \u5690\u5473\u574A"
+  m_simplifiedChineseText: "  \u2022  \u5C1D\u5473\u574A"
   m_isBold: 0
 --- !u!1 &756514507
 GameObject:
@@ -15410,7 +15575,7 @@ RectTransform:
   m_Children:
   - {fileID: 1326628969}
   m_Father: {fileID: 2057117068}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -15770,8 +15935,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Teahouse"
-  m_simplifiedChineseText: "  \u2022  \u8317\u8336\u574A"
   m_traditionalChineseText: "  \u2022  \u8317\u8336\u574A"
+  m_simplifiedChineseText: "  \u2022  \u8317\u8336\u574A"
   m_isBold: 0
 --- !u!1 &761813227
 GameObject:
@@ -15923,8 +16088,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &776558827
 MonoBehaviour:
@@ -16352,8 +16517,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Sanctuary by Pure Yoga"
-  m_simplifiedChineseText: "  \u2022  \u745C\u9038\u9601"
   m_traditionalChineseText: "  \u2022  \u745C\u9038\u95A3"
+  m_simplifiedChineseText: "  \u2022  \u745C\u9038\u9601"
   m_isBold: 0
 --- !u!1 &786868885
 GameObject:
@@ -16807,8 +16972,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: OK
-  m_simplifiedChineseText: "\u4E86\u89E3"
   m_traditionalChineseText: "\u4E86\u89E3"
+  m_simplifiedChineseText: "\u4E86\u89E3"
   m_isBold: 0
 --- !u!114 &803921113
 MonoBehaviour:
@@ -17105,8 +17270,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Champagne Bar"
-  m_simplifiedChineseText: "  \u2022  \u51EF\u65CB\u5427"
   m_traditionalChineseText: "  \u2022  \u51F1\u65CB\u5427"
+  m_simplifiedChineseText: "  \u2022  \u51EF\u65CB\u5427"
   m_isBold: 0
 --- !u!1 &817895482
 GameObject:
@@ -17163,8 +17328,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &817895485
 MonoBehaviour:
@@ -17725,8 +17890,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &858770995
 MonoBehaviour:
@@ -17880,8 +18045,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &862365587
 MonoBehaviour:
@@ -17936,7 +18101,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -18214,8 +18379,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &876279945
 GameObject:
@@ -18580,8 +18745,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: First Class Lounge
-  m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u982D\u7B49\u8CB4\u8CD3\u5BA4"
+  m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
   m_isBold: 0
 --- !u!1 &933401518
 GameObject:
@@ -18714,6 +18879,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933401518}
+  m_CullTransparentMesh: 1
+--- !u!1 &942393448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 942393449}
+  - component: {fileID: 942393451}
+  - component: {fileID: 942393450}
+  m_Layer: 5
+  m_Name: Scroll View
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &942393449
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942393448}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 454986184}
+  - {fileID: 1904704964}
+  m_Father: {fileID: 2057117068}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -150, y: -237.876}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &942393450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942393448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 504519580}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 454986184}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 1904704965}
+  m_HorizontalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: -3
+  m_VerticalScrollbarSpacing: -3
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!222 &942393451
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942393448}
   m_CullTransparentMesh: 1
 --- !u!1 &947635219
 GameObject:
@@ -18925,6 +19167,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951779509}
   m_CullTransparentMesh: 1
+--- !u!1 &961610821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961610822}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &961610822
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961610821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1348484454}
+  m_Father: {fileID: 1904704964}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -19097,7 +19375,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 67d75becb367cdf4484cad22c4ac019b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -19368,8 +19646,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: NO
-  m_simplifiedChineseText: "\u4E0D\u9700\u8981"
   m_traditionalChineseText: "\u4E0D\u9700\u8981"
+  m_simplifiedChineseText: "\u4E0D\u9700\u8981"
   m_isBold: 0
 --- !u!114 &981469071
 MonoBehaviour:
@@ -19880,9 +20158,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
-  m_englishText: 
-  m_simplifiedChineseText: 
-  m_traditionalChineseText: 
+  m_englishText: Go
+  m_traditionalChineseText: "\u524D\u5F80"
+  m_simplifiedChineseText: "\u524D\u5F80"
   m_isBold: 0
 --- !u!114 &1005479635
 MonoBehaviour:
@@ -19904,7 +20182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter
+  m_text: Go
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 205da80b107d3bb4fbb62f453c3c8e1a, type: 2}
   m_sharedMaterial: {fileID: -6929264349920597867, guid: 205da80b107d3bb4fbb62f453c3c8e1a, type: 2}
@@ -20677,8 +20955,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Retreat"
-  m_simplifiedChineseText: "  \u2022  Retreat"
   m_traditionalChineseText: "  \u2022  Retreat"
+  m_simplifiedChineseText: "  \u2022  Retreat"
   m_isBold: 0
 --- !u!1 &1040014237
 GameObject:
@@ -20878,8 +21156,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Seating"
-  m_simplifiedChineseText: "  \u2022  \u5EA7\u6905"
   m_traditionalChineseText: "  \u2022  \u5EA7\u6905"
+  m_simplifiedChineseText: "  \u2022  \u5EA7\u6905"
   m_isBold: 0
 --- !u!1 &1046179797
 GameObject:
@@ -21211,8 +21489,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Reading Room"
-  m_simplifiedChineseText: "  \u2022  \u5199\u610F\u8F69"
   m_traditionalChineseText: "  \u2022  \u5BEB\u610F\u8ED2"
+  m_simplifiedChineseText: "  \u2022  \u5199\u610F\u8F69"
   m_isBold: 0
 --- !u!1 &1056046175
 GameObject:
@@ -21412,8 +21690,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Haven"
-  m_simplifiedChineseText: "  \u2022  \u9038\u96C5\u9601"
   m_traditionalChineseText: "  \u2022  \u9038\u96C5\u95A3"
+  m_simplifiedChineseText: "  \u2022  \u9038\u96C5\u9601"
   m_isBold: 0
 --- !u!1 &1062063646
 GameObject:
@@ -22099,7 +22377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 0, y: -60}
   m_SizeDelta: {x: -200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1095090787
@@ -22149,10 +22427,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
+  m_fontSize: 50
   m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -22216,8 +22494,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &1099845549
 GameObject:
@@ -22430,8 +22708,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &1107663860
 GameObject:
@@ -22895,8 +23173,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Bar"
-  m_simplifiedChineseText: "  \u2022  \u9152\u5427"
   m_traditionalChineseText: "  \u2022  \u9152\u5427"
+  m_simplifiedChineseText: "  \u2022  \u9152\u5427"
   m_isBold: 0
 --- !u!1 &1119937956
 GameObject:
@@ -23621,8 +23899,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1164479489
 MonoBehaviour:
@@ -24124,8 +24402,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Coffee Cart"
-  m_simplifiedChineseText: "  \u2022  \u5496\u5561\u9910\u8F66"
   m_traditionalChineseText: "  \u2022  \u5496\u5561\u9910\u8ECA"
+  m_simplifiedChineseText: "  \u2022  \u5496\u5561\u9910\u8F66"
   m_isBold: 0
 --- !u!1 &1180480561
 GameObject:
@@ -25156,8 +25434,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Map
-  m_simplifiedChineseText: "\u5730\u56FE"
   m_traditionalChineseText: "\u5730\u5716"
+  m_simplifiedChineseText: "\u5730\u56FE"
   m_isBold: 0
 --- !u!1 &1231874009
 GameObject:
@@ -25214,8 +25492,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: OK
-  m_simplifiedChineseText: "\u4E86\u89E3"
   m_traditionalChineseText: "\u4E86\u89E3"
+  m_simplifiedChineseText: "\u4E86\u89E3"
   m_isBold: 0
 --- !u!114 &1231874012
 MonoBehaviour:
@@ -25369,8 +25647,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1233764451
 MonoBehaviour:
@@ -26284,8 +26562,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &1317657726
 GameObject:
@@ -26345,8 +26623,8 @@ MonoBehaviour:
 
     Do
     you need me show you the answer ?'
-  m_simplifiedChineseText: "\u770B\u6765\u4F60\u8FD9\u4E2A\u95EE\u9898\u6709\u70B9\u95EE\u9898\u3002\n\u4F60\u9700\u8981\u6211\u544A\u8BC9\u4F60\u7B54\u6848\u5417\uFF1F"
   m_traditionalChineseText: "\u770B\u4F86\u4F60\u9019\u500B\u554F\u984C\u6709\u9EDE\u554F\u984C\u3002\n\u4F60\u9700\u8981\u6211\u544A\u8A34\u4F60\u7B54\u6848\u55CE\uFF1F"
+  m_simplifiedChineseText: "\u770B\u6765\u4F60\u8FD9\u4E2A\u95EE\u9898\u6709\u70B9\u95EE\u9898\u3002\n\u4F60\u9700\u8981\u6211\u544A\u8BC9\u4F60\u7B54\u6848\u5417\uFF1F"
   m_isBold: 0
 --- !u!114 &1317657729
 MonoBehaviour:
@@ -26503,8 +26781,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1326628971
 MonoBehaviour:
@@ -26602,6 +26880,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326628968}
+  m_CullTransparentMesh: 1
+--- !u!1 &1348484453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348484454}
+  - component: {fileID: 1348484456}
+  - component: {fileID: 1348484455}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1348484454
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348484453}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 961610822}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1348484455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348484453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1348484456
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348484453}
   m_CullTransparentMesh: 1
 --- !u!1 &1357208674
 GameObject:
@@ -26884,11 +27237,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enable: 1
   m_englishTextMargin: 0
-  m_chineseTextMargin: 10
+  m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Wing (Frist)
-  m_simplifiedChineseText: "\u5BF0\u5B87\u5802 (\u5934\u7B49)"
   m_traditionalChineseText: "\u5BF0\u5B87\u5802 (\u982D\u7B49)"
+  m_simplifiedChineseText: "\u5BF0\u5B87\u5802 (\u5934\u7B49)"
   m_isBold: 1
 --- !u!1 &1369212882
 GameObject:
@@ -27827,8 +28180,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Pantry"
-  m_simplifiedChineseText: "  \u2022  \u8F7B\u9994\u574A"
   m_traditionalChineseText: "  \u2022  \u8F15\u994C\u574A"
+  m_simplifiedChineseText: "  \u2022  \u8F7B\u9994\u574A"
   m_isBold: 0
 --- !u!1 &1410779159
 GameObject:
@@ -28041,8 +28394,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Lounge
-  m_simplifiedChineseText: "\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u8CB4\u8CD3\u5BA4"
+  m_simplifiedChineseText: "\u8D35\u5BBE\u5BA4"
   m_isBold: 0
 --- !u!1 &1411717640
 GameObject:
@@ -28331,8 +28684,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Bureau"
-  m_simplifiedChineseText: "  \u2022  \u9605\u89C8\u95F4"
   m_traditionalChineseText: "  \u2022  \u95B1\u89BD\u9593"
+  m_simplifiedChineseText: "  \u2022  \u9605\u89C8\u95F4"
   m_isBold: 0
 --- !u!1 &1424371009
 GameObject:
@@ -28483,11 +28836,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enable: 1
   m_englishTextMargin: 0
-  m_chineseTextMargin: 10
+  m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Deck (Business)
-  m_simplifiedChineseText: "\u73B2\u73D1\u5802 (\u5546\u52A1)"
   m_traditionalChineseText: "\u73B2\u74CF\u5802 (\u5546\u52D9)"
+  m_simplifiedChineseText: "\u73B2\u73D1\u5802 (\u5546\u52A1)"
   m_isBold: 1
 --- !u!1 &1431198838
 GameObject:
@@ -28896,8 +29249,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Atrium"
-  m_simplifiedChineseText: "  \u2022  \u5199\u610F\u5EAD"
   m_traditionalChineseText: "  \u2022  \u5BEB\u610F\u5EAD"
+  m_simplifiedChineseText: "  \u2022  \u5199\u610F\u5EAD"
   m_isBold: 0
 --- !u!1 &1443184065
 GameObject:
@@ -28954,8 +29307,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1443184068
 MonoBehaviour:
@@ -29251,8 +29604,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Shower Suites"
-  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u95F4"
   m_traditionalChineseText: "  \u2022  \u6DCB\u6D74\u9593"
+  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u95F4"
   m_isBold: 0
 --- !u!1 &1458447254
 GameObject:
@@ -29672,8 +30025,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Deck
-  m_simplifiedChineseText: "\u300C\u73B2\u73D1\u5802\u300D"
   m_traditionalChineseText: "\u300C\u73B2\u74CF\u5802\u300D"
+  m_simplifiedChineseText: "\u300C\u73B2\u73D1\u5802\u300D"
   m_isBold: 0
 --- !u!1 &1467888287
 GameObject:
@@ -30212,8 +30565,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Bureau"
-  m_simplifiedChineseText: "  \u2022  \u9605\u89C8\u95F4"
   m_traditionalChineseText: "  \u2022  \u95B1\u89BD\u9593"
+  m_simplifiedChineseText: "  \u2022  \u9605\u89C8\u95F4"
   m_isBold: 0
 --- !u!1 &1489699172
 GameObject:
@@ -30419,7 +30772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 190, y: -90}
+  m_AnchoredPosition: {x: 190, y: -155}
   m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496797607
@@ -30880,8 +31233,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Entry
-  m_simplifiedChineseText: "\u5165\u53E3"
   m_traditionalChineseText: "\u5165\u53E3"
+  m_simplifiedChineseText: "\u5165\u53E3"
   m_isBold: 0
 --- !u!114 &1522298555
 MonoBehaviour:
@@ -31398,8 +31751,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: First Class Lounge
-  m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u982D\u7B49\u8CB4\u8CD3\u5BA4"
+  m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
   m_isBold: 0
 --- !u!1 &1553316754
 GameObject:
@@ -31588,8 +31941,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1556679274
 MonoBehaviour:
@@ -31886,8 +32239,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Cabanas"
-  m_simplifiedChineseText: "  \u2022  \u6D74\u6CC9\u5C45"
   m_traditionalChineseText: "  \u2022  \u6D74\u6CC9\u5C45"
+  m_simplifiedChineseText: "  \u2022  \u6D74\u6CC9\u5C45"
   m_isBold: 0
 --- !u!1 &1572330473
 GameObject:
@@ -32218,8 +32571,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Noodle Bar"
-  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_traditionalChineseText: "  \u2022  \u98A8\u5473\u574A"
+  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_isBold: 0
 --- !u!1 &1587760708
 GameObject:
@@ -32563,8 +32916,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1605234436
 MonoBehaviour:
@@ -32619,7 +32972,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 100
   m_fontSizeMax: 120
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -32947,8 +33300,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Confirm
-  m_simplifiedChineseText: "\u786E\u8BA4"
   m_traditionalChineseText: "\u78BA\u8A8D"
+  m_simplifiedChineseText: "\u786E\u8BA4"
   m_isBold: 0
 --- !u!1 &1617791738
 GameObject:
@@ -33184,8 +33537,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "Open \nFloor Plan"
-  m_simplifiedChineseText: "\u6253\u5F00\u5730\u56FE"
   m_traditionalChineseText: "\u6253\u958B\u5730\u5716"
+  m_simplifiedChineseText: "\u6253\u5F00\u5730\u56FE"
   m_isBold: 0
 --- !u!114 &1630602918
 MonoBehaviour:
@@ -33891,8 +34244,8 @@ MonoBehaviour:
   m_englishText: 'Go to
 
     Navigation mode'
-  m_simplifiedChineseText: "\u5BFC\u822A\u6A21\u5F0F"
   m_traditionalChineseText: "\u5C0E\u822A\u6A21\u5F0F"
+  m_simplifiedChineseText: "\u5BFC\u822A\u6A21\u5F0F"
   m_isBold: 0
 --- !u!114 &1681665431
 MonoBehaviour:
@@ -34237,8 +34590,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Showers"
-  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u95F4"
   m_traditionalChineseText: "  \u2022  \u6DCB\u6D74\u9593"
+  m_simplifiedChineseText: "  \u2022  \u6DCB\u6D74\u95F4"
   m_isBold: 0
 --- !u!1 &1696868755
 GameObject:
@@ -34295,8 +34648,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1696868758
 MonoBehaviour:
@@ -34903,8 +35256,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: OK
-  m_simplifiedChineseText: "\u4E86\u89E3"
   m_traditionalChineseText: "\u4E86\u89E3"
+  m_simplifiedChineseText: "\u4E86\u89E3"
   m_isBold: 0
 --- !u!114 &1748298147
 MonoBehaviour:
@@ -35367,7 +35720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -390, y: 60}
+  m_AnchoredPosition: {x: -570, y: 60}
   m_SizeDelta: {x: 350, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1786906110
@@ -35424,7 +35777,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -35484,8 +35837,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 0
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!1 &1794153183
 GameObject:
@@ -35785,7 +36138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 190, y: -90}
+  m_AnchoredPosition: {x: 190, y: -155}
   m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1817504441
@@ -35937,8 +36290,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1818195449
 MonoBehaviour:
@@ -36225,8 +36578,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Skip
-  m_simplifiedChineseText: "\u8DF3\u8FC7"
   m_traditionalChineseText: "\u8DF3\u904E"
+  m_simplifiedChineseText: "\u8DF3\u8FC7"
   m_isBold: 0
 --- !u!114 &1831508896
 MonoBehaviour:
@@ -37122,8 +37475,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Furniture"
-  m_simplifiedChineseText: "  \u2022  \u5BB6\u5177"
   m_traditionalChineseText: "  \u2022  \u5BB6\u5177"
+  m_simplifiedChineseText: "  \u2022  \u5BB6\u5177"
   m_isBold: 0
 --- !u!1 &1875106620
 GameObject:
@@ -37586,8 +37939,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Luggage Storage"
-  m_simplifiedChineseText: "  \u2022  \u884C\u674E\u9501\u67DC"
   m_traditionalChineseText: "  \u2022  \u884C\u674E\u9396\u6AC3"
+  m_simplifiedChineseText: "  \u2022  \u884C\u674E\u9501\u67DC"
   m_isBold: 0
 --- !u!1 &1891105181
 GameObject:
@@ -38112,6 +38465,132 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1901044557}
   m_CullTransparentMesh: 1
+--- !u!1 &1904704963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904704964}
+  - component: {fileID: 1904704967}
+  - component: {fileID: 1904704966}
+  - component: {fileID: 1904704965}
+  m_Layer: 5
+  m_Name: Scrollbar Vertical
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1904704964
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904704963}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 961610822}
+  m_Father: {fileID: 942393449}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: -17}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1904704965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904704963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1348484455}
+  m_HandleRect: {fileID: 1348484454}
+  m_Direction: 2
+  m_Value: 0
+  m_Size: 1
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1904704966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904704963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1904704967
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904704963}
+  m_CullTransparentMesh: 1
 --- !u!1 &1910772332
 GameObject:
   m_ObjectHideFlags: 0
@@ -38401,8 +38880,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1916074778
 MonoBehaviour:
@@ -39465,8 +39944,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Wing
-  m_simplifiedChineseText: "\u300C\u5BF0\u5B87\u5802\u300D"
   m_traditionalChineseText: "\u300C\u5BF0\u5B87\u5802\u300D"
+  m_simplifiedChineseText: "\u300C\u5BF0\u5B87\u5802\u300D"
   m_isBold: 0
 --- !u!1 &1980704274
 GameObject:
@@ -39523,8 +40002,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!114 &1980704277
 MonoBehaviour:
@@ -39678,8 +40157,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Next Task
-  m_simplifiedChineseText: "\u4E0B\u4E00\u984C"
   m_traditionalChineseText: "\u4E0B\u4E00\u9898"
+  m_simplifiedChineseText: "\u4E0B\u4E00\u984C"
   m_isBold: 0
 --- !u!114 &1981397060
 MonoBehaviour:
@@ -39834,8 +40313,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  The Terrace"
-  m_simplifiedChineseText: "  \u2022  \u6F2B\u8D4F\u9601"
   m_traditionalChineseText: "  \u2022  \u6F2B\u8CDE\u95A3"
+  m_simplifiedChineseText: "  \u2022  \u6F2B\u8D4F\u9601"
   m_isBold: 0
 --- !u!114 &1986220998
 MonoBehaviour:
@@ -40259,11 +40738,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enable: 1
   m_englishTextMargin: 0
-  m_chineseTextMargin: 10
+  m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: The Pier (Business)
-  m_simplifiedChineseText: "\u7389\u8861\u5802 (\u5546\u52A1)"
   m_traditionalChineseText: "\u7389\u8861\u5802 (\u5546\u52D9)"
+  m_simplifiedChineseText: "\u7389\u8861\u5802 (\u5546\u52A1)"
   m_isBold: 1
 --- !u!1 &2002133926
 GameObject:
@@ -40988,8 +41467,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Noodle Bar"
-  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_traditionalChineseText: "  \u2022  \u98A8\u5473\u574A"
+  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_isBold: 0
 --- !u!1 &2029663717
 GameObject:
@@ -41023,7 +41502,7 @@ RectTransform:
   m_Father: {fileID: 1489856586}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.23779243}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -41121,8 +41600,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Entry->
-  m_simplifiedChineseText: "\u5165\u53E3->"
   m_traditionalChineseText: "\u5165\u53E3->"
+  m_simplifiedChineseText: "\u5165\u53E3->"
   m_isBold: 0
 --- !u!114 &2031521993
 MonoBehaviour:
@@ -41544,8 +42023,8 @@ MonoBehaviour:
   m_englishText: 'Go to
 
     Task mode'
-  m_simplifiedChineseText: "\u4EFB\u52A1\u6A21\u5F0F"
   m_traditionalChineseText: "\u4EFB\u52D9\u6A21\u5F0F"
+  m_simplifiedChineseText: "\u4EFB\u52A1\u6A21\u5F0F"
   m_isBold: 0
 --- !u!114 &2041293017
 MonoBehaviour:
@@ -42073,9 +42552,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 862365585}
-  - {fileID: 462819590}
   - {fileID: 112083826}
   - {fileID: 756514508}
+  - {fileID: 942393449}
   m_Father: {fileID: 1900771829}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42427,8 +42906,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: Business Class Lounge
-  m_simplifiedChineseText: "\u5546\u52A1\u8D35\u5BBE\u5BA4"
   m_traditionalChineseText: "\u5546\u52D9\u8CB4\u8CD3\u5BA4"
+  m_simplifiedChineseText: "\u5546\u52A1\u8D35\u5BBE\u5BA4"
   m_isBold: 0
 --- !u!1 &2085165939
 GameObject:
@@ -42485,8 +42964,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "Go to \nHome page"
-  m_simplifiedChineseText: "\u8FD4\u56DE\u9996\u9875"
   m_traditionalChineseText: "\u8FD4\u56DE\u9996\u9801"
+  m_simplifiedChineseText: "\u8FD4\u56DE\u9996\u9875"
   m_isBold: 0
 --- !u!114 &2085165942
 MonoBehaviour:
@@ -43313,8 +43792,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Self Served Buffet Counter"
-  m_simplifiedChineseText: "  \u2022  \u81EA\u52A9\u9910\u5427"
   m_traditionalChineseText: "  \u2022  \u81EA\u52A9\u9910\u5427"
+  m_simplifiedChineseText: "  \u2022  \u81EA\u52A9\u9910\u5427"
   m_isBold: 0
 --- !u!1 &2119255845
 GameObject:
@@ -43712,10 +44191,10 @@ MonoBehaviour:
   m_updateMultiLanguageText: 1
   m_englishText: "Here is the task mode. Please read the task and go to the correct
     place. If you confirm with the answer, please select \u2018confirm\u2019."
-  m_simplifiedChineseText: "\u8FD9\u91CC\u662F\u4EFB\u52A1\u6A21\u5F0F\u3002 \u8BF7\u9605\u8BFB\u4EFB\u52A1\u5E76\u524D\u5F80\u6B63\u786E\u7684\u4F4D\u7F6E\u3002
-    \u5982\u679C\u60A8\u786E\u8BA4\u7B54\u6848\uFF0C\u8BF7\u9009\u62E9\u201C\u786E\u8BA4\u201D\u3002"
   m_traditionalChineseText: "\u9019\u88E1\u662F\u4EFB\u52D9\u6A21\u5F0F\u3002 \u8ACB\u95B1\u8B80\u4EFB\u52D9\u4E26\u524D\u5F80\u6B63\u78BA\u7684\u4F4D\u7F6E\u3002
     \u5982\u679C\u60A8\u78BA\u8A8D\u7B54\u6848\uFF0C\u8ACB\u9078\u64C7\u300C\u78BA\u8A8D\u300D\u3002"
+  m_simplifiedChineseText: "\u8FD9\u91CC\u662F\u4EFB\u52A1\u6A21\u5F0F\u3002 \u8BF7\u9605\u8BFB\u4EFB\u52A1\u5E76\u524D\u5F80\u6B63\u786E\u7684\u4F4D\u7F6E\u3002
+    \u5982\u679C\u60A8\u786E\u8BA4\u7B54\u6848\uFF0C\u8BF7\u9009\u62E9\u201C\u786E\u8BA4\u201D\u3002"
   m_isBold: 0
 --- !u!114 &2134517682
 MonoBehaviour:
@@ -44012,8 +44491,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Noodle Bar"
-  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_traditionalChineseText: "  \u2022  \u98A8\u5473\u574A"
+  m_simplifiedChineseText: "  \u2022  \u98CE\u5473\u574A"
   m_isBold: 0
 --- !u!1 &54485665208756942
 GameObject:
@@ -44279,8 +44758,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: 
-  m_simplifiedChineseText: 
   m_traditionalChineseText: 
+  m_simplifiedChineseText: 
   m_isBold: 0
 --- !u!224 &54485665812749100
 RectTransform:

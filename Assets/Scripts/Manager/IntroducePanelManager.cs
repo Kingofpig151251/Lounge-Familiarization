@@ -99,5 +99,10 @@ namespace Manager
                     return string.Empty;
             }
         }
+
+        public bool getIsCoroutineRunning()
+        {
+            return m_isCoroutineRunning;
+        }
     }
 }

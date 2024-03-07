@@ -1,3 +1,4 @@
+using Manager;
 using Reference;
 using UnityEngine;
 using TMPro;
@@ -124,6 +125,7 @@ public class GameManager : Singleton<GameManager>
         UIElementReference.Instance.m_FloorPlanButton.SetActive(false);
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
+        UIElementReference.Instance.m_exitNavigateButton.SetActive(false);
     }
 
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;

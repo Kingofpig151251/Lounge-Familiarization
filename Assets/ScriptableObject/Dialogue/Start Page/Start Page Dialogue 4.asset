@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc3035813af15e40a8b17e5342cd24a, type: 3}
   m_Name: Start Page Dialogue 4
   m_EditorClassIdentifier: 
-  m_messageEng: "First Class lounges :\nThe Wing / The Pier\r\nBusiness Class lounges
-    :\nThe Wing / The Pier / The Deck\r"
-  m_messageSC: "\u5934\u7B49\u8D35\u5BBE\u5BA4 - \u5BF0\u5B87\u5802 /\u7389\u8861\u5802\r\n\u5546\u52A1\u8D35\u5BBE\u5BA4
-    - \u5BF0\u5B87\u5802 / \u7389\u8861\u5802 / \u73B2\u73D1\u5802"
-  m_messageTC: "\u982D\u7B49\u8CB4\u8CD3\u5BA4 - \u5BF0\u5B87\u5802 /\u7389\u8861\u5802\r\n\u5546\u52D9\u8CB4\u8CD3\u5BA4
-    - \u5BF0\u5B87\u5802 / \u7389\u8861\u5802 / \u73B2\u74CF\u5802\r\n"
+  m_messageEng: "There are 3 Cathay lounges which divided into 5 sections in the
+    departure hall of Hong Kong International Airport:  \r"
+  m_messageTC: "\u570B\u6CF0\u65BC\u9999\u6E2F\u570B\u969B\u6A5F\u5834\u96E2\u5883\u5927\u5802\u5167\u5171\u6709\u4E09\u500B\u8CB4\u8CD3\u5BA4\u5206\u70BA\u4E94\u500B\u5340\u57DF\uFF1A\r"
+  m_messageSC: "\u56FD\u6CF0\u4E8E\u9999\u6E2F\u56FD\u9645\u673A\u573A\u79BB\u5883\u5927\u5802\u5185\u5171\u6709\u4E09\u4E2A\u8D35\u5BBE\u5BA4\u5206\u4E3A\u4E94\u4E2A\u533A\u57DF\uFF1A"
