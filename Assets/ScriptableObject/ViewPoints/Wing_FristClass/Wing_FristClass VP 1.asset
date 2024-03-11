@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_index: 1
   m_loungeName: 1
-  m_relation: 000000000200000004000000
+  m_relation: 
   m_arrowSO:
   - {fileID: 11400000, guid: c67cc62c512662c42bad515a3e37902a, type: 2}
   - {fileID: 11400000, guid: e54c19c65a6c7f4499e985caafba67f8, type: 2}

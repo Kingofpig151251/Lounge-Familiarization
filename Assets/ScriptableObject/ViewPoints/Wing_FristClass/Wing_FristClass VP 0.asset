@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_index: 0
   m_loungeName: 1
-  m_relation: 01000000
+  m_relation: 
   m_arrowSO:
   - {fileID: 11400000, guid: a57ceb5463dfb4040a04c819bd634b00, type: 2}
-  m_infoSO: []
+  m_infoSO:
+  - {fileID: 11400000, guid: d5c0d2425187aa4499e774eea9cea765, type: 2}
   m_texture: {fileID: 2800000, guid: b9e2d7cb570415b4ab49ceef2685b50e, type: 3}
   m_rotation: 25
   m_popupWindowTittle: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527cdb33b69da1543a6ec4c7f443d529, type: 3}
   m_Name: VP11 Arrow 0
   m_EditorClassIdentifier: 
-  m_position: {x: 0.571, y: -0.141, z: -0.538}
+  m_position: {x: 0.17, y: -0.133, z: -0.614}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.01, y: 0.01, z: 0.01}
   m_nextViewPointIndex: 10

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Pier_Business VP17 Info
+  m_EditorClassIdentifier: 
+  m_position: {x: 1.8202829, y: -0.06152002, z: -0.14002505}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Shower Suites
+  m_title_TC: "\u6DCB\u6D74\u9593"
+  m_title_SC: "\u6DCB\u6D74\u95F4"
+  m_content_ENG: "The lounge offers 14 accessible shower suites equipped with premium
+    bath products and fluffy towels, for a convenient refresh ahead of your flight.
+    \r"
+  m_content_TC: "\u7389\u8861\u5802 - \u5546\u52D9\u8CB4\u8CD3\u5BA4\u5171\u6709
+    14 \u9593\u7121\u969C\u7919\u6DCB\u6D74\u5BA4 \u3002\r\n\r\n\u6BCF\u9593\u5747\u914D\u5099\u67D4\u8EDF\u6BDB\u5DFE\u8207\u512A\u8CEA\u68B3\u6D17\u7528\u54C1\uFF0C\u52A9\u60A8\u6296\u64FB\u7CBE\u795E\u7E7C\u7E8C\u65C5\u7A0B\u3002"
+  m_content_SC: "\u7389\u8861\u5802 - \u5546\u52A1\u8D35\u5BBE\u5BA4\u5171\u6709
+    14 \u95F4\u65E0\u969C\u788D\u6DCB\u6D74\u5BA4 \u3002\r\n\r\n\u6BCF\u95F4\u5747\u914D\u5907\u67D4\u8F6F\u6BDB\u5DFE\u4E0E\u4F18\u8D28\u68B3\u6D17\u7528\u54C1\uFF0C\u52A9\u60A8\u6296\u64DE\u7CBE\u795E\u7EE7\u7EED\u65C5\u7A0B\u3002"

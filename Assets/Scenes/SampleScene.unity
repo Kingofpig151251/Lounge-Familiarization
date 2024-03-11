@@ -3700,9 +3700,9 @@ RectTransform:
   m_Father: {fileID: 262535846}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 710, y: 60}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &222144894
@@ -4424,7 +4424,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 20, y: 0}
-  m_SizeDelta: {x: -40, y: -580}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &262535847
 MonoBehaviour:
@@ -15108,6 +15108,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: debb9d75af49d464f8374c7a920a1f56, type: 2}
   - {fileID: 11400000, guid: 0b369a5c9f0741544b4810faa6fe678b, type: 2}
   - {fileID: 11400000, guid: 48183890e80934b42b995d253f6596cb, type: 2}
+  - {fileID: 11400000, guid: 62891a0ffb7e32d408b475a3a363b765, type: 2}
   - {fileID: 11400000, guid: be230fde3f995b0408ed8bbc0b53c29a, type: 2}
   - {fileID: 11400000, guid: bad0caab147cd3341a1ee08dfb566600, type: 2}
   - {fileID: 11400000, guid: d788c6afa138f0242875cfe520c10fa2, type: 2}
@@ -15124,9 +15125,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 768d85c4065e7864b80c705ba72bb436, type: 2}
   - {fileID: 11400000, guid: c368c15a025d96e469d0c498e637efc6, type: 2}
   - {fileID: 11400000, guid: 4d07f3e2fee726248a7e5bf28282d43d, type: 2}
-  - {fileID: 11400000, guid: dfa31e2acc1363b4a9481d5b5004b84c, type: 2}
   - {fileID: 11400000, guid: 7f85e23b342c4294890eb394178c0749, type: 2}
   - {fileID: 11400000, guid: 5417ab80b1a3c804eb2c48b1ad62ced6, type: 2}
+  - {fileID: 11400000, guid: 17a0abc204f96fa41a34f1414229a00c, type: 2}
+  - {fileID: 0}
 --- !u!114 &732346929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20154,10 +20156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0770b186779733e42a6631a6fb8de5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enable: 0
+  m_enable: 1
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
-  m_updateMultiLanguageText: 0
+  m_updateMultiLanguageText: 1
   m_englishText: Go
   m_traditionalChineseText: "\u524D\u5F80"
   m_simplifiedChineseText: "\u524D\u5F80"
@@ -24567,9 +24569,9 @@ RectTransform:
   m_Father: {fileID: 262535846}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -240}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 710, y: 60}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1196694619
@@ -31750,7 +31752,7 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: First Class Lounge
+  m_englishText: 'First Class Lounge '
   m_traditionalChineseText: "\u982D\u7B49\u8CB4\u8CD3\u5BA4"
   m_simplifiedChineseText: "\u5934\u7B49\u8D35\u5BBE\u5BA4"
   m_isBold: 0
@@ -38356,7 +38358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1900771829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38424,7 +38426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 455, y: -322.5}
+  m_AnchoredPosition: {x: 455, y: -388}
   m_SizeDelta: {x: 170, y: 35}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1901044559
@@ -42639,8 +42641,8 @@ RectTransform:
   m_Father: {fileID: 262535846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 710, y: 60}
   m_Pivot: {x: 0, y: 1}
