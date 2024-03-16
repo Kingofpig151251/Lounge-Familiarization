@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
   m_Name: Pier_FirstClass 5
   m_EditorClassIdentifier: 
-  m_index: 8
+  m_index: 5
   m_loungeName: 3
   m_relation: 
-  m_arrowSO: []
+  m_arrowSO:
+  - {fileID: 11400000, guid: 8e66ccef8a174694cb86c848e212ba8e, type: 2}
+  - {fileID: 11400000, guid: 5f0349445302fc547bef420b82e2551f, type: 2}
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 701c49318571abc45a53c90eb8e515cc, type: 3}
-  m_rotation: 0
+  m_rotation: -89
   m_popupWindowTittle: 
   m_popupWindowMessage: 
