@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
+  m_Name: Pier_FirstClass 12
+  m_EditorClassIdentifier: 
+  m_index: 12
+  m_loungeName: 3
+  m_relation: 
+  m_arrowSO:
+  - {fileID: 11400000, guid: 1ab59c25be96f924da3f83d2f0f7a166, type: 2}
+  - {fileID: 11400000, guid: 58347d55bb129cc48b1207b66f2d3f71, type: 2}
+  m_infoSO: []
+  m_texture: {fileID: 2800000, guid: 46e97c14ec17bee439f227ddaf0fdbef, type: 3}
+  m_rotation: -60.2
+  m_popupWindowTittle: 
+  m_popupWindowMessage: 
