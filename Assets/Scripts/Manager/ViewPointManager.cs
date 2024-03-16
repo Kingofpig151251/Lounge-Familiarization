@@ -67,6 +67,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         }
 
         GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
+        CameraController.Instance.SetRotation(m_currentViewPoint.m_infoSO[0].m_position);
     }
 
     private void EnterViewPoint(int viewPointIndex)

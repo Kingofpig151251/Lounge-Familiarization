@@ -18,10 +18,18 @@ MonoBehaviour:
   m_title_ENG: Champagne Bar
   m_title_TC: "\u51F1\u65CB\u5427\v"
   m_title_SC: "\u51EF\u65CB\u5427"
-  m_content_ENG: "Champagne Bar is located right after the entrance of The Wing,
-    First. \r\n\r\nUpon arrival at the lounge, passengers will be greeted with a
-    welcome drink of a selection of premium champagnes.\r\n\r\nAlcoholic drinks in
-    our lounges are only available to passengers aged 18 years and over.\r"
+  m_content_ENG: 'Champagne Bar is located right after the entrance of The Wing,
+    First.
+
+    
+
+    Upon arrival at the lounge, passengers will be greeted with
+    a welcome drink of a selection of premium champagnes.
+
+    
+
+    Alcoholic
+    drinks in our lounges are only available to passengers aged 18 years and over.'
   m_content_TC: "\u51F1\u65CB\u5427\u4F4D\u65BC\u982D\u7B49\u8CB4\u8CD3\u5BA4\u5165\u53E3\u5F8C\u65B9\u3002\r\n\r\n\u51F1\u65CB\u5427\u5167\u88E1\u656C\u5099\u5404\u5F0F\u7CBE\u9078\u9999\u6AB3\uFF0C\u8B93\u4E58\u5BA2\u65BC\u62B5\u9054\u5F8C\u53EF\u4EE5\u96A8\u5FC3\u7D30\u9078\uFF0C\u54C1\u5473\u512A\u9592\u3002\r\n\r\n\u570B\u6CF0\u6240\u6709\u8CB4\u8CD3\u5BA4\u5167\u7684\u9152\u7CBE\u98F2\u54C1\u53EA\u63D0\u4F9B\u4E88
     18 \u6B72\u53CA\u4EE5\u4E0A\u7684\u4E58\u5BA2\u3002"
   m_content_SC: "\u51EF\u65CB\u5427\u4F4D\u4E8E\u5934\u7B49\u8D35\u5BBE\u5BA4\u5165\u53E3\u540E\u65B9\u3002\r\n\r\n\u51EF\u65CB\u5427\u5185\u91CC\u656C\u5907\u5404\u5F0F\u7CBE\u9009\u9999\u69DF\uFF0C\u8BA9\u4E58\u5BA2\u4E8E\u62B5\u8FBE\u540E\u53EF\u4EE5\u968F\u5FC3\u7EC6\u9009\uFF0C\u54C1\u5473\u4F18\u95F2\u3002\r\n\r\n\u56FD\u6CF0\u6240\u6709\u8D35\u5BBE\u5BA4\u5185\u7684\u9152\u7CBE\u996E\u54C1\u53EA\u63D0\u4F9B\u4E88

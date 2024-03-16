@@ -12,8 +12,6 @@ public class ViewPoint : ScriptableObject
     public InfoSO[] m_infoSO;
     public Texture m_texture;
     public float m_rotation;
-    public string m_popupWindowTittle;
-    public string m_popupWindowMessage;
 
 #if UNITY_EDITOR
     // 3rd step

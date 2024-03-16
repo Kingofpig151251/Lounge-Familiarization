@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c32e86d71c29824eab56801473f2756, type: 3}
   m_Name: TaskConfig 1
   m_EditorClassIdentifier: 
-  m_Regionid: 0
-  m_question_TC: "\u8D77\u98DB\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u88E1\u68B3\u6D17\u4E00\u4E0B\uFF1F
-    (\u8D77\u98DE\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u91CC\u68B3\u6D17\u4E00\u4E0B\uFF1F)"
+  m_lounge: 0
+  m_question_TC: "\u8D77\u98DB\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u88E1\u68B3\u6D17\u4E00\u4E0B\uFF1F"
   m_question_SC: "\u8D77\u98DE\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u91CC\u68B3\u6D17\u4E00\u4E0B\uFF1F
     (\u8D77\u98DE\u524D\u6211\u53EF\u4EE5\u5728\u54EA\u91CC\u68B3\u6D17\u4E00\u4E0B\uFF1F)"
   m_question_ENG: Where can I freshen up myself before my flight?

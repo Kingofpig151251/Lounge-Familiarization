@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Wing_Business_VP 5
+  m_EditorClassIdentifier: 
+  m_position: {x: -1.2810309, y: 0, z: -1.5170326}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: ' Self Served Buffet Counter'
+  m_title_TC: "\u81EA\u52A9\u9910\u5427"
+  m_title_SC: "\u81EA\u52A9\u9910\u5427"
+  m_content_ENG: "The self served buffet counter, fully enveloped with white Carrara
+    marble, offers four selections of Asian and Western hot dishes  along with a
+    selection of cold food. \r\n\r\nBeverages include freshly brewed coffee, tea,
+    juices, water, milk, soft drinks, and etc.\r"
+  m_content_TC: "\u81EA\u52A9\u9910\u5427\u7531\u767D\u8272\u5927\u7406\u77F3\u69CB\u6210,
+    \u4F9B\u61C9\u4E00\u7CFB\u5217\u7F8E\u5473\u7684\u4E9E\u6D32\u53CA\u897F\u5F0F\u51B7\u76E4\u548C\u71B1\u98DF\u3002\r\n\r\n\u98F2\u6599\u5305\u62EC\u9BAE\u78E8\u5496\u5561\u3001\u8336\u98F2\u3001\u679C\u6C41\u3001\u5976\u985E\u53CA\u7121\u9152\u7CBE\u98F2\u6599\u7B49\u3002"
+  m_content_SC: "\u81EA\u52A9\u9910\u5427\u7531\u767D\u8272\u5927\u7406\u77F3\u6784\u6210,
+    \u4F9B\u5E94\u4E00\u7CFB\u5217\u7F8E\u5473\u7684\u4E9A\u6D32\u53CA\u897F\u5F0F\u51B7\u76D8\u548C\u70ED\u98DF\u3002\r\n\r\n\u996E\u6599\u5305\u62EC\u9C9C\u78E8\u5496\u5561\u3001\u8336\u996E\u3001\u679C\u6C41\u3001\u5976\u7C7B\u53CA\u65E0\u9152\u7CBE\u996E\u6599\u7B49\u3002"

@@ -22,6 +22,4 @@ MonoBehaviour:
   m_infoSO:
   - {fileID: 11400000, guid: 0d916d28f303fa34c9a2c15941eab75d, type: 2}
   m_texture: {fileID: 2800000, guid: 7818aa9d304fa2a4ebc8d66c12b782b0, type: 3}
-  m_rotation: -160
-  m_popupWindowTittle: 
-  m_popupWindowMessage: 
+  m_rotation: 160

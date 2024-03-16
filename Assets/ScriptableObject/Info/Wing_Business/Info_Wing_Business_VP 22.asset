@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Wing_Business_VP 22
+  m_EditorClassIdentifier: 
+  m_position: {x: -1.9, y: 0, z: -1.3000003}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Noodle Bar
+  m_title_TC: "\u98A8\u5473\u574A"
+  m_title_SC: "\u98CE\u5473\u574A"
+  m_content_ENG: "The open ceiling is the basis design of the Noodle Bar which bringing
+    in more natural sunlight.\r\n\r\nNoodle Bar provides a rich, Asian flavours serving
+    freshly made Asian dishes, such as Dan Dan noodles, char siu buns, dumplings,
+    and regional specials. \r\n\r\nIt is one of the popular places in the lounge.\r"
+  m_content_TC: "\u300C\u98A8\u5473\u574A\u300D\u7684\u958B\u653E\u5F0F\u7A7A\u9593\u8A2D\u8A08\uFF0C\u8B93\u74B0\u5883\u5F15\u5165\u4E86\u66F4\u591A\u81EA\u7136\u967D\u5149\u3002\r\n\r\n\u300C\u98A8\u5473\u574A\u300D\u63D0\u4F9B\u8C50\u5BCC\u4E9E\u6D32\u98A8\u5473\u3002\u4E58\u5BA2\u53EF\u4EE5\u54C1\u5690\u5373\u88FD\u7684\u4E9E\u6D32\u7F8E\u98DF\uFF0C\u5305\u62EC\u64D4\u64D4\u9EB5\u3001\u53C9\u71D2\u5305\u3001\u5404\u5F0F\u9903\u985E\u7F8E\u9EDE\u4EE5\u53CA\u5730\u5340\u7279\u8272\u98DF\u54C1\u3002\r\n\r\n\u300C\u98A8\u5473\u574A\u300D\u662F\u8CB4\u8CD3\u5BA4\u5167\u5EE3\u53D7\u6B61\u8FCE\u7684\u5730\u65B9\u4E4B\u4E00\u3002\r"
+  m_content_SC: "\u300C\u98CE\u5473\u574A\u300D\u7684\u5F00\u653E\u5F0F\u7A7A\u95F4\u8BBE\u8BA1\uFF0C\u8BA9\u73AF\u5883\u5F15\u5165\u4E86\u66F4\u591A\u81EA\u7136\u9633\u5149\u3002\r\n\r\n\u300C\u98CE\u5473\u574A\u300D\u63D0\u4F9B\u4E30\u5BCC\u4E9A\u6D32\u98CE\u5473\u3002
+    \u4E58\u5BA2\u53EF\u4EE5\u54C1\u5C1D\u5373\u5236\u7684\u4E9A\u6D32\u7F8E\u98DF\uFF0C\u5305\u62EC\u62C5\u62C5\u9762\u3001\u53C9\u70E7\u5305\u3001\u5404\u5F0F\u997A\u7C7B\u7F8E\u70B9\u4EE5\u53CA\u5730\u533A\u7279\u8272\u98DF\u54C1\u3002\r\n\r\n\u300C\u98CE\u5473\u574A\u300D\u662F\u8D35\u5BBE\u5BA4\u5185\u5E7F\u53D7\u6B22\u8FCE\u7684\u5730\u65B9\u4E4B\u4E00\u3002"

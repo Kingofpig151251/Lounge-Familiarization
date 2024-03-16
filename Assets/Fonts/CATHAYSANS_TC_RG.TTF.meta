@@ -4,13 +4,14 @@ TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
   fontSize: 16
-  forceTextureCase: -1
+  forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - Cathay Sans TC
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cac5569236a5d5442b8cbb0d7fdc08bb, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
