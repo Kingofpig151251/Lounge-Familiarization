@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 19
+  m_EditorClassIdentifier: 
+  m_position: {x: 1.7, y: 0, z: 2}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Library
+  m_title_TC: "\u975C\u95B1\u820D"
+  m_title_SC: "\u9759\u9605\u820D"
+  m_content_ENG: "Library is  a comfortable and quiet place for passengers to browse
+    a wide selection of local and international newspapers, magazines and books.\r"
+  m_content_TC: "\u300C\u975C\u95B1\u820D\u300D\u74B0\u5883\u5BE7\u975C\u8212\u9069\uFF0C\u63D0\u4F9B\u591A\u4EFD\u672C\u5730\u53CA\u570B\u969B\u5831\u7D19\uFF0C\u96DC\u8A8C\u53CA\u66F8\u7C4D\u4F9B\u4E58\u5BA2\u95B1\u8B80\u3002"
+  m_content_SC: "\u300C\u9759\u9605\u820D\u300D\u73AF\u5883\u5B81\u9759\u8212\u9002\uFF0C\u63D0\u4F9B\u591A\u4EFD\u672C\u5730\u53CA\u56FD\u9645\u62A5\u7EB8\uFF0C\u6742\u5FD7\u53CA\u4E66\u7C4D\u4F9B\u4E58\u5BA2\u9605\u8BFB\u3002"

@@ -29,7 +29,6 @@ namespace Reference
         public GameObject m_nextViewPoint;
         public GameObject m_homeButton;
         public GameObject m_taskModeButton;
-        public GameObject m_enterNavigateButton;
         public GameObject m_exitNavigateButton;
         public GameObject m_confirmNavigateButton;
         public GameObject m_popupWindowEnterButton;
@@ -48,7 +47,6 @@ namespace Reference
         public List<GameObject> m_infoPanel_ClassHeader = new List<GameObject>();
         public List<GameObject> m_infoPanel_ClassHeaderButton = new List<GameObject>();
         public List<GameObject> m_floorPlan_LocationButton = new List<GameObject>();
-        public List<GameObject> m_answerList;
         public List<QAConfigSO> m_questionList;
         public List<DialogueSO> m_dialogueList;
 

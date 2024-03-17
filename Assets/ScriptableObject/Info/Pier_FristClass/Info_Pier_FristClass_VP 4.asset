@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 4
+  m_EditorClassIdentifier: 
+  m_position: {x: 0, y: 0, z: -2.51}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: "The Pantry \v"
+  m_title_TC: "\u8F15\u994C\u574A\v"
+  m_title_SC: "\u8F7B\u9994\u574A"
+  m_content_ENG: 'When passengers in the mood for a quick and light bite, The Pantry
+    offers a generous spread of grab-and-go delicacies.
+
+
+
+    A wide selection of
+    breakfast items is offered in the morning, followed by an all-day menu and is
+    freshly replenished throughout the day.'
+  m_content_TC: "\u300C\u8F15\u994C\u574A\u300D\u70BA\u4F86\u53BB\u5306\u5306\u7684\u65C5\u5BA2\u63D0\u4F9B\u7F8E\u5473\u7684\u8F15\u98DF\u3002\r\n\r\n\u65E9\u4E0A\u6709\u591A\u6B3E\u65E9\u9910\u98DF\u54C1\u53EF\u4F9B\u9078\u64C7\uFF0C\u5F80\u5F8C\u6642\u6BB5\u5247\u4F9B\u61C9\u65E5\u5E38\u9910\u55AE\u3002\u6B3E\u5F0F\u5168\u65E5\u4E0D\u505C\u65B0\u9BAE\u4F9B\u61C9\u3002\r"
+  m_content_SC: "\u300C\u8F7B\u9994\u574A\u300D\u4E3A\u6765\u53BB\u5306\u5306\u7684\u65C5\u5BA2\u63D0\u4F9B\u7F8E\u5473\u7684\u8F7B\u98DF\u3002\r\n\r\n\u65E9\u4E0A\u6709\u591A\u6B3E\u65E9\u9910\u98DF\u54C1\u53EF\u4F9B\u9009\u62E9\uFF0C\u5F80\u540E\u65F6\u6BB5\u5219\u4F9B\u5E94\u65E5\u5E38\u9910\u5355\u3002
+    \u6B3E\u5F0F\u5168\u65E5\u4E0D\u505C\u65B0\u9C9C\u4F9B\u5E94\u3002"

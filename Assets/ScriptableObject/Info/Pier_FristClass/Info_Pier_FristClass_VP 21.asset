@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 21
+  m_EditorClassIdentifier: 
+  m_position: {x: 2.1250021, y: -0.13871507, z: -2.3850026}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: "The Dining Room\v"
+  m_title_TC: "\u994C\u8588\u5EF3\v"
+  m_title_SC: "\u9994\u835F\u5385"
+  m_content_ENG: "The walnut ceiling creates a warm, contemporary room with seasonal
+    \xE0 la carte menu, dining for 100 people at a time. \r\n\r\nThe Dining Room
+    offers table service of signature noodles, specialty desserts and freshly prepared
+    dishes made-to-order by the chef.\r\n\r\nPassengers can sit at the brass-topped
+    onyx bar for a wide selection of drinks."
+  m_content_TC: "\u5929\u82B1\u4EE5\u6843\u6728\u88DD\u6F62\uFF0C\u71DF\u9020\u89AA\u5207\u5BCC\u73FE\u4EE3\u611F\u7684\u300C\u994C\u8588\u5EF3\u300D,\u53EF\u540C\u6642\u70BA\u4E00\u767E\u4F4D\u8CD3\u5BA2\u63D0\u4F9B\u9EDE\u9910\u670D\u52D9\u3002\r\n\r\n\u300C\u994C\u8588\u5EF3\u300D\u63D0\u4F9B\u9910\u684C\u670D\u52D9\uFF0C\u5305\u62EC\u62DB\u724C\u9EB5\u9EDE\u3001\u7279\u8272\u751C\u9EDE\u53CA\u7531\u99D0\u5834\u5EDA\u5E2B\u65B0\u9BAE\u70AE\u88FD\u7684\u9910\u81B3\u3002\r\n\r\n\u4E58\u5BA2\u53EF\u5B89\u5750\u65BC\u9EC3\u9285\u684C\u9762\u7684\u5427\u6AAF\u65C1,\u54C1\u5690\u591A\u6B3E\u98F2\u6599\u3002"
+  m_content_SC: "\u5929\u82B1\u4EE5\u6843\u6728\u88C5\u6F62\uFF0C\u8425\u9020\u4EB2\u5207\u5BCC\u73B0\u4EE3\u611F\u7684\u300C\u9994\u835F\u5385\u300D,\u53EF\u540C\u65F6\u4E3A\u4E00\u767E\u4F4D\u5BBE\u5BA2\u63D0\u4F9B\u70B9\u9910\u670D\u52A1\u3002\r\n\r\n\u300C\u9994\u835F\u5385\u300D\u63D0\u4F9B\u9910\u684C\u670D\u52A1\uFF0C\u5305\u62EC\u62DB\u724C\u9762\u70B9\u3001\u7279\u8272\u751C\u70B9\u53CA\u7531\u9A7B\u573A\u53A8\u5E08\u65B0\u9C9C\u70AE\u5236\u7684\u9910\u81B3\u3002\r\n\r\n\u4E58\u5BA2\u53EF\u5B89\u5750\u4E8E\u9EC4\u94DC\u684C\u9762\u7684\u5427\u53F0\u65C1,\u54C1\u5C1D\u591A\u6B3E\u996E\u6599\u3002"

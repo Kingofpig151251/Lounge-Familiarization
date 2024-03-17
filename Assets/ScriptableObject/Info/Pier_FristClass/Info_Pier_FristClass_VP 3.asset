@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 3
+  m_EditorClassIdentifier: 
+  m_position: {x: 0.5080003, y: 0.000248345, z: 3.0130005}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Hallway
+  m_title_TC: "\u7384\u95DC"
+  m_title_SC: "\u7384\u5173"
+  m_content_ENG: "Passenger can instantly feel the welcoming and domestic atmosphere
+    when entering this impressive entrance.\r\n\r\nThe Hallway is wrapped in honed
+    green onyx, anchored with a long sofa, solid walnut tables, and statement chandeliers.\r\n\r\nIt
+    is a generous space to orientate and pause for a few minutes. \r"
+  m_content_TC: "\u65C5\u5BA2\u752B\u9032\u7389\u8861\u5802\u5165\u53E3\uFF0C\u5373\u53EF\u611F\u53D7\u5230\u8CB4\u8CD3\u5BA4\u5BE7\u795E\u5B89\u975C\u7684\u5BB6\u5C45\u6C23\u606F\u3002\r\n\r\n\u7384\u95DC\u7A7A\u9593\u95CA\u5927\uFF0C\u64FA\u653E\u7740\u4E00\u5F35\u9577\u6C99\u767C\u548C\u4E00\u5217\u80E1\u6843\u6728\u684C\u5B50\u3002\r\n\r\n\u9760\u8457\u5169\u908A\u7684\u7DA0\u8272\u78E8\u7802\u7E1E\u746A\u7459\u7246\u8EAB\uFF0C\u9084\u6709\u5929\u82B1\u4E0A\u9AD8\u639B\u591A\u76DE\u8000\u76EE\u7684\u540A\u71C8\uFF0C\u4EE4\u4EBA\u5370\u8C61\u96E3\u5FD8\u3002"
+  m_content_SC: "\u65C5\u5BA2\u752B\u8FDB\u7389\u8861\u5802\u5165\u53E3\uFF0C\u5373\u53EF\u611F\u53D7\u5230\u8D35\u5BBE\u5BA4\u5B81\u795E\u5B89\u9759\u7684\u5BB6\u5C45\u6C14\u606F\u3002\r\n\r\n\u7384\u5173\u7A7A\u95F4\u9614\u5927\uFF0C\u6446\u653E\u7740\u4E00\u5F20\u957F\u6C99\u53D1\u548C\u4E00\u5217\u80E1\u6843\u6728\u684C\u5B50\u3002\r\n\r\n\u9760\u7740\u4E24\u8FB9\u7684\u7EFF\u8272\u78E8\u7802\u7F1F\u739B\u7459\u5899\u8EAB\uFF0C\u8FD8\u6709\u5929\u82B1\u4E0A\u9AD8\u6302\u591A\u76CF\u8000\u76EE\u7684\u540A\u706F\uFF0C\u4EE4\u4EBA\u5370\u8C61\u96BE\u5FD8\u3002"

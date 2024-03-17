@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 26
+  m_EditorClassIdentifier: 
+  m_position: {x: -0.060000062, y: -0.07801085, z: 2.22}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: "Day Suites\v"
+  m_title_TC: "\u606C\u9038\u9593"
+  m_title_SC: "\u606C\u9038\u95F4"
+  m_content_ENG: "The Pier offers a total of 8 suites. Wrapped in walnut, each with
+    a comfortable day bed, reading light, mirror and heavy curtain for added privacy.
+    \r\n\r\nThe adjustable lighting and blinds allow passengers to control their
+    own environment.\r\n\r\nWith a view over the runway, Day Suite makes a perfect
+    area to catch up on sleep or work undisturbed, before boarding.\r\n \r\nThe Day
+    Suites in the Retreat area is a signature of the Cathay Pacific First Class lounge."
+  m_content_TC: "\u300C\u7389\u8861\u5802\u300D\u5171\u8A2D\u6709\u516B\u500B\u4EE5\u6843\u6728\u88DD\u6F62\u7684\u300C\u606C\u9038\u9593\u300D\u3002\r\n\r\n\u914D\u5099\u8212\u9069\u7684\u5E73\u81E5\u5EA7\u6905\u3001\u95B1\u8B80\u71C8\u3001\u93E1\u5B50\u548C\u7C3E\u5E33\uFF0C\u8B93\u4E58\u5BA2\u76E1\u4EAB\u79C1\u4EBA\u7A7A\u9593\u3002\r\n\r\n\u71C8\u5149\u53CA\u7A97\u7C3E\u5747\u53EF\u8ABF\u63A7\u3002\r\n\r\n\u7A97\u5916\u9060\u773A\u8DD1\u9053\uFF0C\u6700\u9069\u5408\u5728\u767B\u6A5F\u524D\u9B06\u5F1B\u4E00\u756A\u3002\r\n\r\n\u606C\u9038\u9593\u662F\u982D\u7B49\u8CB4\u8CD3\u5BA4\u6A19\u8A8C\u6027\u7684\u8A2D\u65BD\u3002"
+  m_content_SC: "\u300C\u7389\u8861\u5802\u300D\u5171\u8BBE\u6709\u516B\u4E2A\u4EE5\u6843\u6728\u88C5\u6F62\u7684\u300C\u606C\u9038\u95F4\u300D\u3002\r\n\r\n\u914D\u5907\u8212\u9002\u7684\u5E73\u5367\u5EA7\u6905\u3001\u9605\u8BFB\u706F\u3001\u955C\u5B50\u548C\u5E18\u5E10\uFF0C\u8BA9\u4E58\u5BA2\u5C3D\u4EAB\u79C1\u4EBA\u7A7A\u95F4\u3002\r\n\r\n\u706F\u5149\u53CA\u7A97\u5E18\u5747\u53EF\u8C03\u63A7\u3002\r\n\r\n\u7A97\u5916\u8FDC\u773A\u8DD1\u9053\uFF0C\u6700\u9002\u5408\u5728\u767B\u673A\u524D\u677E\u5F1B\u4E00\u756A\u3002\r\n\r\n\u606C\u9038\u95F4\u662F\u5934\u7B49\u8D35\u5BBE\u5BA4\u6807\u5FD7\u6027\u7684\u8BBE\u65BD\u3002"

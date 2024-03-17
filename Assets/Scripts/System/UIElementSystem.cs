@@ -22,8 +22,8 @@ public class UIElementSystem : MonoBehaviour
 
     public void ShowMapLayer(int id)
     {
-        if (TestPanelManager.Instance.m_isQuestionPanelActive)
-            return;
+        //if (TestPanelManager.Instance.m_isQuestionPanelActive)
+        //    return;
         LayerManager.Instance.m_isLayerActive = true;
         switch (id)
         {
@@ -41,7 +41,7 @@ public class UIElementSystem : MonoBehaviour
 
     public void OnClickNextQuestion()
     {
-        TestPanelManager.Instance.m_isQuestionPanelActive = false;
+        //TestPanelManager.Instance.m_isQuestionPanelActive = false;
         GameEventReference.Instance.OpenTestPanel.Trigger();
     }
 

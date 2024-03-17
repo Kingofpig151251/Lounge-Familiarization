@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 13
+  m_EditorClassIdentifier: 
+  m_position: {x: -1.1249999, y: 0.015845953, z: 1.255}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Showers
+  m_title_TC: "\u6DCB\u6D74\u9593"
+  m_title_SC: "\u6DCB\u6D74\u95F4"
+  m_content_ENG: "14 accessible Showers furnished with natural limestone and timber.
+    \r\n\r\nThe Showers provide a calm, relaxing and private sanctuary for passengers
+    to freshen up and unwind before journey."
+  m_content_TC: "\u9078\u7528\u5929\u7136\u77F3\u7070\u5CA9\u53CA\u6728\u6750\u4F48\u7F6E\u7684\u5341\u56DB\u500B\u7121\u969C\u7919\u6DCB\u6D74\u9593\uFF0C\u63D0\u4F9B\u5E73\u975C\u3001\u8F15\u9B06\u53CA\u7368\u7ACB\u7684\u79C1\u4EBA\u74B0\u5883\uFF0C\u8B93\u4E58\u5BA2\u5728\u555F\u7A0B\u524D\u6D17\u6ECC\u75B2\u7D2F\u3002"
+  m_content_SC: "\u9009\u7528\u5929\u7136\u77F3\u7070\u5CA9\u53CA\u6728\u6750\u5E03\u7F6E\u7684\u5341\u56DB\u4E2A\u65E0\u969C\u788D\u6DCB\u6D74\u95F4\uFF0C\u63D0\u4F9B\u5E73\u9759\u3001\u8F7B\u677E\u53CA\u72EC\u7ACB\u7684\u79C1\u4EBA\u73AF\u5883\uFF0C\u8BA9\u4E58\u5BA2\u5728\u542F\u7A0B\u524D\u6D17\u6DA4\u75B2\u7D2F\u3002"
