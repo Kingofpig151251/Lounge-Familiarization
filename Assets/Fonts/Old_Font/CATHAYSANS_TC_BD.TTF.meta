@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cac5569236a5d5442b8cbb0d7fdc08bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cathay Sans TC
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: baf1f039befd98f4cb9130c02ab5de7a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -23135,8 +23135,8 @@ MonoBehaviour:
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
   m_englishText: "  \u2022  Retreat"
-  m_traditionalChineseText: "  \u2022  Retreat"
-  m_simplifiedChineseText: "  \u2022  Retreat"
+  m_traditionalChineseText: "  \u2022  \u60A0\u7136\u8ED2"
+  m_simplifiedChineseText: "  \u2022  \u60A0\u7136\u8F69"
   m_isBold: 0
 --- !u!1 &1040014237
 GameObject:
