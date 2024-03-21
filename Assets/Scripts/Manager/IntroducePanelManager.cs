@@ -65,9 +65,10 @@ namespace Manager
         // Update the dialogue and start a new coroutine when the language changes
         private void OnLanguageChanged(params object[] param)
         {
-            if (m_isCoroutineRunning)
-                return;
             SetCurrentLanguage((int)param[0]);
+
+            if (!UIElementReference.Instance.m_IntroducePanel.activeSelf)
+                return;
             StartCoroutine(RefreshDisplay());
         }
 
@@ -100,7 +101,7 @@ namespace Manager
             }
         }
 
-        public bool getIsCoroutineRunning()
+        public bool GetIsCoroutineRunning()
         {
             return m_isCoroutineRunning;
         }

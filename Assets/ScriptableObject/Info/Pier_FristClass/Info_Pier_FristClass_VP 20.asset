@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Pier_FristClass_VP 20
+  m_EditorClassIdentifier: 
+  m_position: {x: -0.72300005, y: -0.05180282, z: 2.4010003}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: "The Bureau \v"
+  m_title_TC: "\u95B1\u89BD\u9593\v"
+  m_title_SC: "\u9605\u89C8\u95F4"
+  m_content_ENG: "The Bureau offers six secluded work suites equipped with iMac computers,
+    for quiet productivity in a home office environment. \r\n\r\nHigh speed Wi-Fi,
+    offered throughout the lounge, allows you to stay connected at all times."
+  m_content_TC: "\u516D\u9593\u5DE5\u4F5C\u9593\u5747\u8A2D\u6709 iMac \u96FB\u8166\uFF0C\u8B93\u65C5\u5BA2\u5728\u95B1\u89BD\u9593\u5B89\u975C\u5730\u8655\u7406\u696D\u52D9\u3002\r\n\r\n\u6240\u6709\u8CB4\u8CD3\u5BA4\u63D0\u4F9B\u9AD8\u901F\u7121\u7DDA\u4E0A\u7DB2\uFF0C
+    \u8F15\u9B06\u8207\u5916\u754C\u4FDD\u6301\u806F\u7E6B\u3002"
+  m_content_SC: "\u516D\u95F4\u5DE5\u4F5C\u95F4\u5747\u8BBE\u6709 iMac \u7535\u8111\uFF0C\u8BA9\u65C5\u5BA2\u53EF\u4EE5\u5728\u9605\u89C8\u95F4\u5B89\u9759\u5730\u5904\u7406\u4E1A\u52A1\u3002\r\n\r\n\u6240\u6709\u8D35\u5BBE\u5BA4\u5747\u63D0\u4F9B\u9AD8\u901F\u65E0\u7EBF\u4E0A\u7F51\uFF0C
+    \u8F7B\u677E\u4E0E\u5916\u754C\u4FDD\u6301\u8054\u7CFB\u3002"

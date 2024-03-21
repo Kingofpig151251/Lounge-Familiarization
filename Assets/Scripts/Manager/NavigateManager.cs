@@ -30,7 +30,7 @@ public class NavigateManager : Singleton<NavigateManager>
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(true);
 
         GenerateTask();
-        ChangeCorrectRateText();
+        ChangeCorrectRateText(GameManager.Instance.GetCurrentLanguage());
     }
 
     private void OnExitNavigatePhase(params object[] param)
@@ -53,7 +53,7 @@ public class NavigateManager : Singleton<NavigateManager>
             UIElementReference.Instance.m_wrongPanel.SetActive(true);
         }
 
-        ChangeCorrectRateText();
+        ChangeCorrectRateText(GameManager.Instance.GetCurrentLanguage());
     }
 
     private void OnLanguageChanged(params object[] param)
@@ -65,14 +65,14 @@ public class NavigateManager : Singleton<NavigateManager>
             UpdateTaskText(language);
         }
 
-        ChangeCorrectRateText();
+        ChangeCorrectRateText(language);
     }
 
-    private void ChangeCorrectRateText()
+    private void ChangeCorrectRateText(int language)
     {
         //int rate = (m_correctRate / m_totalQuestionGenerate);
         string text;
-        switch (GameManager.Instance.GetCurrentLanguage())
+        switch (language)
         {
             case Class_Language.English:
                 text = string.Format($"Correct Rate : {m_correctRate} /  {m_totalQuestionGenerate}");

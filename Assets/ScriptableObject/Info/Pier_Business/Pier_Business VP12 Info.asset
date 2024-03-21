@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Pier_Business VP12 Info
+  m_EditorClassIdentifier: 
+  m_position: {x: -2.6240013, y: 0.11827111, z: 0.0120005375}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Bar
+  m_title_TC: "\u9152\u5427"
+  m_title_SC: "\u9152\u5427"
+  m_content_ENG: "The drink offering is extensive with a range of spirits, wines
+    and cocktails but the feel is relaxed rather than gaudy.\r\n\nAlcoholic drinks
+    in our lounges are only available to passengers aged 18 years and over.\r"
+  m_content_TC: "\u9152\u5427\u7684\u98F2\u54C1\u7A2E\u985E\u8C50\u5BCC\uFF0C\u5305\u62EC\u70C8\u9152\u3001\u8461\u8404\u9152\u548C\u96DE\u5C3E\u9152\u3002\n\n\u5728\u9019\u88E1\u9017\u7247\u523B\uFF0C\u5BEB\u610F\u8F15\u9B06\u800C\u4E0D\u62D8\u675F\u3002\r\n\n\u570B\u6CF0\u6240\u6709\u8CB4\u8CD3\u5BA4\u5167\u7684\u9152\u7CBE\u98F2\u54C1\u53EA\u63D0\u4F9B\u4E88
+    18 \u6B72\u53CA\u4EE5\u4E0A\u7684\u4E58\u5BA2\u3002\r"
+  m_content_SC: "\u9152\u5427\u7684\u996E\u54C1\u79CD\u7C7B\u4E30\u5BCC\uFF0C\u5305\u62EC\u70C8\u9152\u3001\u8461\u8404\u9152\u548C\u9E21\u5C3E\u9152\u3002\r\n\r\n\u5728\u8FD9\u91CC\u9017\u7247\u523B\uFF0C\u5199\u610F\u8F7B\u677E\u800C\u4E0D\u62D8\u675F\u3002\r\n\r\n\u56FD\u6CF0\u6240\u6709\u8D35\u5BBE\u5BA4\u5185\u7684\u9152\u7CBE\u996E\u54C1\u53EA\u63D0\u4F9B\u4E88
+    18 \u5C81\u53CA\u4EE5\u4E0A\u7684\u4E58\u5BA2\u3002"

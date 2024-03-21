@@ -117,7 +117,6 @@ public class GameManager : Singleton<GameManager>
     private void OnGameReset(params object[] param)
     {
         GameEventReference.Instance.OnEnter360Mode.Trigger();
-        GameEventReference.Instance.OnEnterViewPoint.Trigger(0);
 
         UIElementReference.Instance.m_homeButton.SetActive(false);
         UIElementReference.Instance.m_CityMapPanel.SetActive(true);

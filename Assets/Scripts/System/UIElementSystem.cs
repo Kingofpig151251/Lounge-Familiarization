@@ -1,3 +1,4 @@
+using Manager;
 using Reference;
 using UnityEngine;
 
@@ -14,7 +15,12 @@ public class UIElementSystem : MonoBehaviour
 
     #region Language
 
-    public void OnLanguageChanged(int language) => GameEventReference.Instance.OnLanguageChanged.Trigger(language);
+    public void OnLanguageChanged(int language)
+    {
+        if (IntroducePanelManager.Instance.GetIsCoroutineRunning() || GameManager.Instance.GetCurrentLanguage() == language)
+            return;
+        GameEventReference.Instance.OnLanguageChanged.Trigger(language);
+    }
 
     #endregion
 

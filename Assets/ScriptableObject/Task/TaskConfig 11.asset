@@ -16,4 +16,4 @@ MonoBehaviour:
   m_question_TC: "\u6211\u662F\u4E00\u8317\u8336\u611B\u597D\u8005\uFF0C\u9019\u88E1\u6709\u63D0\u4F9B\u512A\u8CEA\u8336\u54C1\uFF1F"
   m_question_SC: "\u6211\u662F\u4E00\u8317\u8336\u7231\u597D\u8005\uFF0C\u8FD9\u91CC\u6709\u63D0\u4F9B\u4F18\u8D28\u8336\u54C1\uFF1F"
   m_question_ENG: 'I am a tea lover, where do you serve fine tea at The Pier?  '
-  m_navigateIndex: 
+  m_navigateIndex: 0f000000

@@ -17,4 +17,4 @@ MonoBehaviour:
   m_question_SC: "\u8FD8\u6709\u4E24\u4E2A\u5C0F\u65F6\u624D\u767B\u673A\uFF0C\u54EA\u91CC\u53EF\u4EE5\u5C0F\u7761\u4E00\u4E0B\uFF1F"
   m_question_ENG: 'Where is the best place to take a nap before I continue my journey
     in 2 hours?  '
-  m_navigateIndex: 
+  m_navigateIndex: 15000000

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pier_Business VP 1
   m_EditorClassIdentifier: 
   m_index: 1
-  m_loungeName: 2
+  m_loungeName: 4
   m_relation: 
   m_arrowSO:
   - {fileID: 11400000, guid: 1812ffb8230a6954f9413600f673de16, type: 2}
@@ -21,4 +21,3 @@ MonoBehaviour:
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 5b013188f2f70a142a4e827a6df83bbe, type: 3}
   m_rotation: 213.07
-  m_popupWindowMessage: 
