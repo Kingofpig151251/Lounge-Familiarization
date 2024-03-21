@@ -16,11 +16,11 @@ MonoBehaviour:
   m_loungeName: 2
   m_relation: 01000000
   m_arrowSO:
-  - {fileID: 11400000, guid: 8c2784b7ae5ff2648a7919c6733f12db, type: 2}
-  - {fileID: 11400000, guid: e73db574e62f739438f877f9103e6fe2, type: 2}
-  - {fileID: 11400000, guid: 7307dd1670afe5c4b8fb7fb9ce31afc3, type: 2}
+  - {fileID: 11400000, guid: ed168c85389506f488fbdff3131311bd, type: 2}
+  - {fileID: 11400000, guid: 841c201705151004696e9fd1c9691673, type: 2}
+  - {fileID: 11400000, guid: 32ef24ceee8fe0d4aa59130049c1845a, type: 2}
+  - {fileID: 11400000, guid: 93a668ed69c9d354c8b3c7f7ad08cd43, type: 2}
+  - {fileID: 11400000, guid: 09b8686c7f4b2a947b534f6aef36a407, type: 2}
   m_infoSO: []
-  m_texture: {fileID: 2800000, guid: 5cc00bfe9ba2066499cbebf1d93ef629, type: 3}
-  m_rotation: 304.96
-  m_popupWindowTittle: 
-  m_popupWindowMessage: 
+  m_texture: {fileID: 2800000, guid: 0b0a90bc6d6369f40bfd5af71c3bf274, type: 3}
+  m_rotation: 145.4
