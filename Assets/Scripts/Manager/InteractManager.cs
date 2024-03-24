@@ -16,7 +16,7 @@ public class InteractManager : Singleton<InteractManager>
             Input.GetKeyDown(KeyCode.Mouse0)
             && !GameManager.Instance.IsCityMapPanelActive()
             && !FloorPlanManager.Instance.IsFloorPlanPanelActive()
-            && !InfoPanelManager.Instance.IsExpanded())
+            && !InfoPanelManager.Instance.GetIsExpanded())
         {
             int index = hit.collider.gameObject.GetComponent<InterfaceItem>().GetIndex();
             GameEventReference.Instance.OnInteract.Trigger(index);

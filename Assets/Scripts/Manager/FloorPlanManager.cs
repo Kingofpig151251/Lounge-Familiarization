@@ -23,7 +23,7 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
 
     private void OnEnterViewPoint(params object[] param)
     {
-        int viewPointIndex = (int)param[0];
+        int viewPointIndex = (int)param[0] + ViewPointReference.Instance.m_loungeStartIndex[(int)ViewPointManager.Instance.m_currentLounge];
         UIElementReference.Instance.m_floorPlan_LocationButton[m_currentViewPointIndex].GetComponent<Image>().sprite =
             UIElementReference.Instance.m_locationButton;
         UIElementReference.Instance.m_floorPlan_LocationButton[viewPointIndex].GetComponent<Image>().sprite =

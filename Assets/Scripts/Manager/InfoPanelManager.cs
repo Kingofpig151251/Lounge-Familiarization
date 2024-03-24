@@ -1,7 +1,10 @@
+﻿using System;
 using System.Collections;
 using Reference;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static Unity.VisualScripting.Icons;
 
 public class InfoPanelManager : Singleton<InfoPanelManager>
 {
@@ -37,15 +40,12 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         GameEventReference.Instance.OnClickLoungeHeader.AddListener(OnClickLoungeHeader);
         GameEventReference.Instance.OnClickClassHeader.AddListener(OnClickClassHeader);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
+        GameEventReference.Instance.OnLanguageChanged.AddListener(UpdateCurentLoungh);
+        GameEventReference.Instance.OnEnterViewPoint.AddListener(UpdateCurentLoungh);
     }
 
-    private void OnClickInfoExpandButton(params object[] param)
+    private void ExpandInfoPanel()
     {
-        if (m_isAnimating)
-        {
-            return;
-        }
-
         m_isPanelExpanded = !m_isPanelExpanded;
 
         float panelWidth = UIElementReference.Instance.m_InfoPanel.GetComponent<RectTransform>().sizeDelta.x;
@@ -64,6 +64,16 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
             UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite =
                 UIElementReference.Instance.m_collapseButton;
         }
+    }
+
+    private void OnClickInfoExpandButton(params object[] param)
+    {
+        if (m_isAnimating)
+        {
+            return;
+        }
+
+        ExpandInfoPanel();
     }
 
     private void OnClickLoungeHeader(params object[] param)
@@ -167,14 +177,7 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
     {
         if (m_isPanelExpanded)
         {
-            m_isPanelExpanded = false;
-
-            GameObject infoPanel = UIElementReference.Instance.m_InfoPanel;
-            float panelWidth = UIElementReference.Instance.m_InfoPanel.GetComponent<RectTransform>().sizeDelta.x;
-            infoPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(-panelWidth / 2,
-                infoPanel.GetComponent<RectTransform>().anchoredPosition.y);
-            UIElementReference.Instance.m_InfoPanelExpandButton.GetComponent<Image>().sprite =
-                UIElementReference.Instance.m_collapseButton;
+            ExpandInfoPanel();
         }
     }
 
@@ -311,5 +314,83 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         }
     }
 
-    public bool IsExpanded() => m_isPanelExpanded;
+    private void UpdateCurentLoungh(params object[] param)
+    {
+        TMP_Text curentLoungh = UIElementReference.Instance.m_curentLounghText.GetComponent<TMP_Text>();
+
+        switch (ViewPointManager.Instance.m_currentLounge)
+        {
+            case Lounge.DeckBusinessLounge:
+                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
+                {
+                    curentLoungh.text = "The Deck";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玲瓏堂";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玲珑堂";
+                }
+                break;
+            case Lounge.WingFristClassLounge:
+                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
+                {
+                    curentLoungh.text = "The Wing(First)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "寰宇堂(頭等)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "寰宇堂(头等)";
+                }
+                break;
+            case Lounge.WingBusinessLounge:
+                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
+                {
+                    curentLoungh.text = "The Wing(Business)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "寰宇堂(商務)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "寰宇堂(商务)";
+                }
+                break;
+            case Lounge.PierFirstClassLounge:
+                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
+                {
+                    curentLoungh.text = "The Pier(First)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玉衡堂(頭等)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玉衡堂(头等)";
+                }
+                break;
+            case Lounge.PierBusinessLounge:
+                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
+                {
+                    curentLoungh.text = "The Pier(Business)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玉衡堂(商務)";
+                }
+                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玉衡堂(商务)";
+                }
+                break;
+        }
+    }
+    public bool GetIsExpanded() => m_isPanelExpanded;
 }

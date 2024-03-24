@@ -10,9 +10,9 @@ public class TMPTranslater : MonoBehaviour
     [SerializeField] private float m_chineseTextMargin = 0f;
 
     [SerializeField] private bool m_updateMultiLanguageText = true;
-    [SerializeField] [TextAreaAttribute] private string m_englishText;
-    [SerializeField] [TextAreaAttribute] private string m_traditionalChineseText;
-    [SerializeField] [TextAreaAttribute] private string m_simplifiedChineseText;
+    [SerializeField] [TextAreaAttribute] public string m_englishText;
+    [SerializeField] [TextAreaAttribute] public string m_traditionalChineseText;
+    [SerializeField] [TextAreaAttribute] public string m_simplifiedChineseText;
 
     [SerializeField] private bool m_isBold = false;
 
@@ -45,7 +45,7 @@ public class TMPTranslater : MonoBehaviour
         UpdateTMP(language);
     }
 
-    private void UpdateTMP(int language)
+    public void UpdateTMP(int language)
     {
         switch (language)
         {
