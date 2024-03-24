@@ -1,10 +1,8 @@
-﻿using System;
+﻿using Reference;
 using System.Collections;
-using Reference;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static Unity.VisualScripting.Icons;
 
 public class InfoPanelManager : Singleton<InfoPanelManager>
 {
@@ -40,8 +38,8 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         GameEventReference.Instance.OnClickLoungeHeader.AddListener(OnClickLoungeHeader);
         GameEventReference.Instance.OnClickClassHeader.AddListener(OnClickClassHeader);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
-        GameEventReference.Instance.OnLanguageChanged.AddListener(UpdateCurentLoungh);
-        GameEventReference.Instance.OnEnterViewPoint.AddListener(UpdateCurentLoungh);
+        GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
+        GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
     }
 
     private void ExpandInfoPanel()
@@ -314,10 +312,87 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         }
     }
 
-    private void UpdateCurentLoungh(params object[] param)
+    private void OnLanguageChanged(params object[] param)
     {
         TMP_Text curentLoungh = UIElementReference.Instance.m_curentLounghText.GetComponent<TMP_Text>();
+        switch (ViewPointManager.Instance.m_currentLounge)
+        {
+            case Lounge.DeckBusinessLounge:
+                if ((int)param[0] == Class_Language.English)
+                {
+                    curentLoungh.text = "The Deck";
+                }
+                else if ((int)param[0] == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玲瓏堂";
+                }
+                else if ((int)param[0] == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玲珑堂";
+                }
+                break;
+            case Lounge.WingFristClassLounge:
+                if ((int)param[0] == Class_Language.English)
+                {
+                    curentLoungh.text = "The Wing(First)";
+                }
+                else if ((int)param[0] == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "寰宇堂(頭等)";
+                }
+                else if ((int)param[0] == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "寰宇堂(头等)";
+                }
+                break;
+            case Lounge.WingBusinessLounge:
+                if ((int)param[0] == Class_Language.English)
+                {
+                    curentLoungh.text = "The Wing(Business)";
+                }
+                else if ((int)param[0] == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "寰宇堂(商務)";
+                }
+                else if ((int)param[0] == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "寰宇堂(商务)";
+                }
+                break;
+            case Lounge.PierFirstClassLounge:
+                if ((int)param[0] == Class_Language.English)
+                {
+                    curentLoungh.text = "The Pier(First)";
+                }
+                else if ((int)param[0] == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玉衡堂(頭等)";
+                }
+                else if ((int)param[0] == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玉衡堂(头等)";
+                }
+                break;
+            case Lounge.PierBusinessLounge:
+                if ((int)param[0] == Class_Language.English)
+                {
+                    curentLoungh.text = "The Pier(Business)";
+                }
+                else if ((int)param[0] == Class_Language.TraditionalChinese)
+                {
+                    curentLoungh.text = "玉衡堂(商務)";
+                }
+                else if ((int)param[0] == Class_Language.SimplifiedChinese)
+                {
+                    curentLoungh.text = "玉衡堂(商务)";
+                }
+                break;
+        }
+    }
+    private void OnEnterViewPoint(params object[] param)
+    {
 
+        TMP_Text curentLoungh = UIElementReference.Instance.m_curentLounghText.GetComponent<TMP_Text>();
         switch (ViewPointManager.Instance.m_currentLounge)
         {
             case Lounge.DeckBusinessLounge:
