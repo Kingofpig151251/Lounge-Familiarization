@@ -39,7 +39,7 @@ namespace Reference
 
         [Header("UI Texts")] public TextMeshProUGUI m_taskText;
         public TextMeshProUGUI m_taskCorrectRate;
-        public GameObject m_curentLounghText;
+        public List<GameObject> m_curentLounghText;
 
         [Header("UI Lists")] public List<GameObject> m_FloorPlanImage = new List<GameObject>();
         public List<GameObject> m_infoPanel_LoungeView = new List<GameObject>();

@@ -35,11 +35,10 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
     private void SetUpListeners()
     {
         GameEventReference.Instance.OnClickInfoExpandButton.AddListener(OnClickInfoExpandButton);
+        GameEventReference.Instance.OnClickInfoExpandButton.AddListener(UpdateCurentLounghText);
         GameEventReference.Instance.OnClickLoungeHeader.AddListener(OnClickLoungeHeader);
         GameEventReference.Instance.OnClickClassHeader.AddListener(OnClickClassHeader);
         GameEventReference.Instance.OnGameReset.AddListener(OnGameReset);
-        GameEventReference.Instance.OnLanguageChanged.AddListener(OnLanguageChanged);
-        GameEventReference.Instance.OnEnterViewPoint.AddListener(OnEnterViewPoint);
     }
 
     private void ExpandInfoPanel()
@@ -312,160 +311,49 @@ public class InfoPanelManager : Singleton<InfoPanelManager>
         }
     }
 
-    private void OnLanguageChanged(params object[] param)
+    private void UpdateCurentLounghText(params object[] param)
     {
-        TMP_Text curentLoungh = UIElementReference.Instance.m_curentLounghText.GetComponent<TMP_Text>();
-        switch (ViewPointManager.Instance.m_currentLounge)
+        foreach (GameObject text in UIElementReference.Instance.m_curentLounghText)
         {
-            case Lounge.DeckBusinessLounge:
-                if ((int)param[0] == Class_Language.English)
-                {
-                    curentLoungh.text = "The Deck";
-                }
-                else if ((int)param[0] == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玲瓏堂";
-                }
-                else if ((int)param[0] == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玲珑堂";
-                }
-                break;
-            case Lounge.WingFristClassLounge:
-                if ((int)param[0] == Class_Language.English)
-                {
-                    curentLoungh.text = "The Wing(First)";
-                }
-                else if ((int)param[0] == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "寰宇堂(頭等)";
-                }
-                else if ((int)param[0] == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "寰宇堂(头等)";
-                }
-                break;
-            case Lounge.WingBusinessLounge:
-                if ((int)param[0] == Class_Language.English)
-                {
-                    curentLoungh.text = "The Wing(Business)";
-                }
-                else if ((int)param[0] == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "寰宇堂(商務)";
-                }
-                else if ((int)param[0] == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "寰宇堂(商务)";
-                }
-                break;
-            case Lounge.PierFirstClassLounge:
-                if ((int)param[0] == Class_Language.English)
-                {
-                    curentLoungh.text = "The Pier(First)";
-                }
-                else if ((int)param[0] == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玉衡堂(頭等)";
-                }
-                else if ((int)param[0] == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玉衡堂(头等)";
-                }
-                break;
-            case Lounge.PierBusinessLounge:
-                if ((int)param[0] == Class_Language.English)
-                {
-                    curentLoungh.text = "The Pier(Business)";
-                }
-                else if ((int)param[0] == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玉衡堂(商務)";
-                }
-                else if ((int)param[0] == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玉衡堂(商务)";
-                }
-                break;
+            text.SetActive(false);
         }
-    }
-    private void OnEnterViewPoint(params object[] param)
-    {
 
-        TMP_Text curentLoungh = UIElementReference.Instance.m_curentLounghText.GetComponent<TMP_Text>();
         switch (ViewPointManager.Instance.m_currentLounge)
         {
             case Lounge.DeckBusinessLounge:
-                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
-                {
-                    curentLoungh.text = "The Deck";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玲瓏堂";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玲珑堂";
-                }
+                UIElementReference.Instance.m_curentLounghText[2].SetActive(true);
+                UIElementReference.Instance.m_curentLounghText[2].GetComponent<TMPTranslater>().m_englishText = "<Current Location>";
+                UIElementReference.Instance.m_curentLounghText[2].GetComponent<TMPTranslater>().m_traditionalChineseText = "<目前位置>";
+                UIElementReference.Instance.m_curentLounghText[2].GetComponent<TMPTranslater>().m_simplifiedChineseText = "<目前位置>";
                 break;
             case Lounge.WingFristClassLounge:
-                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
-                {
-                    curentLoungh.text = "The Wing(First)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "寰宇堂(頭等)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "寰宇堂(头等)";
-                }
+                UIElementReference.Instance.m_curentLounghText[0].SetActive(true);
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_englishText = "<Current Location>(First)";
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_traditionalChineseText = "<目前位置>(頭等)";
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_simplifiedChineseText = "<目前位置>(头等)";
                 break;
             case Lounge.WingBusinessLounge:
-                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
-                {
-                    curentLoungh.text = "The Wing(Business)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "寰宇堂(商務)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "寰宇堂(商务)";
-                }
+                UIElementReference.Instance.m_curentLounghText[0].SetActive(true);
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_englishText = "<Current Location>(Business)";
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_traditionalChineseText = "<目前位置>(商務)";
+                UIElementReference.Instance.m_curentLounghText[0].GetComponent<TMPTranslater>().m_simplifiedChineseText = "<目前位置>(商务)";
                 break;
             case Lounge.PierFirstClassLounge:
-                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
-                {
-                    curentLoungh.text = "The Pier(First)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玉衡堂(頭等)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玉衡堂(头等)";
-                }
+                UIElementReference.Instance.m_curentLounghText[1].SetActive(true);
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_englishText = "<Current Location>(First)";
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_traditionalChineseText = "<目前位置>(頭等)";
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_simplifiedChineseText = "玉衡堂(头等)";
                 break;
             case Lounge.PierBusinessLounge:
-                if (GameManager.Instance.GetCurrentLanguage() == Class_Language.English)
-                {
-                    curentLoungh.text = "The Pier(Business)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.TraditionalChinese)
-                {
-                    curentLoungh.text = "玉衡堂(商務)";
-                }
-                else if (GameManager.Instance.GetCurrentLanguage() == Class_Language.SimplifiedChinese)
-                {
-                    curentLoungh.text = "玉衡堂(商务)";
-                }
+                UIElementReference.Instance.m_curentLounghText[1].SetActive(true);
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_englishText = "<Current Location>(Business)";
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_traditionalChineseText = "<目前位置>(商務)";
+                UIElementReference.Instance.m_curentLounghText[1].GetComponent<TMPTranslater>().m_simplifiedChineseText = "<目前位置>(商务)";
                 break;
         }
+        //暴力解法,強制更新語言
+        GameEventReference.Instance.OnLanguageChanged.Trigger(GameManager.Instance.GetCurrentLanguage());
     }
+
     public bool GetIsExpanded() => m_isPanelExpanded;
 }
