@@ -30,7 +30,7 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             UIElementReference.Instance.m_activeLocationButton;
         m_currentViewPointIndex = viewPointIndex;
         m_isFloorPlanPanelActive = false;
-    }
+    } 
 
     private void OnClickFloorPlanButton(params object[] param)
     {
