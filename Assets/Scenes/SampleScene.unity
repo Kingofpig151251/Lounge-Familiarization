@@ -21559,8 +21559,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24fe4770a2aa05a4a8e6be7878cb0590, type: 2}
   m_expandButton: {fileID: 21300000, guid: 723eb3334722baa4ab93c5df711f8827, type: 3}
   m_collapseButton: {fileID: 21300000, guid: 98f193ab891eff145b9ef83730ba3539, type: 3}
-  m_locationButton: {fileID: 21300000, guid: 4f97b6b9d426fcb49b96b68d6488622f, type: 3}
-  m_activeLocationButton: {fileID: 21300000, guid: 05f61eb10fe84c64b9f8322a1c37d47f, type: 3}
+  m_locationButton: {fileID: 21300000, guid: 36fe17c5be0011947ab592b7caa8a091, type: 3}
+  m_activeLocationButton: {fileID: 21300000, guid: 8f885e369d166ff4a9dcbcdae36e2499, type: 3}
   m_Grid: {fileID: 262535845}
   m_waterMark: {fileID: 323864176}
   m_questionBox: {fileID: 1440338618}
@@ -53860,7 +53860,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981397059
 MonoBehaviour:
