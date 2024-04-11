@@ -92,4 +92,8 @@ public class UIElementSystem : MonoBehaviour
         UIElementReference.Instance.m_nextTaskButton.SetActive(false);
         UIElementReference.Instance.m_confirmButton.SetActive(true);
     }
+    public void DelectPage(GameObject page)
+    {
+        Destroy(page);
+    }
 }
