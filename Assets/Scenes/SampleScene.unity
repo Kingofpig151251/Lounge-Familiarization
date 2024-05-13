@@ -3210,9 +3210,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: "Go to \nHome page"
-  m_traditionalChineseText: "\u8FD4\u56DE\u9996\u9801"
-  m_simplifiedChineseText: "\u8FD4\u56DE\u9996\u9875"
+  m_englishText: Home Page
+  m_traditionalChineseText: "\u9996\u9801"
+  m_simplifiedChineseText: "\u9996\u9875"
   m_isBold: 0
 --- !u!114 &111885368
 MonoBehaviour:
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Go to \nHome page"
+  m_text: Home Page
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -3481,8 +3481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1561.6509, y: -352.5}
-  m_SizeDelta: {x: 2809.302, y: 705}
+  m_AnchoredPosition: {x: 1760, y: -352.5}
+  m_SizeDelta: {x: 3200, y: 705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114219900
 MonoBehaviour:
@@ -6794,7 +6794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 284.00012, y: 336}
+  m_AnchoredPosition: {x: 285, y: 336}
   m_SizeDelta: {x: 2048, y: 912}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265963944
@@ -8635,7 +8635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56, y: 473}
+  m_AnchoredPosition: {x: -56, y: 399}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &321844510
@@ -9791,7 +9791,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -105, y: -30}
-  m_SizeDelta: {x: 200, y: 80}
+  m_SizeDelta: {x: 220, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354224191
 MonoBehaviour:
@@ -10336,8 +10336,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 284.00012, y: 336}
-  m_SizeDelta: {x: 2048, y: 912}
+  m_AnchoredPosition: {x: 284.00012, y: 355}
+  m_SizeDelta: {x: 2048, y: 456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367140114
 MonoBehaviour:
@@ -11955,7 +11955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 530, y: 150}
+  m_AnchoredPosition: {x: 530, y: 220}
   m_SizeDelta: {x: 672, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436645177
@@ -13180,11 +13180,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: 'Browse
-
-    Feature points'
-  m_traditionalChineseText: "\u700F\u89BD\u7279\u8272\u5730\u9EDE"
-  m_simplifiedChineseText: "\u6D4F\u89C8\u7279\u8272\u5730\u70B9"
+  m_englishText: Distinctive feature
+  m_traditionalChineseText: "\u7279\u8272\u5730\u9EDE\r"
+  m_simplifiedChineseText: "\u7279\u8272\u5730\u70B9"
   m_isBold: 0
 --- !u!114 &469250715
 MonoBehaviour:
@@ -13206,9 +13204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Browse
-
-    Feature points'
+  m_text: Distinctive feature
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13398,7 +13394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 530, y: 150}
+  m_AnchoredPosition: {x: 530, y: 230}
   m_SizeDelta: {x: 672, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471262289
@@ -17001,8 +16997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.935, y: 0}
-  m_SizeDelta: {x: 2464.061, y: 400}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 3000, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &597825427
 MonoBehaviour:
@@ -17020,9 +17016,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: "Please click the lounge and let\u2019s explore it together"
-  m_traditionalChineseText: "\u8ACB\u9EDE\u64CA\u4F11\u606F\u5BA4\uFF0C\u8B93\u6211\u5011\u4E00\u8D77\u63A2\u7D22\u5427"
-  m_simplifiedChineseText: "\u8BF7\u70B9\u51FB\u4F11\u606F\u5BA4\uFF0C\u8BA9\u6211\u4EEC\u4E00\u8D77\u63A2\u7D22\u5427"
+  m_englishText: Select the lounge to learn more
+  m_traditionalChineseText: "\u9078\u64C7\u8CB4\u8CD3\u5BA4\u4EE5\u4E86\u89E3\u66F4\u591A\u8CC7\u8A0A\r"
+  m_simplifiedChineseText: "\u9009\u62E9\u4F11\u606F\u5BA4\u4EE5\u4E86\u89E3\u66F4\u591A\u4FE1\u606F\r"
   m_isBold: 0
 --- !u!114 &597825428
 MonoBehaviour:
@@ -17044,7 +17040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Please click the lounge and let\u2019s explore it together"
+  m_text: Select the lounge to learn more
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -17071,7 +17067,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 174.6
+  m_fontSize: 183.7
   m_fontSizeBase: 160
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -18899,9 +18895,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: "You're right! \nHere is the Correct Location !"
-  m_traditionalChineseText: "\u4F60\u8AAA\u5F97\u5C0D\uFF01\r\n\u9019\u662F\u6B63\u78BA\u7684\u5730\u9EDE\uFF01"
-  m_simplifiedChineseText: "\u4F60\u8BF4\u5F97\u5BF9\uFF01\r\n\u8FD9\u662F\u6B63\u786E\u7684\u5730\u70B9\uFF01"
+  m_englishText: "You're right ! \nHere is the Correct Location."
+  m_traditionalChineseText: "\u505A\u5F97\u597D! \r\n\u9019\u662F\u6B63\u78BA\u7684\u5730\u9EDE."
+  m_simplifiedChineseText: "\u505A\u5F97\u597D! \r\n\u8FD9\u662F\u6B63\u786E\u7684\u5730\u70B9."
   m_isBold: 0
 --- !u!114 &677304887
 MonoBehaviour:
@@ -18923,7 +18919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You're right! \nHere is the Correct Location !"
+  m_text: "You're right ! \nHere is the Correct Location."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20431,7 +20427,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1839.6, y: 912}
+  m_SizeDelta: {x: 1839.6, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709475361
 MonoBehaviour:
@@ -20449,10 +20445,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: "Welcome to our Lounge.\nLet's familiarize ourselves with the 360\xB0
-    navigation mode first."
-  m_traditionalChineseText: "\u6B61\u8FCE\u4F86\u5230\u6211\u5011\u7684\u8CB4\u8CD3\u5BA4\u3002\r\n\u6211\u5011\u5148\u4F86\u719F\u6089\u4E00\u4E0B360\xB0\u5C0E\u822A\u6A21\u5F0F\u3002"
-  m_simplifiedChineseText: "\u6B22\u8FCE\u6765\u5230\u6211\u4EEC\u7684\u8D35\u5BBE\u5BA4\u3002\r\n\u6211\u4EEC\u5148\u6765\u719F\u6089\u4E00\u4E0B360\xB0\u5BFC\u822A\u6A21\u5F0F\u3002"
+  m_englishText: "Here are some features that may be useful. \r"
+  m_traditionalChineseText: "\u9019\u4E9B\u529F\u80FD\u53EF\u80FD\u5C0D\u4F60\u6709\u5E6B\u52A9\u3002\r"
+  m_simplifiedChineseText: "\u8FD9\u4E9B\u529F\u80FD\u53EF\u80FD\u5BF9\u4F60\u6709\u5E2E\u52A9\u3002\r"
   m_isBold: 0
 --- !u!114 &709475362
 MonoBehaviour:
@@ -20474,8 +20469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to our Lounge.\nLet's familiarize ourselves with the 360\xB0 navigation
-    mode first."
+  m_text: "Here are some features that may be useful. \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -25272,7 +25266,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -95, y: 0}
-  m_SizeDelta: {x: 200, y: 80}
+  m_SizeDelta: {x: 130, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859958547
 MonoBehaviour:
@@ -27366,7 +27360,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -175, y: 5}
-  m_SizeDelta: {x: 250, y: 80}
+  m_SizeDelta: {x: 250, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &967572902
 MonoBehaviour:
@@ -30541,7 +30535,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 284.00012, y: 336}
-  m_SizeDelta: {x: 2048, y: 912}
+  m_SizeDelta: {x: 2048, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091603466
 MonoBehaviour:
@@ -35412,9 +35406,10 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Do you need me show you the answer ?
-  m_traditionalChineseText: "\u4F60\u9700\u8981\u6211\u544A\u8A34\u4F60\u7B54\u6848\u55CE\uFF1F"
-  m_simplifiedChineseText: "\u4F60\u9700\u8981\u6211\u544A\u8BC9\u4F60\u7B54\u6848\u5417\uFF1F"
+  m_englishText: "It appears that you're having some difficulty answering this question.
+    \r\nDo you want me to show you the answer?"
+  m_traditionalChineseText: "\u9019\u500B\u554F\u984C\u4F3C\u4E4E\u6709\u9EDE\u96E3\u5EA6\u3002\r\n\u4F60\u60F3\u8B93\u6211\u544A\u8A34\u4F60\u7B54\u6848\u55CE\uFF1F\t"
+  m_simplifiedChineseText: "\u8FD9\u4E2A\u95EE\u9898\u4F3C\u4E4E\u6709\u70B9\u96BE\u5EA6\u3002\r\n\u4F60\u60F3\u8BA9\u6211\u544A\u8BC9\u4F60\u7B54\u6848\u5417\uFF1F"
   m_isBold: 0
 --- !u!114 &1317657729
 MonoBehaviour:
@@ -35436,10 +35431,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'It looks like you have some trouble with this question.
-
-    Do you need
-    me show you the answer ?'
+  m_text: "It appears that you're having some difficulty answering this question.
+    \r\nDo you want me to show you the answer?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -44403,9 +44396,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: "Open \nFloor Plan"
-  m_traditionalChineseText: "\u6253\u958B\u5730\u5716"
-  m_simplifiedChineseText: "\u6253\u5F00\u5730\u56FE"
+  m_englishText: Floor Plan
+  m_traditionalChineseText: "\u5E73\u9762\u5716"
+  m_simplifiedChineseText: "\u5E73\u9762\u56FE"
   m_isBold: 0
 --- !u!114 &1630602918
 MonoBehaviour:
@@ -44427,7 +44420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Open \nFloor Plan"
+  m_text: Floor Plan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
@@ -50918,7 +50911,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56, y: 473}
+  m_AnchoredPosition: {x: -56, y: 425}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850406585
@@ -56240,11 +56233,9 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: 'Go to
-
-    Task mode'
-  m_traditionalChineseText: "\u4EFB\u52D9\u6A21\u5F0F"
-  m_simplifiedChineseText: "\u4EFB\u52A1\u6A21\u5F0F"
+  m_englishText: Task
+  m_traditionalChineseText: "\u4EFB\u52D9"
+  m_simplifiedChineseText: "\u4EFB\u52A1"
   m_isBold: 0
 --- !u!114 &2041293017
 MonoBehaviour:
@@ -56266,9 +56257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Go to
-
-    Task mode'
+  m_text: Task
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
