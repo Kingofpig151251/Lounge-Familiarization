@@ -16,8 +16,8 @@ MonoBehaviour:
   m_loungeName: 4
   m_relation: 
   m_arrowSO:
-  - {fileID: 11400000, guid: 2f2d17a5f3ef9774e94675524191621e, type: 2}
-  - {fileID: 11400000, guid: 465e2a0e9efb38f489d969082cd3df7f, type: 2}
+  - {fileID: 11400000, guid: b951ecca51d375446ad123846335a58f, type: 2}
+  - {fileID: 11400000, guid: 2621490d31a6fad4bbdf0cef82fe2575, type: 2}
   m_infoSO:
   - {fileID: 11400000, guid: 802ae6dc90f6f1542907470839c075d4, type: 2}
   - {fileID: 11400000, guid: 7dd5c03eb6280b44c8fee635854cf031, type: 2}
