@@ -33,6 +33,8 @@ namespace Reference
 
         #region Navigation Events
 
+        public GameEvent OnShowLoungeInfo = new GameEvent();
+        public GameEvent OnCloseLoungeInfo = new GameEvent();
         public GameEvent OnChangeRegion = new GameEvent();
         public GameEvent OnEnterNavigatePhase = new GameEvent();
         public GameEvent OnExitNavigatePhase = new GameEvent();

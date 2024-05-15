@@ -6,8 +6,10 @@ namespace Reference
 {
     public class UIElementReference : Singleton<UIElementReference>
     {
-        [Header("UI Panels")] public GameObject m_CityMapPanel;
+        [Header("UI Panels")]
+        public GameObject m_CityMapPanel;
         public GameObject m_FloorPlanPanel;
+        public GameObject m_loungeInformationPanel;
         public GameObject m_MessagePanel;
         public GameObject m_IntroducePanel;
         public GameObject m_InfoPanel;
@@ -19,7 +21,8 @@ namespace Reference
         public GameObject m_correctPanel;
         public GameObject m_wrongPanel;
 
-        [Header("UI Buttons")] public GameObject m_InfoPanelExpandButton;
+        [Header("UI Buttons")]
+        public GameObject m_InfoPanelExpandButton;
         public List<GameObject> m_ButtonENG;
         public List<GameObject> m_ButtonSC;
         public List<GameObject> m_ButtonTC;
@@ -37,11 +40,13 @@ namespace Reference
         public GameObject m_nextTaskButton;
         public GameObject m_confirmButton;
 
-        [Header("UI Texts")] public TextMeshProUGUI m_taskText;
+        [Header("UI Texts")]
+        public TextMeshProUGUI m_taskText;
         public TextMeshProUGUI m_taskCorrectRate;
         public List<GameObject> m_curentLounghText;
 
-        [Header("UI Lists")] public List<GameObject> m_FloorPlanImage = new List<GameObject>();
+        [Header("UI Lists")]
+        public List<GameObject> m_FloorPlanImage = new List<GameObject>();
         public List<GameObject> m_infoPanel_LoungeView = new List<GameObject>();
         public List<GameObject> m_infoPanel_LoungeHeaderButton = new List<GameObject>();
         public List<GameObject> m_infoPanel_ClassView = new List<GameObject>();
@@ -51,19 +56,25 @@ namespace Reference
         public List<QAConfigSO> m_questionList;
         public List<DialogueSO> m_dialogueList;
 
-        [Header("Sprites")] public Sprite m_expandButton;
+        [Header("Sprites")]
+        public Sprite m_expandButton;
         public Sprite m_collapseButton;
         public Sprite m_locationButton;
         public Sprite m_activeLocationButton;
 
-        [Header("Others")] public GameObject m_Grid;
+        [Header("Others")]
+        public GameObject m_Grid;
         public GameObject m_waterMark;
         public GameObject m_questionBox;
         public GameObject m_nextQuestionButton;
         public GameObject m_taskList;
         public GameObject m_popupWindowTitle;
         public GameObject m_popupWindowMessage;
+        public GameObject m_loungeInfoTitle;
+        public GameObject m_loungeInfoContent;
+        public GameObject m_npcReminder;
 
-        [Header("SO")] public InfoSO m_LoungeInfoSo;
+        [Header("SO")]
+        public InfoSO m_LoungeInfoSo;
     }
 }

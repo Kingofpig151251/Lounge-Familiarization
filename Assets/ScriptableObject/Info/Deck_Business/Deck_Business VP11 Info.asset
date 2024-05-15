@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Deck_Business VP11 Info
+  m_EditorClassIdentifier: 
+  m_position: {x: 0.2, y: 0, z: 0.7}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Workstations
+  m_title_TC: "\u5DE5\u4F5C\u9593"
+  m_title_SC: "\u5DE5\u4F5C\u95F4"
+  m_content_ENG: The entire lounge area is covered by Wi-Fi, making The Deck a great
+    place to stay connected and productive. Guests will find ample seating available,
+    and several spaces for working and gathering.
+  m_content_TC: "\u6574\u500B\u8CB4\u8CD3\u5BA4\u5747\u6709\u7121\u7DDA\u7DB2\u7D61\u8986\u84CB\uFF0C\u8B93\u60A8\u8207\u4E16\u754C\u4FDD\u6301\u9023\u7E6B\uFF0C\u904B\u7C4C\u5E37\u5E44\u3002\u5145\u8DB3\u7684\u5EA7\u6905\u8207\u7A7A\u9593\u65B9\u4FBF\u65C5\u5BA2\u8655\u7406\u516C\u52D9\u53CA\u9592\u8AC7\u5C0F\u805A\u3002"
+  m_content_SC: "\u6574\u4E2A\u8D35\u5BBE\u5BA4\u5747\u6709\u65E0\u7EBF\u7F51\u7EDC\u8986\u76D6\uFF0C\u8BA9\u60A8\u4E0E\u4E16\u754C\u4FDD\u6301\u8FDE\u7CFB\uFF0C\u8FD0\u7B79\u5E37\u5E44\u3002
+    \u5145\u8DB3\u7684\u5EA7\u6905\u4E0E\u7A7A\u95F4\u65B9\u4FBF\u65C5\u5BA2\u5904\u7406\u516C\u52A1\u53CA\u95F2\u8C08\u5C0F\u805A\u3002"

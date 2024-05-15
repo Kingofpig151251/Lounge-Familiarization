@@ -6,9 +6,14 @@ public class UIElementSystem : MonoBehaviour
 {
     #region Navigation
 
-    public void EnterViewPoint(int index) => GameEventReference.Instance.OnEnterViewPoint.Trigger(index);
-    public void OnEnterNavigatePhase() => GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
+    public void EnterViewPoint(int index) =>
+        GameEventReference.Instance.OnEnterViewPoint.Trigger(index);
+
+    public void OnEnterNavigatePhase() =>
+        GameEventReference.Instance.OnEnterNavigatePhase.Trigger();
+
     public void OnExitNavigatePhase() => GameEventReference.Instance.OnExitNavigatePhase.Trigger();
+
     public void OnConfirmNavigate() => GameEventReference.Instance.OnConfirmNavigate.Trigger();
 
     #endregion
@@ -17,7 +22,10 @@ public class UIElementSystem : MonoBehaviour
 
     public void OnLanguageChanged(int language)
     {
-        if (IntroducePanelManager.Instance.GetIsCoroutineRunning() || GameManager.Instance.GetCurrentLanguage() == language)
+        if (
+            IntroducePanelManager.Instance.GetIsCoroutineRunning()
+            || GameManager.Instance.GetCurrentLanguage() == language
+        )
             return;
         GameEventReference.Instance.OnLanguageChanged.Trigger(language);
     }
@@ -52,15 +60,32 @@ public class UIElementSystem : MonoBehaviour
     }
 
     public void OnGameReset() => GameEventReference.Instance.OnGameReset.Trigger();
-    public void OnClickTaskModeButton(string message) => GameEventReference.Instance.OnEnterTaskMode.Trigger(message);
-    public void OnClickInfoExpandButton() => GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
-    public void OnClickRegion(string regionID) => GameEventReference.Instance.OnChangeRegion.Trigger(regionID);
-    public void OnCloseMessagePanel() => UIElementReference.Instance.m_MessagePanel.SetActive(false);
-    public void OnClickLoungeHeader(int index) => GameEventReference.Instance.OnClickLoungeHeader.Trigger(index);
-    public void OnClickClassHeader(int index) => GameEventReference.Instance.OnClickClassHeader.Trigger(index);
+
+    public void OnClickTaskModeButton(string message) =>
+        GameEventReference.Instance.OnEnterTaskMode.Trigger(message);
+
+    public void OnClickInfoExpandButton() =>
+        GameEventReference.Instance.OnClickInfoExpandButton.Trigger();
+
+    public void OnClickRegion(string regionID) =>
+        GameEventReference.Instance.OnChangeRegion.Trigger(regionID);
+
+    public void OnCloseMessagePanel() =>
+        UIElementReference.Instance.m_MessagePanel.SetActive(false);
+
+    public void OnClickLoungeHeader(int index) =>
+        GameEventReference.Instance.OnClickLoungeHeader.Trigger(index);
+
+    public void OnClickClassHeader(int index) =>
+        GameEventReference.Instance.OnClickClassHeader.Trigger(index);
+
     public void OpenTestPanel() => GameEventReference.Instance.OpenTestPanel.Trigger();
-    public void OnClickTestOption(int index) => GameEventReference.Instance.OnClickTestOption.Trigger(index);
-    public void OnClickFloorPlanButton() => GameEventReference.Instance.OnClickFloorPlanButton.Trigger();
+
+    public void OnClickTestOption(int index) =>
+        GameEventReference.Instance.OnClickTestOption.Trigger(index);
+
+    public void OnClickFloorPlanButton() =>
+        GameEventReference.Instance.OnClickFloorPlanButton.Trigger();
 
     public void OnClickIntroducePanelNextButton() =>
         GameEventReference.Instance.OnClickIntroducePanelNextButton.Trigger();
@@ -75,7 +100,8 @@ public class UIElementSystem : MonoBehaviour
     public void OnClickNeedAnswerButton()
     {
         GameEventReference.Instance.OnEnterViewPoint.Trigger(
-            NavigateManager.Instance.GetCurrentTaskSO().m_navigateIndex[0]);
+            NavigateManager.Instance.GetCurrentTaskSO().m_navigateIndex[0]
+        );
         UIElementReference.Instance.m_nextTaskButton.SetActive(true);
         UIElementReference.Instance.m_confirmButton.SetActive(false);
     }
@@ -92,8 +118,20 @@ public class UIElementSystem : MonoBehaviour
         UIElementReference.Instance.m_nextTaskButton.SetActive(false);
         UIElementReference.Instance.m_confirmButton.SetActive(true);
     }
+
     public void DelectPage(GameObject page)
     {
         Destroy(page);
+    }
+
+    public void ShowLoungeInformation(LoungeInfoSO loungeInfoSO)
+    {
+        UIElementReference.Instance.m_loungeInformationPanel.SetActive(true);
+        GameEventReference.Instance.OnShowLoungeInfo.Trigger(loungeInfoSO);
+    }
+
+    public void CloseLoungeInformation()
+    {
+        GameEventReference.Instance.OnCloseLoungeInfo.Trigger();
     }
 }

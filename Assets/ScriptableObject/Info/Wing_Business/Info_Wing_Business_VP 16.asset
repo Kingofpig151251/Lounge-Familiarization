@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
+  m_Name: Info_Wing_Business_VP 16
+  m_EditorClassIdentifier: 
+  m_position: {x: 4, y: 0.5, z: -2}
+  m_rotation: {x: 0, y: 0, z: 0}
+  m_size: {x: 0.05, y: 0.05, z: 0.05}
+  m_title_ENG: Coffe Loft
+  m_title_TC: "\u5496\u5561\u95A3"
+  m_title_SC: "\u5496\u5561\u9601"
+  m_content_ENG: Try a cup of freshly brewed coffee, tea in your Coffee Loft. Frothy
+    cappuccino and other specialty beverages made by our expert baristas. To accompany
+    your drink we have a tasty selection of pastries sandwiches, pies and cookies.
+    A wide range of international newspapers and magazines are also available for
+    passengers to help while away the time.
+  m_content_TC: "\u5728\u60A8\u7684\u5496\u5561\u95A3\u5617\u8A66\u4E00\u676F\u73FE\u716E\u7684\u5496\u5561\u3001\u8336\u3002
+    \u7531\u6211\u5011\u7684\u5C08\u696D\u5496\u5561\u5E2B\u88FD\u4F5C\u7684\u6CE1\u6CAB\u5361\u5E03\u5947\u8AFE\u548C\u5176\u4ED6\u7279\u8272\u98F2\u6599\u3002
+    \u70BA\u4E86\u642D\u914D\u60A8\u7684\u98F2\u54C1\uFF0C\u6211\u5011\u9084\u63D0\u4F9B\u4E00\u7CFB\u5217\u7F8E\u5473\u7684\u7CD5\u9EDE\u3001\u4E09\u660E\u6CBB\u3001\u9921\u9905\u548C\u9905\u4E7E\u3002
+    \u4E5F\u63D0\u4F9B\u591A\u7A2E\u570B\u969B\u5831\u7D19\u548C\u96DC\u8A8C\u4F9B\u4E58\u5BA2\u6D88\u78E8\u6642\u9593\u3002"
+  m_content_SC: "\u5728\u60A8\u7684\u5496\u5561\u9601\u5C1D\u8BD5\u4E00\u676F\u73B0\u716E\u7684\u5496\u5561\u3001\u8336\u3002
+    \u7531\u6211\u4EEC\u7684\u4E13\u4E1A\u5496\u5561\u5E08\u5236\u4F5C\u7684\u6CE1\u6CAB\u5361\u5E03\u5947\u8BFA\u548C\u5176\u4ED6\u7279\u8272\u996E\u6599\u3002
+    \u4E3A\u4E86\u642D\u914D\u60A8\u7684\u996E\u54C1\uFF0C\u6211\u4EEC\u8FD8\u63D0\u4F9B\u4E00\u7CFB\u5217\u7F8E\u5473\u7684\u7CD5\u70B9\u3001\u4E09\u660E\u6CBB\u3001\u9985\u997C\u548C\u997C\u5E72\u3002
+    \u8FD8\u63D0\u4F9B\u591A\u79CD\u56FD\u9645\u62A5\u7EB8\u548C\u6742\u5FD7\u4F9B\u4E58\u5BA2\u6D88\u78E8\u65F6\u95F4\u3002"

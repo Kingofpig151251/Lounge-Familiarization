@@ -1,10 +1,18 @@
 using Reference;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : Singleton<GameManager>
 {
+    [SerializeField]
+    private InfoSO m_TheDeckInfo;
+
+    [SerializeField]
+    private InfoSO m_ThePierInfo;
+
+    [SerializeField]
+    private InfoSO m_TheWingInfo;
     private int m_CurrentMode = Class_PlayMode.StartMode;
     private int m_currentLanguage = Class_Language.English;
     private bool m_isCityMapPanelActive = true;
@@ -65,21 +73,57 @@ public class GameManager : Singleton<GameManager>
 
     private void OnChangeRegion(params object[] param)
     {
+        string regionIndex = (string)param[0];
+
         InfoSO info = UIElementReference.Instance.m_LoungeInfoSo;
 
         m_isCityMapPanelActive = false;
         if (m_is360FristTime)
         {
             UIElementReference.Instance.m_360teachingPanel.SetActive(true);
-            UIElementReference.Instance.m_OkButton.GetComponent<Button>().onClick.AddListener(delegate
-            {
-                GameEventReference.Instance.OnInteractInfo.Trigger(info);
-            });
+            UIElementReference
+                .Instance.m_OkButton.GetComponent<Button>()
+                .onClick.AddListener(
+                    delegate
+                    {
+                        switch (regionIndex)
+                        {
+                            case "10":
+                                //GameEventReference.Instance.OnInteractInfo.Trigger(m_TheDeckInfo);
+                                break;
+                            case "11":
+                                GameEventReference.Instance.OnInteractInfo.Trigger(m_TheWingInfo);
+                                break;
+                            case "12":
+                                GameEventReference.Instance.OnInteractInfo.Trigger(m_TheWingInfo);
+                                break;
+                            case "13":
+                                GameEventReference.Instance.OnInteractInfo.Trigger(m_ThePierInfo);
+                                break;
+                            case "14":
+                                GameEventReference.Instance.OnInteractInfo.Trigger(m_ThePierInfo);
+                                break;
+                        }
+                    }
+                );
             m_is360FristTime = false;
         }
         else
         {
-            GameEventReference.Instance.OnInteractInfo.Trigger(info);
+            switch (regionIndex)
+            {
+                case "10":
+                    //GameEventReference.Instance.OnInteractInfo.Trigger(m_TheDeckInfo);
+                    break;
+                case "11":
+                case "12":
+                    GameEventReference.Instance.OnInteractInfo.Trigger(m_TheWingInfo);
+                    break;
+                case "13":
+                case "14":
+                    GameEventReference.Instance.OnInteractInfo.Trigger(m_ThePierInfo);
+                    break;
+            }
         }
     }
 
@@ -94,9 +138,24 @@ public class GameManager : Singleton<GameManager>
     {
         for (int i = 0; i < UIElementReference.Instance.m_ButtonSC.Count; i++)
         {
-            UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
-            UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
-            UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color = new Color(1, 1, 1, 1f);
+            UIElementReference.Instance.m_ButtonENG[i].GetComponent<TMP_Text>().color = new Color(
+                1,
+                1,
+                1,
+                1f
+            );
+            UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(
+                1,
+                1,
+                1,
+                1f
+            );
+            UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color = new Color(
+                1,
+                1,
+                1,
+                1f
+            );
             switch (m_currentLanguage)
             {
                 case Class_Language.English:
@@ -104,10 +163,12 @@ public class GameManager : Singleton<GameManager>
                         new Color(0, 0, 0, 0.5f);
                     break;
                 case Class_Language.SimplifiedChinese:
-                    UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    UIElementReference.Instance.m_ButtonSC[i].GetComponent<TMP_Text>().color =
+                        new Color(0, 0, 0, 0.5f);
                     break;
                 case Class_Language.TraditionalChinese:
-                    UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color = new Color(0, 0, 0, 0.5f);
+                    UIElementReference.Instance.m_ButtonTC[i].GetComponent<TMP_Text>().color =
+                        new Color(0, 0, 0, 0.5f);
                     break;
             }
         }
@@ -127,7 +188,10 @@ public class GameManager : Singleton<GameManager>
     }
 
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;
+
     public int GetCurrentMode() => m_CurrentMode;
+
     public int GetCurrentLanguage() => m_currentLanguage;
+
     public bool GetIsFirstEnter() => m_is360FristTime;
 }
