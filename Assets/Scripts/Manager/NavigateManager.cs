@@ -1,5 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Reference;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class NavigateManager : Singleton<NavigateManager>
 {
@@ -8,6 +12,7 @@ public class NavigateManager : Singleton<NavigateManager>
     private int m_questionIndex;
     private int m_previousQuestionIndex;
 
+    private List<TaskSO> m_taskQueue;
     private TaskSO m_currentTaskSO;
 
     private void Start()
@@ -29,6 +34,10 @@ public class NavigateManager : Singleton<NavigateManager>
         UIElementReference.Instance.m_navigatePanel.SetActive(true);
         UIElementReference.Instance.m_exitNavigateButton.gameObject.SetActive(true);
 
+        m_taskQueue = TaskReference.Instance.m_taskConfigSO
+            .Where(t => t.m_lounge == ViewPointManager.Instance.m_currentLounge)
+            .ToList();
+
         GenerateTask();
         ChangeCorrectRateText(GameManager.Instance.GetCurrentLanguage());
     }
@@ -47,6 +56,7 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             ++m_correctRate;
             UIElementReference.Instance.m_correctPanel.SetActive(true);
+            m_currentTaskSO.CompleteTask();
         }
         else
         {
@@ -93,19 +103,35 @@ public class NavigateManager : Singleton<NavigateManager>
 
     public void GenerateTask()
     {
-        System.DateTime now = System.DateTime.Now;
-
+        // Prevents from infinite loop
+        // If all tasks in the lounge are completed, set the current task to the placeholder task
+        if (m_taskQueue.TrueForAll(t => t.IsCompleted()))
+        {
+            m_currentTaskSO = TaskReference.Instance.m_completedTaskPlaceHolderSO;
+            UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
+            UIElementReference.Instance.m_confirmButton.SetActive(false);
+            return;
+        }
+        
+        // Look for another task if the current task is completed
         do
         {
-            int seed = (int)((now.Day) * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
-            Random.InitState(seed);
+            GenerateNewSeed();
             m_questionIndex = Mathf.Clamp(Random.Range(0, TaskReference.Instance.m_taskConfigSO.Count), 0,
                 TaskReference.Instance.m_taskConfigSO.Count - 1);
-        } while (!isQuestionIndexPremit());
+        } while (!isQuestionIndexPremit() || TaskReference.Instance.m_taskConfigSO[m_questionIndex].IsCompleted());
 
         m_previousQuestionIndex = m_questionIndex;
         m_currentTaskSO = TaskReference.Instance.m_taskConfigSO[m_questionIndex];
         UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
+        UIElementReference.Instance.m_confirmButton.SetActive(true);
+    }
+
+    private static void GenerateNewSeed()
+    {
+        var now = DateTime.Now;
+        var seed = (int)(now.Day * now.Millisecond * Time.realtimeSinceStartup / now.Minute);
+        Random.InitState(seed);
     }
 
     private void UpdateTaskText(int language)
@@ -140,4 +166,9 @@ public class NavigateManager : Singleton<NavigateManager>
     }
 
     public TaskSO GetCurrentTaskSO() => m_currentTaskSO;
+
+    public void ResetTaskHistory()
+    {
+        PlayerPrefs.SetInt("task-mask", 0);
+    }
 }

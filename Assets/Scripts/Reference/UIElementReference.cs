@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Reference
 {
@@ -39,6 +40,8 @@ namespace Reference
         public GameObject m_OkButton;
         public GameObject m_nextTaskButton;
         public GameObject m_confirmButton;
+        public Button m_resetTaskButton;
+        public TMP_Text m_resetTaskButtonText;
 
         [Header("UI Texts")]
         public TextMeshProUGUI m_taskText;
