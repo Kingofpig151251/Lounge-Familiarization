@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c32e86d71c29824eab56801473f2756, type: 3}
   m_Name: TaskConfig 9
   m_EditorClassIdentifier: 
+  m_taskID: 512
   m_lounge: 3
   m_question_TC: "\u6211\u5728\u54EA\u88E1\u53EF\u4EE5\u4EAB\u53D7\u653E\u9B06\u8EAB\u5FC3\u7684\u6309\u6469\u670D\u52D9\uFF1F"
   m_question_SC: "\u6211\u5728\u54EA\u91CC\u53EF\u4EE5\u4EAB\u53D7\u653E\u677E\u8EAB\u5FC3\u7684\u6309\u6469\u670D\u52A1\uFF1F"
