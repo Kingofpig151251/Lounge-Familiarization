@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cd6ddfe21859f4c8b239e5323b386e, type: 3}
   m_Name: QAConfig 7
   m_EditorClassIdentifier: 
+  m_questionID: 128
   m_Regionid: 0
   m_question: "\u4E58\u5BA2\uFF1A\u6211\u9700\u8981\u4E00\u4E9B\u7A7A\u9593\u8655\u7406\u79C1\u4EBA\u5DE5\u4F5C\uFF0C\u4F60\u6703\u63A8\u85A6\u54EA\u88E1\uFF1F"
   m_wrongAnswer1: Wrong
