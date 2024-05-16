@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -42,6 +43,8 @@ namespace Reference
         public GameObject m_confirmButton;
         public Button m_resetTaskButton;
         public TMP_Text m_resetTaskButtonText;
+        public Button m_purgeHistoryButton;
+        public TMP_Text m_purgeHistoryButtonText;
 
         [Header("UI Texts")]
         public TextMeshProUGUI m_taskText;
@@ -58,12 +61,33 @@ namespace Reference
         public List<GameObject> m_floorPlan_LocationButton = new List<GameObject>();
         public List<QAConfigSO> m_questionList;
         public List<DialogueSO> m_dialogueList;
+        
+        private void Start()
+        {
+            for (var i = 0; i < 114; i++)
+            {
+                m_floorPlan_LocationButton[i].GetComponent<Image>().sprite = 
+                    ViewPointReference.Instance.m_viewPointSO[i].m_isVisited
+                        ? m_visitedLocationButton
+                        : m_locationButton;
+            }
+        }
+
+        public void OnPurgeLocationHistory()
+        {
+            foreach (var v in ViewPointReference.Instance.m_viewPointSO)
+            {
+                v.m_isVisited = false;
+            }
+            Start();
+        }
 
         [Header("Sprites")]
         public Sprite m_expandButton;
         public Sprite m_collapseButton;
         public Sprite m_locationButton;
         public Sprite m_activeLocationButton;
+        public Sprite m_visitedLocationButton;
 
         [Header("Others")]
         public GameObject m_Grid;
