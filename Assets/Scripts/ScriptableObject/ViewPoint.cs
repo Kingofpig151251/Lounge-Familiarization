@@ -1,6 +1,8 @@
+using System;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 [CreateAssetMenu(fileName = "NewViewPoint", menuName = "New ViewPoint", order = 0)]
 public class ViewPoint : ScriptableObject
@@ -12,6 +14,19 @@ public class ViewPoint : ScriptableObject
     public InfoSO[] m_infoSO;
     public Texture m_texture;
     public float m_rotation;
+
+    public bool m_isVisited = false;
+
+    private void OnEnable()
+    {
+        m_isVisited = ((1 << m_index) & PlayerPrefs.GetInt(m_loungeName.ToString())) != 0;
+    }
+    
+    public void SetVisited()
+    {
+        m_isVisited = true;
+        PlayerPrefs.SetInt(m_loungeName.ToString(), PlayerPrefs.GetInt(m_loungeName.ToString()) | (1 << m_index));
+    }
 
 #if UNITY_EDITOR
     // 3rd step

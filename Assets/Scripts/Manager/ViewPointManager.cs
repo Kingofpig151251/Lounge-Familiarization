@@ -125,6 +125,8 @@ public class ViewPointManager : Singleton<ViewPointManager>
         m_currentViewPoint =
             ViewPointReference.Instance.m_viewPointSO[
                 viewPointIndex + ViewPointReference.Instance.m_loungeStartIndex[(int)m_currentLounge]];
+        
+        m_currentViewPoint.SetVisited();
 
         UIElementReference.Instance.m_nextViewPoint.GetComponent<Renderer>().material
             .SetTexture("mainTexture", m_currentViewPoint.m_texture);
@@ -167,6 +169,15 @@ public class ViewPointManager : Singleton<ViewPointManager>
         Camera.main.GetComponent<RapidBlurEffect>().enabled = false;
 
         InstantiateInterfaceItem();
+    }
+    
+    public void PurgeLocationHistory()
+    {
+        PlayerPrefs.SetInt(Lounge.DeckBusinessLounge.ToString(), 0);
+        PlayerPrefs.SetInt(Lounge.WingFristClassLounge.ToString(), 0);
+        PlayerPrefs.SetInt(Lounge.WingBusinessLounge.ToString(), 0);
+        PlayerPrefs.SetInt(Lounge.PierFirstClassLounge.ToString(), 0);
+        PlayerPrefs.SetInt(Lounge.PierBusinessLounge.ToString(), 0);
     }
 
 #if UNITY_EDITOR

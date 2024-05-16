@@ -50,6 +50,7 @@ public class GameManager : Singleton<GameManager>
     private void EnterViewMode()
     {
         UIElementReference.Instance.m_resetTaskButton.gameObject.SetActive(false);
+        UIElementReference.Instance.m_purgeHistoryButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_homeButton.SetActive(true);
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(true);
@@ -202,6 +203,15 @@ public class GameManager : Singleton<GameManager>
             Class_Language.English => "Reset Task",
             Class_Language.SimplifiedChinese => "重置任务",
             Class_Language.TraditionalChinese => "重置任務",
+            _ => throw new ArgumentOutOfRangeException()
+        };
+        
+        UIElementReference.Instance.m_purgeHistoryButton.gameObject.SetActive(true);
+        UIElementReference.Instance.m_purgeHistoryButtonText.text = GetCurrentLanguage() switch
+        {
+            Class_Language.English => "Purge History",
+            Class_Language.SimplifiedChinese => "清除位置历史",
+            Class_Language.TraditionalChinese => "清除位置歷史",
             _ => throw new ArgumentOutOfRangeException()
         };
     }

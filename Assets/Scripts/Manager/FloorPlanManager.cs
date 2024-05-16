@@ -28,10 +28,14 @@ public class FloorPlanManager : Singleton<FloorPlanManager>
             + ViewPointReference.Instance.m_loungeStartIndex[
                 (int)ViewPointManager.Instance.m_currentLounge
             ];
+        
         UIElementReference
             .Instance.m_floorPlan_LocationButton[m_currentViewPointIndex]
             .GetComponent<Image>()
-            .sprite = UIElementReference.Instance.m_locationButton;
+            .sprite = ViewPointManager.Instance.m_currentViewPoint.m_isVisited 
+                ? UIElementReference.Instance.m_visitedLocationButton
+                : UIElementReference.Instance.m_locationButton;
+        
         UIElementReference
             .Instance.m_floorPlan_LocationButton[viewPointIndex]
             .GetComponent<Image>()
