@@ -1,3 +1,4 @@
+using System;
 using Reference;
 using TMPro;
 using UnityEngine;
@@ -48,6 +49,7 @@ public class GameManager : Singleton<GameManager>
 
     private void EnterViewMode()
     {
+        UIElementReference.Instance.m_resetTaskButton.gameObject.SetActive(false);
         UIElementReference.Instance.m_homeButton.SetActive(true);
         UIElementReference.Instance.m_InfoPanel.SetActive(true);
         UIElementReference.Instance.m_FloorPlanButton.SetActive(true);
@@ -132,6 +134,14 @@ public class GameManager : Singleton<GameManager>
         int language = (int)param[0];
         m_currentLanguage = language;
         HiedLanguageButton();
+        
+        UIElementReference.Instance.m_resetTaskButtonText.text = language switch
+        {
+            Class_Language.English => "Reset Task",
+            Class_Language.SimplifiedChinese => "重置任务",
+            Class_Language.TraditionalChinese => "重置任務",
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 
     private void HiedLanguageButton()
@@ -185,6 +195,15 @@ public class GameManager : Singleton<GameManager>
         UIElementReference.Instance.m_GameModeSwitcher.SetActive(false);
         UIElementReference.Instance.m_InfoPanel.SetActive(false);
         UIElementReference.Instance.m_exitNavigateButton.SetActive(false);
+        
+        UIElementReference.Instance.m_resetTaskButton.gameObject.SetActive(true);
+        UIElementReference.Instance.m_resetTaskButtonText.text = GetCurrentLanguage() switch
+        {
+            Class_Language.English => "Reset Task",
+            Class_Language.SimplifiedChinese => "重置任务",
+            Class_Language.TraditionalChinese => "重置任務",
+            _ => throw new ArgumentOutOfRangeException()
+        };
     }
 
     public bool IsCityMapPanelActive() => m_isCityMapPanelActive;
