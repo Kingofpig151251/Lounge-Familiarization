@@ -17866,9 +17866,11 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Select the lounge to learn more
-  m_traditionalChineseText: "\u9078\u64C7\u8CB4\u8CD3\u5BA4\u4EE5\u4E86\u89E3\u66F4\u591A\u8CC7\u8A0A\r"
-  m_simplifiedChineseText: "\u9009\u62E9\u4F11\u606F\u5BA4\u4EE5\u4E86\u89E3\u66F4\u591A\u4FE1\u606F\r"
+  m_englishText: 'Select bubble to learn more
+
+    Select a lounge to explore'
+  m_traditionalChineseText: "\r\u9078\u64C7\u8CC7\u8A0A\u6309\u9215\u4EE5\u4E86\u89E3\u66F4\u591A\u8CC7\u8A0A\r\n\u9078\u64C7\u8CB4\u8CD3\u5BA4\u4EE5\u524D\u5F80\u63A2\u7D22"
+  m_simplifiedChineseText: "\u9009\u62E9\u4FE1\u606F\u6309\u94AE\u4EE5\u4E86\u89E3\u66F4\u591A\u4FE1\u606F\r\n\u9009\u62E9\u8D35\u5BBE\u5BA4\u4EE5\u524D\u5F80\u63A2\u7D22"
   m_isBold: 0
 --- !u!114 &597825428
 MonoBehaviour:
@@ -17890,7 +17892,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Select the lounge to learn more
+  m_text: 'Select "!" to learn more
+
+    Select a lounge to explore'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
   m_sharedMaterial: {fileID: 3020035750406233375, guid: 4ce40ac6f2289ca4d82e85a9568c62e6, type: 2}
