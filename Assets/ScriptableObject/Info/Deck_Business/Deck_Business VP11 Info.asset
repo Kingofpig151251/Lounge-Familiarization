@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
   m_Name: Deck_Business VP11 Info
   m_EditorClassIdentifier: 
-  m_position: {x: 0.2, y: 0, z: 0.7}
+  m_position: {x: 0.4440994, y: 0.0012055894, z: 1.5544971}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.05, y: 0.05, z: 0.05}
   m_title_ENG: Workstations

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
   m_Name: Pier_Business VP17 Info
   m_EditorClassIdentifier: 
-  m_position: {x: 1.8202829, y: -0.06152002, z: -0.14002505}
+  m_position: {x: 3.0295274, y: -0.061539598, z: -0.23303738}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.05, y: 0.05, z: 0.05}
   m_title_ENG: Shower Suites

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0511d6f61eca48b44a365b710868bb0e, type: 3}
+  m_Name: Pier_Business VP 9-2
+  m_EditorClassIdentifier: 
+  m_index: 9
+  m_loungeName: 4
+  m_relation: 
+  m_arrowSO:
+  - {fileID: 11400000, guid: fc3735652481f474e85e10b3d67b3ab0, type: 2}
+  - {fileID: 11400000, guid: 64babdee99c1e7e40a9b599719dd12b5, type: 2}
+  m_infoSO:
+  - {fileID: 11400000, guid: 99ff70d3aa817534b88ccafcbf31fa1b, type: 2}
+  - {fileID: 11400000, guid: 235e17b055c154f4da7d40d9f87e001a, type: 2}
+  m_texture: {fileID: 2800000, guid: d4beb16fcabfa6a4ab5acf8d9e94b2f5, type: 3}
+  m_rotation: -210
+  m_isVisited: 0

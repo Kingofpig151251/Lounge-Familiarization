@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0311f240ac5781240ad15a29b962b422, type: 3}
   m_Name: CathaySignatureScene
   m_EditorClassIdentifier: 
-  m_position: {x: -2.5, y: 0, z: 2}
+  m_position: {x: -3.093, y: 0.31123158, z: -1.315}
   m_rotation: {x: 0, y: 0, z: 0}
   m_size: {x: 0.05, y: 0.05, z: 0.05}
   m_title_ENG: Cathay Signature Scent
