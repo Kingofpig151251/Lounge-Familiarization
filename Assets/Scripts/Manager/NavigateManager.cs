@@ -38,7 +38,7 @@ public class NavigateManager : Singleton<NavigateManager>
             .Where(t => t.m_lounge == ViewPointManager.Instance.m_currentLounge)
             .ToList();
 
-        GenerateTask();
+        GenerateTaskFromQueue();
         ChangeCorrectRateText(GameManager.Instance.GetCurrentLanguage());
     }
 
@@ -101,6 +101,26 @@ public class NavigateManager : Singleton<NavigateManager>
         UIElementReference.Instance.m_taskCorrectRate.text = text;
     }
 
+    public void GenerateTaskFromQueue()
+    {
+        // Prevents from infinite loop
+        // If all tasks in the lounge are completed, set the current task to the placeholder task
+        if (m_taskQueue.TrueForAll(t => t.IsCompleted()))
+        {
+            m_currentTaskSO = TaskReference.Instance.m_completedTaskPlaceHolderSO;
+            UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
+            UIElementReference.Instance.m_confirmButton.SetActive(false);
+            return;
+        }
+        
+        var inCompleteQueue = m_taskQueue.Where(t => !t.IsCompleted()).ToList();
+        var index = Random.Range(0, inCompleteQueue.Count);
+        m_questionIndex = TaskReference.Instance.m_taskConfigSO.FindIndex(m => m == inCompleteQueue[index]);
+        m_currentTaskSO = TaskReference.Instance.m_taskConfigSO[m_questionIndex];
+        UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
+        UIElementReference.Instance.m_confirmButton.SetActive(true);
+    }
+
     public void GenerateTask()
     {
         // Prevents from infinite loop
@@ -136,28 +156,18 @@ public class NavigateManager : Singleton<NavigateManager>
 
     private void UpdateTaskText(int language)
     {
-        switch (language)
+        UIElementReference.Instance.m_taskText.text = language switch
         {
-            case Class_Language.English:
-                UIElementReference.Instance.m_taskText.text = m_currentTaskSO.m_question_ENG;
-                break;
-            case Class_Language.SimplifiedChinese:
-                UIElementReference.Instance.m_taskText.text = m_currentTaskSO.m_question_SC;
-                break;
-            case Class_Language.TraditionalChinese:
-                UIElementReference.Instance.m_taskText.text = m_currentTaskSO.m_question_TC;
-                break;
-        }
+            Class_Language.English => m_currentTaskSO.m_question_ENG,
+            Class_Language.SimplifiedChinese => m_currentTaskSO.m_question_SC,
+            Class_Language.TraditionalChinese => m_currentTaskSO.m_question_TC,
+            _ => UIElementReference.Instance.m_taskText.text
+        };
     }
 
     private bool isQuestionIndexPremit()
     {
-        if (TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_lounge == ViewPointManager.Instance.m_currentLounge && m_previousQuestionIndex != m_questionIndex)
-        {
-            return true;
-        }
-
-        return false;
+        return TaskReference.Instance.m_taskConfigSO[m_questionIndex].m_lounge == ViewPointManager.Instance.m_currentLounge && m_previousQuestionIndex != m_questionIndex;
     }
 
     private void OnGameReset(params object[] param)
