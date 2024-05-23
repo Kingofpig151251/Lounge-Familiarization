@@ -114,7 +114,7 @@ public class UIElementSystem : MonoBehaviour
 
     public void ClickNextTaskButton()
     {
-        NavigateManager.Instance.GenerateTask();
+        NavigateManager.Instance.GenerateTaskFromQueue();
         UIElementReference.Instance.m_nextTaskButton.SetActive(false);
         UIElementReference.Instance.m_confirmButton.SetActive(true);
     }
