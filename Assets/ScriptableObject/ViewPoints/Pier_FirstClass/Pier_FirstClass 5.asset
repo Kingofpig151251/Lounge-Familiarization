@@ -21,4 +21,5 @@ MonoBehaviour:
   m_infoSO:
   - {fileID: 11400000, guid: 3089c6bf2b723b94992933ce3def7b75, type: 2}
   m_texture: {fileID: 2800000, guid: 701c49318571abc45a53c90eb8e515cc, type: 3}
-  m_rotation: -89
+  m_rotation: -141.2
+  m_isVisited: 1

@@ -125,7 +125,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
         m_currentViewPoint =
             ViewPointReference.Instance.m_viewPointSO[
                 viewPointIndex + ViewPointReference.Instance.m_loungeStartIndex[(int)m_currentLounge]];
-        
+
         m_currentViewPoint.SetVisited();
 
         UIElementReference.Instance.m_nextViewPoint.GetComponent<Renderer>().material
@@ -151,6 +151,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
                 UIElementReference.Instance.m_nextViewPoint.transform.localEulerAngles = temp;
 
                 UIElementReference.Instance.m_waterMark.SetActive(true);
+
                 break;
             }
             else
@@ -170,7 +171,7 @@ public class ViewPointManager : Singleton<ViewPointManager>
 
         InstantiateInterfaceItem();
     }
-    
+
     public void PurgeLocationHistory()
     {
         PlayerPrefs.SetInt(Lounge.DeckBusinessLounge.ToString(), 0);

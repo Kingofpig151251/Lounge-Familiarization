@@ -22,6 +22,7 @@ namespace Reference
         public GameObject m_popupWindow;
         public GameObject m_correctPanel;
         public GameObject m_wrongPanel;
+        public GameObject m_selectLocationLabel;
 
         [Header("UI Buttons")]
         public GameObject m_InfoPanelExpandButton;

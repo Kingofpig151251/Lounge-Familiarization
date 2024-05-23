@@ -62,7 +62,6 @@ public class NavigateManager : Singleton<NavigateManager>
         {
             UIElementReference.Instance.m_wrongPanel.SetActive(true);
         }
-
         ChangeCorrectRateText(GameManager.Instance.GetCurrentLanguage());
     }
 
@@ -110,9 +109,10 @@ public class NavigateManager : Singleton<NavigateManager>
             m_currentTaskSO = TaskReference.Instance.m_completedTaskPlaceHolderSO;
             UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
             UIElementReference.Instance.m_confirmButton.SetActive(false);
+            UIElementReference.Instance.m_selectLocationLabel.SetActive(false);
             return;
         }
-        
+
         var inCompleteQueue = m_taskQueue.Where(t => !t.IsCompleted()).ToList();
         var index = Random.Range(0, inCompleteQueue.Count);
         m_questionIndex = TaskReference.Instance.m_taskConfigSO.FindIndex(m => m == inCompleteQueue[index]);
@@ -130,9 +130,10 @@ public class NavigateManager : Singleton<NavigateManager>
             m_currentTaskSO = TaskReference.Instance.m_completedTaskPlaceHolderSO;
             UpdateTaskText(GameManager.Instance.GetCurrentLanguage());
             UIElementReference.Instance.m_confirmButton.SetActive(false);
+            UIElementReference.Instance.m_selectLocationLabel.SetActive(false);
             return;
         }
-        
+
         // Look for another task if the current task is completed
         do
         {

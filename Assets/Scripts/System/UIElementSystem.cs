@@ -94,6 +94,8 @@ public class UIElementSystem : MonoBehaviour
         GameEventReference.Instance.OnFeaturePointListExpandButtonClicked.Trigger(vp);
 
     public void Deactive(GameObject gameObject) => gameObject.SetActive(false);
+        public void Active(GameObject gameObject) => gameObject.SetActive(true);
+
 
     #endregion
 
@@ -104,6 +106,8 @@ public class UIElementSystem : MonoBehaviour
         );
         UIElementReference.Instance.m_nextTaskButton.SetActive(true);
         UIElementReference.Instance.m_confirmButton.SetActive(false);
+
+        CameraController.Instance.SetRotation(ViewPointManager.Instance.m_currentViewPoint.m_infoSO[0].m_position);
     }
 
     public void SkipIntroduce()
