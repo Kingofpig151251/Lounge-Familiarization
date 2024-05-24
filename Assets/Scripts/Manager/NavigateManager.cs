@@ -122,6 +122,7 @@ public class NavigateManager : Singleton<NavigateManager>
     }
 
     // Unused method, can be safely removed or comment out
+    [Obsolete]
     public void GenerateTask()
     {
         // Prevents from infinite loop
