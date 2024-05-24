@@ -121,6 +121,7 @@ public class NavigateManager : Singleton<NavigateManager>
         UIElementReference.Instance.m_confirmButton.SetActive(true);
     }
 
+    // Unused method, can be safely removed or comment out
     public void GenerateTask()
     {
         // Prevents from infinite loop
