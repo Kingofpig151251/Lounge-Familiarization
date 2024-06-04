@@ -16,9 +16,9 @@ MonoBehaviour:
   m_loungeName: 1
   m_relation: 
   m_arrowSO:
-  - {fileID: 11400000, guid: c3844d8ebc94ce1429c18c0422874de2, type: 2}
+  - {fileID: 11400000, guid: 0a72998dfcddfdb4a84cc61559d5c667, type: 2}
+  - {fileID: 11400000, guid: 5fc51ae7c9065874d9b48a0a70cb4381, type: 2}
   m_infoSO: []
   m_texture: {fileID: 2800000, guid: 82cff13284ad85445af7ab7069255b81, type: 3}
   m_rotation: -30
-  m_popupWindowTittle: 
-  m_popupWindowMessage: 
+  m_isVisited: 1
