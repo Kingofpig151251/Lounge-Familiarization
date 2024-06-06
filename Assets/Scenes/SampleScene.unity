@@ -15360,7 +15360,7 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Current location
+  m_englishText: Current Location
   m_traditionalChineseText: "\u76EE\u524D\u5730\u9EDE"
   m_simplifiedChineseText: "\u5F53\u524D\u5730\u70B9"
   m_isBold: 0
@@ -39240,7 +39240,7 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Reset Tasks
+  m_englishText: Reset Task
   m_traditionalChineseText: "\u91CD\u7F6E\u4EFB\u52D9"
   m_simplifiedChineseText: "\u91CD\u7F6E\u4EFB\u52A1"
   m_isBold: 0
@@ -40141,7 +40141,7 @@ MonoBehaviour:
   m_englishTextMargin: 0
   m_chineseTextMargin: 0
   m_updateMultiLanguageText: 1
-  m_englishText: Unvisited location
+  m_englishText: Unvisited Location
   m_traditionalChineseText: "\u672A\u8A2A\u554F\u5730\u9EDE"
   m_simplifiedChineseText: "\u672A\u8BBF\u95EE\u5730\u70B9"
   m_isBold: 0
