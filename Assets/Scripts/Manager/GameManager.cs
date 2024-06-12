@@ -209,7 +209,7 @@ public class GameManager : Singleton<GameManager>
         UIElementReference.Instance.m_purgeHistoryButton.gameObject.SetActive(true);
         UIElementReference.Instance.m_purgeHistoryButtonText.text = GetCurrentLanguage() switch
         {
-            Class_Language.English => "Purge History",
+            Class_Language.English => "Clear Location History",
             Class_Language.SimplifiedChinese => "清除位置历史",
             Class_Language.TraditionalChinese => "清除位置歷史",
             _ => throw new ArgumentOutOfRangeException()
